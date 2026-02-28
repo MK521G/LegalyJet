@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LegalyJet — Free Legal Document Generator for Websites & Apps</title>
+  <meta name="description" content="Generate professional Privacy Policies, Terms & Conditions, Cookie Policies and more in minutes. Free, personalized, no account required."/>
+    <!-- SEO & Open Graph -->
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="LegalyJet"/>
+  <link rel="canonical" href="https://legalyjet.com/index.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="LegalyJet — Free Legal Document Generator for Websites & Apps"/>
+  <meta property="og:description" content="Generate a professional Privacy Policy, Terms & Conditions, Cookie Policy and more in minutes. Free, personalized, no account required."/>
+  <meta property="og:url" content="https://legalyjet.com/index.html"/>
+  <meta property="og:site_name" content="LegalyJet"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="LegalyJet — Free Legal Document Generator for Websites & Apps"/>
+  <meta name="twitter:description" content="Generate a professional Privacy Policy, Terms & Conditions, Cookie Policy and more in minutes. Free, personalized, no account required."/>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:        #0c1a3a;
+      --navy-mid:    #142247;
+      --accent:      #2563eb;
+      --accent-lt:   #3b82f6;
+      --accent-soft: #dbeafe;
+      --text:        #0f1117;
+      --text-mid:    #374151;
+      --muted:       #6b7280;
+      --border:      #e2e8f4;
+      --page-bg:     #f4f7fd;
+      --white:       #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Source Sans 3', sans-serif; background: var(--page-bg); color: var(--text); overflow-x: hidden; }
+
+    /* ── HEADER ── */
+    header {
+      background: rgba(10,22,52,0.97);
+      backdrop-filter: blur(14px);
+      padding: 0 3rem;
+      height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.25);
+    }
+
+    .logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+    .logo-mark { width: 38px; height: 38px; filter: drop-shadow(0 2px 8px rgba(59,130,246,0.45)); }
+    .logo-wordmark { display: flex; flex-direction: column; line-height: 1; }
+    .logo-name { font-family: 'Lora', serif; font-size: 1.22rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+    .logo-name em { font-style: normal; color: #60a5fa; }
+    .logo-tagline { font-size: 0.55rem; font-weight: 600; letter-spacing: 0.15em; color: #4a7aaa; text-transform: uppercase; margin-top: 0.12rem; }
+
+    /* nav desktop */
+    .nav-desktop { display: flex; align-items: center; gap: 1.8rem; }
+    .nav-desktop a { color: #7a9ec4; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; min-height: 44px; display: flex; align-items: center; }
+    .nav-desktop a:hover, .nav-desktop a.active { color: #fff; }
+    .nav-cta { background: var(--accent) !important; color: #fff !important; padding: 0.52rem 1.2rem !important; border-radius: 7px; font-weight: 600 !important; white-space: nowrap; box-shadow: 0 2px 10px rgba(37,99,235,0.35); transition: background 0.2s, box-shadow 0.2s !important; }
+    .nav-cta:hover { background: #1d4ed8 !important; box-shadow: 0 4px 18px rgba(37,99,235,0.5) !important; }
+    /* Mobile hamburger */
+    .nav-mobile-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; cursor: pointer; background: none; border: none; padding: 10px; border-radius: 8px; transition: background 0.2s; }
+    .nav-mobile-toggle:hover { background: rgba(255,255,255,0.06); }
+    .nav-mobile-toggle span { display: block; width: 22px; height: 2px; background: #93c5fd; border-radius: 2px; transition: all 0.3s; }
+    .nav-mobile-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-mobile-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-mobile-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    /* Mobile drawer */
+    .nav-drawer { display: none; position: fixed; top: 64px; left: 0; right: 0; background: rgba(7,13,31,0.98); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 1.5rem 1.6rem 2rem; z-index: 199; box-shadow: 0 8px 32px rgba(0,0,0,0.4); animation: slideDown 0.22s ease both; }
+    .nav-drawer.open { display: block; }
+    @keyframes slideDown { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
+    .nav-drawer a { display: flex; align-items: center; gap: 0.6rem; color: #8aafd4; text-decoration: none; font-size: 1rem; font-weight: 500; padding: 0.9rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); min-height: 52px; transition: color 0.2s; }
+    .nav-drawer a:hover, .nav-drawer a.active { color: #fff; }
+    .nav-drawer a:last-child { border-bottom: none; }
+    .nav-drawer .drawer-cta { margin-top: 1rem; background: var(--accent); color: #fff !important; border-radius: 9px; padding: 1rem !important; font-weight: 700 !important; text-align: center; justify-content: center; border-bottom: none !important; font-size: 1rem !important; }
+    .nav-drawer .drawer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 0.5rem 0; }
+    .nav-drawer .drawer-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #2e4a65; padding: 0.5rem 0.5rem 0; display: block; }
+    /* Doc shortcuts */
+    .doc-shortcuts { background: rgba(7,13,31,0.97); border-bottom: 1px solid rgba(255,255,255,0.07); overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .doc-shortcuts::-webkit-scrollbar { display: none; }
+    .doc-shortcuts-inner { display: flex; align-items: center; min-width: max-content; }
+    .doc-shortcut { display: flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.3rem; text-decoration: none; color: #557090; font-size: 0.79rem; font-weight: 500; border-right: 1px solid rgba(255,255,255,0.06); white-space: nowrap; transition: all 0.18s; min-height: 40px; }
+    .doc-shortcut:first-child { padding-left: 2rem; }
+    .doc-shortcut:hover { color: #93c5fd; background: rgba(37,99,235,0.09); }
+    .doc-shortcut.sc-active { color: #93c5fd; background: rgba(37,99,235,0.12); }
+    .sc-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+    .sc-dot.green { background: #4ade80; }
+    .sc-dot.gray { background: #334455; }
+    .sc-pill { font-size: 0.57rem; font-weight: 700; letter-spacing: 0.06em; padding: 0.12rem 0.4rem; border-radius: 99px; text-transform: uppercase; }
+    .sc-pill.available { background: rgba(34,197,94,0.14); color: #4ade80; }
+    .sc-pill.soon { background: rgba(255,255,255,0.05); color: #3a5570; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, #070e20 0%, #0b1630 35%, #0d1c44 65%, #0a1530 100%);
+      padding: 6.5rem 2rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-glow {
+      position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+      width: 900px; height: 550px;
+      background: radial-gradient(ellipse, rgba(37,99,235,0.2) 0%, rgba(59,130,246,0.07) 50%, transparent 72%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(59,130,246,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59,130,246,0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      pointer-events: none;
+      mask-image: radial-gradient(ellipse 85% 85% at 50% 40%, black 30%, transparent 100%);
+    }
+    .hero-inner { position: relative; z-index: 2; max-width: 860px; margin: 0 auto; }
+
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      background: rgba(37,99,235,0.13); border: 1px solid rgba(96,165,250,0.22);
+      color: #93c5fd; font-size: 0.71rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.38rem 1rem; border-radius: 99px; margin-bottom: 1.8rem;
+      animation: fadeDown 0.6s ease both;
+    }
+    .eyebrow-dot { width: 6px; height: 6px; background: #60a5fa; border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.45;transform:scale(0.82)} }
+
+    .hero h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(2.5rem, 5.5vw, 4rem);
+      font-weight: 700; color: #eef4ff; line-height: 1.12;
+      margin-bottom: 1.3rem; letter-spacing: -0.025em;
+      animation: fadeDown 0.6s ease 0.08s both;
+    }
+    .hero h1 .accent-word { color: #60a5fa; }
+
+    .hero-sub {
+      font-size: 1.12rem; color: #6a96c0; max-width: 580px;
+      margin: 0 auto 2.6rem; line-height: 1.78; font-weight: 300;
+      animation: fadeDown 0.6s ease 0.16s both;
+    }
+
+    .hero-actions {
+      display: flex; align-items: center; justify-content: center;
+      gap: 0.9rem; flex-wrap: wrap; margin-bottom: 2rem;
+      animation: fadeDown 0.6s ease 0.24s both;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white; padding: 0.95rem 2.2rem; border-radius: 9px;
+      font-size: 0.98rem; font-weight: 700; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      box-shadow: 0 4px 24px rgba(37,99,235,0.45); transition: all 0.22s;
+      letter-spacing: 0.005em;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(37,99,235,0.6); background: linear-gradient(135deg, #1d4ed8, #1e40af); }
+    .btn-ghost {
+      color: #7aafd4; padding: 0.95rem 1.7rem; border-radius: 9px;
+      font-size: 0.93rem; font-weight: 500; text-decoration: none;
+      border: 1.5px solid rgba(96,165,250,0.2); transition: all 0.2s;
+      display: inline-flex; align-items: center; gap: 0.45rem;
+    }
+    .btn-ghost:hover { border-color: rgba(147,197,253,0.55); color: #d0e8ff; background: rgba(255,255,255,0.04); }
+
+    .hero-trust {
+      font-size: 0.77rem; color: #3d6080; letter-spacing: 0.02em;
+      animation: fadeDown 0.6s ease 0.32s both;
+      display: flex; align-items: center; justify-content: center; gap: 1.6rem; flex-wrap: wrap;
+    }
+    .trust-item { display: flex; align-items: center; gap: 0.3rem; }
+    .trust-icon { color: #3b82f6; }
+
+    /* Hero doc preview strip */
+    .hero-docs-strip {
+      position: relative; z-index: 2;
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      animation: fadeDown 0.7s ease 0.38s both;
+    }
+    .hero-strip-doc {
+      padding: 1.5rem 1.2rem;
+      border-right: 1px solid rgba(255,255,255,0.07);
+      text-align: center;
+      transition: background 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+    .hero-strip-doc:last-child { border-right: none; }
+    .hero-strip-doc:hover { background: rgba(37,99,235,0.08); }
+    .hero-strip-doc.available:hover .strip-arrow { opacity: 1; transform: translateX(3px); }
+    .strip-emoji { font-size: 1.5rem; margin-bottom: 0.4rem; display: block; }
+    .strip-name { font-size: 0.82rem; font-weight: 600; color: #cde; margin-bottom: 0.2rem; }
+    .strip-status-available { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #4ade80; }
+    .strip-status-soon { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #4a6a8a; }
+    .strip-arrow { font-size: 0.75rem; color: #60a5fa; margin-left: 0.3rem; display: inline-block; transition: all 0.2s; opacity: 0; }
+
+    /* ── SHARED ── */
+    .section-wrap { max-width: 1120px; margin: 0 auto; padding: 5.5rem 2rem; }
+    .section-header { margin-bottom: 3.5rem; }
+    .section-eyebrow { display: inline-block; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.65rem; }
+    .section-title { font-family: 'Lora', serif; font-size: clamp(1.7rem, 3.2vw, 2.3rem); font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
+    .section-sub { font-size: 0.97rem; color: var(--muted); max-width: 500px; line-height: 1.72; }
+
+    /* ── DOCUMENTS SECTION ── */
+    .docs-section { background: var(--white); border-top: 1px solid var(--border); }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.4rem;
+    }
+
+    .doc-card-wrap {
+      display: block; text-decoration: none;
+      border-radius: 16px; overflow: hidden;
+      border: 1.5px solid var(--border);
+      background: var(--white);
+      transition: all 0.28s cubic-bezier(0.34, 1.2, 0.64, 1);
+      position: relative;
+    }
+    .doc-card-wrap.active { cursor: pointer; }
+    .doc-card-wrap.active:hover {
+      border-color: var(--accent);
+      box-shadow: 0 12px 48px rgba(37,99,235,0.14), 0 2px 8px rgba(37,99,235,0.08);
+      transform: translateY(-5px);
+    }
+    .doc-card-wrap.inactive { opacity: 0.58; cursor: default; }
+
+    .doc-card-accent-bar {
+      height: 4px;
+      background: linear-gradient(90deg, #2563eb, #60a5fa);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .doc-card-wrap.active:hover .doc-card-accent-bar { transform: scaleX(1); }
+
+    .doc-card-body { padding: 2rem 2rem 1.7rem; }
+
+    .doc-card-top {
+      display: flex; align-items: flex-start;
+      justify-content: space-between; gap: 1rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .doc-icon-wrap {
+      width: 52px; height: 52px; border-radius: 13px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; flex-shrink: 0;
+    }
+
+    .doc-status-available {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      background: #f0fdf4; border: 1px solid #bbf7d0;
+      color: #16a34a; font-size: 0.67rem; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      padding: 0.25rem 0.7rem; border-radius: 99px;
+      white-space: nowrap;
+    }
+    .doc-status-available::before { content:''; width:6px;height:6px;background:#22c55e;border-radius:50%;display:inline-block; }
+    .doc-status-soon {
+      background: #f8fafc; border: 1px solid #e2e8f0;
+      color: #94a3b8; font-size: 0.67rem; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      padding: 0.25rem 0.7rem; border-radius: 99px;
+      display: inline-block; white-space: nowrap;
+    }
+
+    .doc-card-name { font-family: 'Lora', serif; font-size: 1.2rem; font-weight: 700; color: var(--navy); margin-bottom: 0.55rem; }
+    .doc-card-desc { font-size: 0.87rem; color: var(--muted); line-height: 1.65; margin-bottom: 1.4rem; }
+
+    .doc-card-meta {
+      display: flex; align-items: center; gap: 1.2rem;
+      padding-top: 1.1rem; border-top: 1px solid #f1f5f9;
+    }
+    .doc-meta-item { display: flex; align-items: center; gap: 0.35rem; font-size: 0.77rem; color: #94a3b8; }
+    .doc-meta-icon { font-size: 0.82rem; }
+
+    .doc-card-cta {
+      font-size: 0.85rem; font-weight: 700; color: var(--accent);
+      display: flex; align-items: center; gap: 0.3rem; margin-left: auto;
+      transition: gap 0.2s;
+    }
+    .doc-card-wrap.active:hover .doc-card-cta { gap: 0.55rem; }
+
+    /* ── HOW IT WORKS ── */
+    .how-section { background: var(--page-bg); }
+
+    .steps-track {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      position: relative; gap: 0; margin-top: 3.5rem;
+    }
+    .steps-track::before {
+      content: ''; position: absolute;
+      top: 28px; left: 14%; right: 14%; height: 2px;
+      background: linear-gradient(90deg, #2563eb 0%, #93c5fd 100%);
+      opacity: 0.25; z-index: 0;
+    }
+    .step-item { text-align: center; padding: 0 1rem; position: relative; z-index: 1; }
+    .step-circle {
+      width: 56px; height: 56px; border-radius: 50%; margin: 0 auto 1.3rem;
+      background: linear-gradient(145deg, #142247, #0c1a3a);
+      color: white; font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      border: 2px solid rgba(96,165,250,0.25);
+      box-shadow: 0 4px 18px rgba(12,26,58,0.28);
+    }
+    .step-title { font-family: 'Lora', serif; font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+    .step-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.65; }
+
+    /* ── FEATURES ── */
+    .features-section { background: var(--white); border-top: 1px solid var(--border); }
+    .features-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+    .feature-cell { background: var(--white); padding: 2.2rem 2rem; transition: background 0.2s; }
+    .feature-cell:hover { background: #f8faff; }
+    .feature-icon-box { width: 46px; height: 46px; border-radius: 11px; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 1.1rem; }
+    .feature-title { font-size: 0.97rem; font-weight: 700; color: var(--navy); margin-bottom: 0.42rem; }
+    .feature-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.65; }
+
+    /* ── COMPLIANCE ── */
+    .compliance-section {
+      background: linear-gradient(145deg, #080f22 0%, #0c1a3a 50%, #0d1c44 100%);
+      padding: 5rem 2rem;
+    }
+    .compliance-inner { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; align-items: center; }
+    .compliance-intro .section-eyebrow { color: #60a5fa; }
+    .compliance-intro h2 { font-family: 'Lora', serif; font-size: 1.65rem; font-weight: 700; color: white; line-height: 1.3; margin-top: 0.4rem; }
+    .compliance-intro p { font-size: 0.88rem; color: #4a7090; margin-top: 0.6rem; line-height: 1.65; }
+    .compliance-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09); border-radius: 14px; padding: 1.6rem; text-align: center; transition: background 0.2s; }
+    .compliance-card:hover { background: rgba(255,255,255,0.08); }
+    .compliance-badge { font-size: 1.6rem; margin-bottom: 0.6rem; display: block; }
+    .compliance-name { font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 700; color: white; margin-bottom: 0.35rem; }
+    .compliance-desc { font-size: 0.79rem; color: #5a88b0; line-height: 1.55; }
+
+    /* ── FAQ ── */
+    .faq-section { background: var(--page-bg); }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; }
+    .faq-item { background: white; border: 1.5px solid var(--border); border-radius: 12px; padding: 1.5rem 1.8rem; cursor: pointer; transition: border-color 0.2s; }
+    .faq-item:hover { border-color: #b0c8e8; }
+    .faq-item.open { border-color: var(--accent); }
+    .faq-question { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .faq-q-text { font-size: 0.93rem; font-weight: 600; color: var(--navy); line-height: 1.4; }
+    .faq-icon { width: 22px; height: 22px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; flex-shrink: 0; transition: transform 0.25s, background 0.2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--accent); color: white; }
+    .faq-answer { font-size: 0.86rem; color: var(--muted); line-height: 1.7; max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.25s; }
+    .faq-item.open .faq-answer { max-height: 200px; padding-top: 0.9rem; }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: linear-gradient(160deg, #070e20 0%, #0b1630 50%, #0d1c44 100%);
+      padding: 6rem 2rem; text-align: center; position: relative; overflow: hidden;
+    }
+    .cta-section::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(59,130,246,0.065) 1px,transparent 1px), linear-gradient(90deg,rgba(59,130,246,0.065) 1px,transparent 1px);
+      background-size: 56px 56px;
+    }
+    .cta-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
+    .cta-section h2 { font-family: 'Lora', serif; font-size: clamp(1.9rem, 3.5vw, 2.65rem); font-weight: 700; color: white; margin-bottom: 1rem; line-height: 1.2; letter-spacing: -0.02em; }
+    .cta-section p { color: #5a88aa; font-size: 1rem; margin-bottom: 2.5rem; line-height: 1.72; }
+    .cta-docs-row { display: flex; align-items: center; justify-content: center; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .cta-doc-chip {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      color: #93c5fd; font-size: 0.82rem; font-weight: 600;
+      padding: 0.45rem 1rem; border-radius: 99px;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .cta-doc-chip:hover { background: rgba(37,99,235,0.2); border-color: rgba(96,165,250,0.4); color: #bde0ff; }
+    .cta-actions { display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+
+    /* ── FOOTER ── */
+    footer { background: #06091a; padding: 3.5rem 3rem 2rem; border-top: 1px solid rgba(255,255,255,0.05); }
+    .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .footer-logo-name { font-family: 'Lora', serif; font-size: 1.1rem; font-weight: 700; color: white; margin-bottom: 0.7rem; display: block; }
+    .footer-logo-name em { font-style: normal; color: #60a5fa; }
+    .footer-desc { font-size: 0.82rem; color: #3a5870; line-height: 1.65; max-width: 230px; }
+    .footer-col-title { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #2e4a65; margin-bottom: 1rem; }
+    .footer-col a { display: block; font-size: 0.84rem; color: #3e5e7a; text-decoration: none; margin-bottom: 0.55rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #93c5fd; }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { font-size: 0.76rem; color: #1e2e40; }
+    .footer-legal { display: flex; gap: 1.5rem; }
+    .footer-legal a { font-size: 0.76rem; color: #1e2e40; text-decoration: none; transition: color 0.2s; }
+    .footer-legal a:hover { color: #60a5fa; }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeDown { from{opacity:0;transform:translateY(-18px)} to{opacity:1;transform:translateY(0)} }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: 0.1s; }
+    .reveal-d2 { transition-delay: 0.2s; }
+    .reveal-d3 { transition-delay: 0.3s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      .docs-grid { grid-template-columns: 1fr; }
+      .hero-docs-strip { grid-template-columns: repeat(2,1fr); }
+      .steps-track { grid-template-columns: repeat(2,1fr); gap: 2rem; }
+      .steps-track::before { display: none; }
+      .features-grid { grid-template-columns: repeat(2,1fr); }
+      .compliance-inner { grid-template-columns: 1fr; text-align: center; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      header { padding: 0 1.4rem; }
+      .nav-desktop { display: none; } .nav-mobile-toggle { display: flex; }
+      .hero { padding: 5rem 1.4rem 0; }
+      .hero-docs-strip { grid-template-columns: repeat(2,1fr); }
+      .features-grid { grid-template-columns: 1fr; }
+      .steps-track { grid-template-columns: 1fr; }
+      footer { padding: 2.5rem 1.4rem 1.5rem; }
+      .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  
+    /* ── SHARED NAV FROM shared-styles.css ── */
+    .nav-desktop { display: flex; align-items: center; gap: 1.8rem; }
+    .nav-desktop a { color: #7a9ec4; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; padding: 0.3rem 0; min-height: 44px; display: flex; align-items: center; }
+    .nav-desktop a:hover, .nav-desktop a.active { color: #fff; }
+    .nav-cta { background: #2563eb !important; color: #fff !important; padding: 0.52rem 1.2rem !important; border-radius: 7px; font-weight: 600 !important; white-space: nowrap; box-shadow: 0 2px 10px rgba(37,99,235,0.35); }
+    .nav-cta:hover { background: #1d4ed8 !important; }
+    .nav-mobile-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; cursor: pointer; background: none; border: none; padding: 10px; border-radius: 8px; transition: background 0.2s; }
+    .nav-mobile-toggle:hover { background: rgba(255,255,255,0.06); }
+    .nav-mobile-toggle span { display: block; width: 22px; height: 2px; background: #93c5fd; border-radius: 2px; transition: all 0.3s; }
+    .nav-mobile-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-mobile-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-mobile-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-drawer { display: none; position: fixed; top: 60px; left: 0; right: 0; background: rgba(7,13,31,0.98); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 1.5rem 1.6rem 2rem; z-index: 199; box-shadow: 0 8px 32px rgba(0,0,0,0.4); animation: slideDown 0.22s ease both; }
+    .nav-drawer.open { display: block; }
+    @keyframes slideDown { from{opacity:0;transform:translateY(-8px)} to{opacity:1;transform:translateY(0)} }
+    .nav-drawer a { display: flex; align-items: center; gap: 0.6rem; color: #8aafd4; text-decoration: none; font-size: 1rem; font-weight: 500; padding: 0.9rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); min-height: 52px; transition: color 0.2s; }
+    .nav-drawer a:hover, .nav-drawer a.active { color: #fff; }
+    .nav-drawer a:last-child { border-bottom: none; }
+    .nav-drawer .drawer-cta { margin-top: 1rem; background: #2563eb; color: #fff !important; border-radius: 9px; padding: 1rem !important; font-weight: 700 !important; text-align: center; justify-content: center; border-bottom: none !important; font-size: 1rem !important; }
+    .nav-drawer .drawer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 0.5rem 0; }
+    .nav-drawer .drawer-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #2e4a65; padding: 0.5rem 0.5rem 0; display: block; }
+    /* Shortcuts strip */
+    .doc-shortcuts { background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.05); overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .doc-shortcuts::-webkit-scrollbar { display: none; }
+    .doc-shortcuts-inner { display: flex; align-items: center; padding: 0 2.5rem; min-width: max-content; }
+    .doc-shortcut { display: flex; align-items: center; gap: 0.55rem; padding: 0.72rem 1.2rem; text-decoration: none; color: #6a8fb4; font-size: 0.8rem; font-weight: 500; border-right: 1px solid rgba(255,255,255,0.05); white-space: nowrap; transition: all 0.2s; min-height: 44px; }
+    .doc-shortcut:hover { color: #93c5fd; background: rgba(37,99,235,0.08); }
+    .sc-badge { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.06em; padding: 0.15rem 0.42rem; border-radius: 99px; text-transform: uppercase; }
+    .sc-badge.available { background: rgba(34,197,94,0.15); color: #4ade80; }
+    .sc-badge.soon { background: rgba(255,255,255,0.06); color: #4a6a8a; }
+    /* Footer brand */
+    .footer-brand .footer-logo-name { font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 700; color: white; display: block; margin-bottom: 0.6rem; }
+    .footer-brand .footer-logo-name em { font-style: normal; color: #60a5fa; }
+    .footer-brand .footer-desc { font-size: 0.8rem; color: #3a5878; line-height: 1.65; max-width: 220px; }
+    /* Mobile overrides for index */
+    @media (max-width: 780px) {
+      .nav-desktop { display: none; }
+      .nav-mobile-toggle { display: flex; }
+      header { padding: 0 1.2rem !important; }
+      .doc-shortcuts-inner { padding: 0 1rem; }
+      .hero-docs-strip { grid-template-columns: repeat(2,1fr) !important; }
+      .steps-track, .steps-grid { grid-template-columns: repeat(2,1fr) !important; }
+      .features-grid { grid-template-columns: 1fr !important; }
+      .docs-grid { grid-template-columns: 1fr !important; }
+      .compliance-inner { grid-template-columns: 1fr !important; text-align: center; }
+      .faq-grid { grid-template-columns: 1fr !important; }
+      .footer-top { grid-template-columns: 1fr 1fr !important; }
+      .cta-docs-row { flex-direction: column; align-items: center; }
+    }
+    @media (max-width: 480px) {
+      .footer-top { grid-template-columns: 1fr !important; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .hero-docs-strip { grid-template-columns: 1fr 1fr !important; }
+      .doc-card-meta { flex-wrap: wrap; gap: 0.5rem; }
+      .cta-actions { flex-direction: column; width: 100%; }
+      .cta-actions a { width: 100%; text-align: center; justify-content: center; }
+      .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">
+    <svg class="logo-mark" viewBox="0 0 36 36" fill="none"><defs><linearGradient id="sg" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#1d4ed8"/></linearGradient><linearGradient id="ag" x1="0" y1="0" x2="36" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#93c5fd"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient></defs><path d="M18 2L4 7.5V18c0 7.5 6 12.5 14 14.5 8-2 14-7 14-14.5V7.5L18 2Z" fill="url(#sg)"/><path d="M18 4.5L6 9.4V18c0 6.3 4.8 10.6 12 12.4 7.2-1.8 12-6.1 12-12.4V9.4L18 4.5Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><line x1="11" y1="13" x2="25" y2="13" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="11" x2="18" y2="23.5" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round"/><line x1="12.5" y1="13" x2="11" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><line x1="14" y1="13" x2="15.5" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><path d="M10 17 Q13.25 19.5 16.5 17" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round" fill="none"/><line x1="21.5" y1="13" x2="20" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><line x1="23" y1="13" x2="24.5" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><path d="M19.5 17 Q22.75 19.5 26 17" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round" fill="none"/><line x1="15.5" y1="23.5" x2="20.5" y2="23.5" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <div class="logo-wordmark"><div class="logo-name">Legaly<em>Jet</em></div><div class="logo-tagline">Legal Docs in Minutes</div></div>
+  </a>
+  <nav class="nav-desktop">
+    <a href="index.html" class="active">Home</a>
+    <a href="index.html#documents">Documents</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="legalyjet.html" class="nav-cta">Generate Free →</a>
+  </nav>
+  <button class="nav-mobile-toggle" onclick="toggleNav(this)" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+<nav class="nav-drawer" id="nav-drawer">
+  <span class="drawer-label">Generators</span>
+  <a href="legalyjet.html">🔒 Privacy Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="terms-generator.html">📋 Terms &amp; Conditions <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="index.html#documents" style="color:#4a6a8a;">🍪 Cookie Policy <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
+  <a href="index.html#documents" style="color:#4a6a8a;">📝 EULA <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
+  <hr class="drawer-divider"/>
+  <span class="drawer-label">Pages</span>
+  <a href="index.html" class="active">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="legalyjet.html" class="drawer-cta">Generate Free →</a>
+</nav>
+<div class="doc-shortcuts">
+  <div class="doc-shortcuts-inner">
+    <a href="legalyjet.html" class="doc-shortcut"><span class="sc-dot green"></span> Privacy Policy <span class="sc-pill available">Live</span></a>
+    <a href="terms-generator.html" class="doc-shortcut"><span class="sc-dot green"></span> Terms &amp; Conditions <span class="sc-pill available">Live</span></a>
+    <a href="index.html#documents" class="doc-shortcut"><span class="sc-dot gray"></span> Cookie Policy <span class="sc-pill soon">Soon</span></a>
+    <a href="index.html#documents" class="doc-shortcut"><span class="sc-dot gray"></span> EULA <span class="sc-pill soon">Soon</span></a>
+    <a href="blog.html" class="doc-shortcut" style="border-left:1px solid rgba(255,255,255,0.06);margin-left:auto;">📖 Legal Guides</a>
+  </div>
+</div>
+
+
+<!-- ─────────── HERO ─────────── -->
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      Free · No Account · Instant — Privacy Policy, T&amp;C &amp; More
+    </div>
+
+    <h1>
+      All the legal documents<br/>
+      your <span class="accent-word">website or app</span> needs
+    </h1>
+
+    <p class="hero-sub">
+      Privacy Policy, Terms &amp; Conditions, Cookie Policy — generate a professional, personalized legal document in under 4 steps. No lawyer fees, no templates with blank lines, no account required.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#documents" class="btn-primary">
+        Browse Documents
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#how-it-works" class="btn-ghost">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        How it works
+      </a>
+    </div>
+
+    <div class="hero-trust">
+      <div class="trust-item"><span class="trust-icon">✓</span> GDPR compliant output</div>
+      <div class="trust-item"><span class="trust-icon">✓</span> CCPA &amp; CalOPPA ready</div>
+      <div class="trust-item"><span class="trust-icon">✓</span> Download as PDF</div>
+      <div class="trust-item"><span class="trust-icon">✓</span> Zero data stored</div>
+    </div>
+
+    <!-- Doc quick-access strip -->
+    <div class="hero-docs-strip">
+      <a href="legalyjet.html" class="hero-strip-doc available">
+        <span class="strip-emoji">🔒</span>
+        <div class="strip-name">Privacy Policy <span class="strip-arrow">→</span></div>
+        <div class="strip-status-available">Available</div>
+      </a>
+      <a href="terms-generator.html" class="hero-strip-doc available">
+        <span class="strip-emoji">📋</span>
+        <div class="strip-name">Terms &amp; Conditions <span class="strip-arrow">→</span></div>
+        <div class="strip-status-available">Available</div>
+      </a>
+      <div class="hero-strip-doc">
+        <span class="strip-emoji">🍪</span>
+        <div class="strip-name">Cookie Policy</div>
+        <div class="strip-status-soon">Coming Soon</div>
+      </div>
+      <div class="hero-strip-doc">
+        <span class="strip-emoji">📝</span>
+        <div class="strip-name">EULA</div>
+        <div class="strip-status-soon">Coming Soon</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─────────── DOCUMENTS ─────────── -->
+<section class="docs-section" id="documents">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Our generators</div>
+      <div class="section-title">Every legal document your<br/>business needs — in one place</div>
+      <p class="section-sub">Pick a document, answer a few questions about your platform, and get a fully personalized legal document ready to publish in minutes.</p>
+    </div>
+
+    <div class="docs-grid">
+
+      <!-- Privacy Policy -->
+      <a href="legalyjet.html" class="doc-card-wrap active reveal">
+        <div class="doc-card-accent-bar"></div>
+        <div class="doc-card-body">
+          <div class="doc-card-top">
+            <div class="doc-icon-wrap" style="background:#eff6ff;">🔒</div>
+            <span class="doc-status-available">Available</span>
+          </div>
+          <div class="doc-card-name">Privacy Policy</div>
+          <p class="doc-card-desc">Legally disclose what personal data you collect, how you use and store it, and what rights your users have. Required by law in most countries for any website or app that collects any user information.</p>
+          <div class="doc-card-meta">
+            <div class="doc-meta-item"><span class="doc-meta-icon">⚡</span> ~3 min</div>
+            <div class="doc-meta-item"><span class="doc-meta-icon">📄</span> 4 steps</div>
+            <div class="doc-meta-item"><span class="doc-meta-icon">✅</span> GDPR · CCPA · CalOPPA</div>
+            <div class="doc-card-cta">Generate free →</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Terms & Conditions -->
+      <a href="terms-generator.html" class="doc-card-wrap active reveal reveal-d1">
+        <div class="doc-card-accent-bar"></div>
+        <div class="doc-card-body">
+          <div class="doc-card-top">
+            <div class="doc-icon-wrap" style="background:#f0fdf4;">📋</div>
+            <span class="doc-status-available">Available</span>
+          </div>
+          <div class="doc-card-name">Terms &amp; Conditions</div>
+          <p class="doc-card-desc">Define the rules users must agree to when using your platform. Protect your business from misuse, limit your liability, and establish who owns what — before a dispute arises.</p>
+          <div class="doc-card-meta">
+            <div class="doc-meta-item"><span class="doc-meta-icon">⚡</span> ~4 min</div>
+            <div class="doc-meta-item"><span class="doc-meta-icon">📄</span> 4 steps</div>
+            <div class="doc-meta-item"><span class="doc-meta-icon">✅</span> Payments · Arbitration</div>
+            <div class="doc-card-cta">Generate free →</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Cookie Policy -->
+      <div class="doc-card-wrap inactive reveal reveal-d2">
+        <div class="doc-card-accent-bar" style="background:linear-gradient(90deg,#f59e0b,#fcd34d);"></div>
+        <div class="doc-card-body">
+          <div class="doc-card-top">
+            <div class="doc-icon-wrap" style="background:#fffbeb;">🍪</div>
+            <span class="doc-status-soon">Coming Soon</span>
+          </div>
+          <div class="doc-card-name">Cookie Policy</div>
+          <p class="doc-card-desc">Disclose which cookies and tracking technologies your site uses. Required under GDPR and ePrivacy Directive for any site serving visitors in the European Union.</p>
+          <div class="doc-card-meta">
+            <div class="doc-meta-item"><span class="doc-meta-icon">🌍</span> GDPR · ePrivacy</div>
+            <div class="doc-meta-item"><span class="doc-meta-icon">🔔</span> Notify me when live</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EULA -->
+      <div class="doc-card-wrap inactive reveal reveal-d3">
+        <div class="doc-card-accent-bar" style="background:linear-gradient(90deg,#a855f7,#c084fc);"></div>
+        <div class="doc-card-body">
+          <div class="doc-card-top">
+            <div class="doc-icon-wrap" style="background:#fdf4ff;">📝</div>
+            <span class="doc-status-soon">Coming Soon</span>
+          </div>
+          <div class="doc-card-name">EULA</div>
+          <p class="doc-card-desc">End User License Agreement for software products and mobile apps. Define how users may install, access and use your software — and what they cannot do with it.</p>
+          <div class="doc-card-meta">
+            <div class="doc-meta-item"><span class="doc-meta-icon">📱</span> Apps &amp; Software</div>
+            <div class="doc-meta-item"><span class="doc-meta-icon">🔔</span> Notify me when live</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── HOW IT WORKS ─────────── -->
+<section class="how-section" id="how-it-works">
+  <div class="section-wrap">
+    <div class="section-header reveal" style="text-align:center;max-width:580px;margin-left:auto;margin-right:auto;margin-bottom:0;">
+      <div class="section-eyebrow">The process</div>
+      <div class="section-title">From zero to published<br/>in four steps</div>
+      <p class="section-sub" style="max-width:100%;margin:0 auto;">No legal knowledge required. Just answer plain-English questions and we generate your document instantly.</p>
+    </div>
+
+    <div class="steps-track reveal" style="margin-top:3.5rem;">
+      <div class="step-item">
+        <div class="step-circle">1</div>
+        <div class="step-title">Choose a Document</div>
+        <p class="step-desc">Pick the legal document your website or app needs from our library.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">2</div>
+        <div class="step-title">Your Business Info</div>
+        <p class="step-desc">Enter your platform name, company details, country and effective date.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">3</div>
+        <div class="step-title">Data &amp; Compliance</div>
+        <p class="step-desc">Tell us what data you collect, your tracking tech, and your legal requirements.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">4</div>
+        <div class="step-title">Download &amp; Publish</div>
+        <p class="step-desc">Your personalized document is ready instantly. Copy the text or download as PDF.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── FEATURES ─────────── -->
+<section class="features-section">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Why LegalyJet</div>
+      <div class="section-title">Built for founders, freelancers<br/>and developers</div>
+    </div>
+    <div class="features-grid reveal">
+      <div class="feature-cell">
+        <div class="feature-icon-box">⚡</div>
+        <div class="feature-title">Instant generation</div>
+        <p class="feature-desc">Get a complete, professional legal document in under 4 minutes. Answer questions, click generate — done.</p>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon-box">✏️</div>
+        <div class="feature-title">Fully personalized</div>
+        <p class="feature-desc">No blank-line templates. Every section is written using your actual business inputs — company name, country, contact details and all.</p>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon-box">📄</div>
+        <div class="feature-title">PDF &amp; text export</div>
+        <p class="feature-desc">Download as a print-ready PDF or copy plain text — ready to paste into any website, CMS, or app store listing.</p>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon-box">🔒</div>
+        <div class="feature-title">No account needed</div>
+        <p class="feature-desc">Generate your document without signing up or giving us your email. No friction, no spam, ever.</p>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon-box">🌍</div>
+        <div class="feature-title">Works worldwide</div>
+        <p class="feature-desc">Whether you're in the US, UK, Nigeria, India, or anywhere else — LegalyJet adapts the document to your location and laws.</p>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-icon-box">💰</div>
+        <div class="feature-title">Completely free</div>
+        <p class="feature-desc">No paywalls, no watermarks, no hidden fees. Core document generation is free and always will be.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── COMPLIANCE ─────────── -->
+<section class="compliance-section">
+  <div class="compliance-inner">
+    <div class="compliance-intro reveal">
+      <div class="section-eyebrow">Legal coverage</div>
+      <h2>Documents built for global compliance</h2>
+      <p>LegalyJet generates documents that address the world's major privacy and consumer protection regulations — so you're covered wherever your users are.</p>
+    </div>
+    <div class="compliance-card reveal reveal-d1">
+      <span class="compliance-badge">🇪🇺</span>
+      <div class="compliance-name">GDPR</div>
+      <p class="compliance-desc">General Data Protection Regulation — the EU's comprehensive privacy law covering all businesses that serve EU residents.</p>
+    </div>
+    <div class="compliance-card reveal reveal-d2">
+      <span class="compliance-badge">🇺🇸</span>
+      <div class="compliance-name">CCPA &amp; CalOPPA</div>
+      <p class="compliance-desc">California Consumer Privacy Act and Online Privacy Protection Act — the US gold standard for data privacy disclosure.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── FAQ ─────────── -->
+<section class="faq-section">
+  <div class="section-wrap">
+    <div class="section-header reveal" style="text-align:center;max-width:560px;margin:0 auto;">
+      <div class="section-eyebrow">FAQ</div>
+      <div class="section-title">Common questions</div>
+    </div>
+    <div class="faq-grid reveal">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question"><div class="faq-q-text">Is LegalyJet really free?</div><div class="faq-icon">+</div></div>
+        <div class="faq-answer">Yes, completely free. Generating and downloading any document costs nothing. No premium tiers, no watermarks, no hidden charges.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question"><div class="faq-q-text">Do I need to create an account?</div><div class="faq-icon">+</div></div>
+        <div class="faq-answer">No account is required. Generate, copy, and download your document without entering your email address or creating any profile.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question"><div class="faq-q-text">Are these documents legally valid?</div><div class="faq-icon">+</div></div>
+        <div class="faq-answer">LegalyJet is not a law firm. The documents are professionally structured and tailored to your inputs. For most small businesses and apps they're fit for purpose — but for high-stakes situations, an attorney review is recommended.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question"><div class="faq-q-text">Does LegalyJet store my data?</div><div class="faq-icon">+</div></div>
+        <div class="faq-answer">No. All document generation happens entirely in your browser. The information you enter is never sent to or stored on our servers.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question"><div class="faq-q-text">Can I use this for a mobile app?</div><div class="faq-icon">+</div></div>
+        <div class="faq-answer">Yes. LegalyJet supports both websites and mobile apps. The generator asks which platform you have and tailors every section of the document accordingly.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question"><div class="faq-q-text">What documents are coming next?</div><div class="faq-icon">+</div></div>
+        <div class="faq-answer">Cookie Policy and EULA generators are in development, following the same fast, free, personalized approach. They'll be available soon.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── CTA ─────────── -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <h2>Start generating your<br/>legal documents today</h2>
+    <p>Completely free. No account required. Ready to publish in minutes.</p>
+    <div class="cta-docs-row">
+      <a href="legalyjet.html" class="cta-doc-chip">🔒 Privacy Policy</a>
+      <a href="terms-generator.html" class="cta-doc-chip">📋 Terms &amp; Conditions</a>
+      <span class="cta-doc-chip" style="opacity:0.4;cursor:default;">🍪 Cookie Policy</span>
+      <span class="cta-doc-chip" style="opacity:0.4;cursor:default;">📝 EULA</span>
+    </div>
+    <div class="cta-actions">
+      <a href="legalyjet.html" class="btn-primary">
+        Generate Privacy Policy Free
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="terms-generator.html" class="btn-ghost">Generate Terms &amp; Conditions →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── FOOTER ─────────── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="footer-logo-name">Legaly<em>Jet</em></span>
+      <p class="footer-desc">Free legal document generator for websites and apps. Personalized policies in minutes — no account needed.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Generators</div>
+      <a href="legalyjet.html">🔒 Privacy Policy</a>
+      <a href="terms-generator.html">📋 Terms &amp; Conditions</a>
+      <a href="index.html#documents">🍪 Cookie Policy <small style="color:#2a3e52;">(soon)</small></a>
+      <a href="index.html#documents">📝 EULA <small style="color:#2a3e52;">(soon)</small></a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Learn</div>
+      <a href="blog.html">Blog &amp; Guides</a>
+      <a href="blog-privacy-policy-guide.html">Privacy Policy Guide</a>
+      <a href="blog-terms-and-conditions.html">T&amp;C Guide</a>
+      <a href="blog-gdpr-guide.html">GDPR Guide</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Our Privacy Policy</a>
+      <a href="terms.html">Our Terms</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 LegalyJet. All rights reserved. Not a law firm. Documents are for informational purposes only.</div>
+    <div class="footer-legal">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // FAQ
+  function toggleFaq(item) {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+
+<script>
+  function toggleNav(btn) {
+    btn.classList.toggle('open');
+    const drawer = document.getElementById('nav-drawer');
+    drawer.classList.toggle('open');
+    document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
+  }
+  document.addEventListener('click', e => {
+    const drawer = document.getElementById('nav-drawer');
+    const toggle = document.querySelector('.nav-mobile-toggle');
+    if (drawer && drawer.classList.contains('open') && !drawer.contains(e.target) && !toggle.contains(e.target)) {
+      drawer.classList.remove('open');
+      toggle.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  // FAQ
+  function toggleFaq(item) {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>

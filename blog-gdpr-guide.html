@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GDPR Compliance Guide for Small Businesses & Websites | LegalyJet</title>
+  <meta name="description" content="A practical GDPR compliance guide for small business owners, developers, and website owners. What you must do, what the fines are, and how to get compliant fast."/>
+    <!-- SEO & Open Graph -->
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="LegalyJet"/>
+  <link rel="canonical" href="https://legalyjet.com/blog-gdpr-guide.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="GDPR Compliance Guide for Websites & Apps — LegalyJet"/>
+  <meta property="og:description" content="A plain-English guide to GDPR compliance: who it applies to, what's required, and how to make your website GDPR-ready."/>
+  <meta property="og:url" content="https://legalyjet.com/blog-gdpr-guide.html"/>
+  <meta property="og:site_name" content="LegalyJet"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="GDPR Compliance Guide for Websites & Apps — LegalyJet"/>
+  <meta name="twitter:description" content="A plain-English guide to GDPR compliance: who it applies to, what's required, and how to make your website GDPR-ready."/>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+:root{--navy:#0c1a3a;--navy-mid:#142247;--navy-dark:#070d1f;--accent:#2563eb;--accent-lt:#3b82f6;--accent-soft:#dbeafe;--text:#0f1117;--muted:#6b7280;--border:#e2e8f4;--page-bg:#f4f7fd;--white:#ffffff;--header-h:60px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:'Source Sans 3',sans-serif;background:var(--page-bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;}
+header{background:rgba(7,13,31,0.97);backdrop-filter:blur(14px);height:var(--header-h);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,0.06);box-shadow:0 2px 20px rgba(0,0,0,0.3);}
+.logo{display:flex;align-items:center;gap:0.65rem;text-decoration:none;min-height:44px;}
+.logo-mark{width:34px;height:34px;flex-shrink:0;filter:drop-shadow(0 2px 8px rgba(59,130,246,0.4));}
+.logo-wordmark{display:flex;flex-direction:column;line-height:1;}
+.logo-name{font-family:'Lora',serif;font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:-0.02em;}
+.logo-name em{font-style:normal;color:#60a5fa;}
+.logo-tagline{font-size:0.54rem;font-weight:600;letter-spacing:0.15em;color:#4a7aaa;text-transform:uppercase;margin-top:0.12rem;}
+.nav-desktop{display:flex;align-items:center;gap:1.8rem;}
+.nav-desktop a{color:#7a9ec4;text-decoration:none;font-size:0.875rem;font-weight:500;transition:color 0.2s;padding:0.3rem 0;min-height:44px;display:flex;align-items:center;}
+.nav-desktop a:hover,.nav-desktop a.active{color:#fff;}
+.nav-cta{background:var(--accent)!important;color:#fff!important;padding:0.52rem 1.2rem!important;border-radius:7px;font-weight:600!important;white-space:nowrap;box-shadow:0 2px 10px rgba(37,99,235,0.35);transition:background 0.2s,box-shadow 0.2s!important;}
+.nav-cta:hover{background:#1d4ed8!important;box-shadow:0 4px 18px rgba(37,99,235,0.5)!important;}
+.nav-mobile-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;cursor:pointer;background:none;border:none;padding:10px;border-radius:8px;transition:background 0.2s;}
+.nav-mobile-toggle:hover{background:rgba(255,255,255,0.06);}
+.nav-mobile-toggle span{display:block;width:22px;height:2px;background:#93c5fd;border-radius:2px;transition:all 0.3s;}
+.nav-mobile-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-mobile-toggle.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.nav-mobile-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.nav-drawer{display:none;position:fixed;top:var(--header-h);left:0;right:0;background:rgba(7,13,31,0.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.08);padding:1.5rem 1.6rem 2rem;z-index:199;box-shadow:0 8px 32px rgba(0,0,0,0.4);animation:slideDown 0.22s ease both;}
+.nav-drawer.open{display:block;}
+@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+.nav-drawer a{display:flex;align-items:center;gap:0.6rem;color:#8aafd4;text-decoration:none;font-size:1rem;font-weight:500;padding:0.9rem 0.5rem;border-bottom:1px solid rgba(255,255,255,0.05);min-height:52px;transition:color 0.2s;}
+.nav-drawer a:hover,.nav-drawer a.active{color:#fff;}
+.nav-drawer a:last-child{border-bottom:none;}
+.drawer-cta{margin-top:1rem;background:var(--accent);color:#fff!important;border-radius:9px;padding:1rem!important;font-weight:700!important;text-align:center;justify-content:center;border-bottom:none!important;font-size:1rem!important;}
+.drawer-divider{border:none;border-top:1px solid rgba(255,255,255,0.06);margin:0.5rem 0;}
+.drawer-label{font-size:0.65rem;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:#2e4a65;padding:0.5rem 0.5rem 0;display:block;}
+.doc-shortcuts{background:rgba(7,13,31,0.95);border-bottom:1px solid rgba(255,255,255,0.07);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.doc-shortcuts::-webkit-scrollbar{display:none;}
+.doc-shortcuts-inner{display:flex;align-items:center;padding:0 1.5rem;min-width:max-content;}
+.doc-shortcut{display:flex;align-items:center;gap:0.55rem;padding:0.65rem 1.1rem;text-decoration:none;color:#5a80a4;font-size:0.8rem;font-weight:500;border-right:1px solid rgba(255,255,255,0.06);white-space:nowrap;transition:all 0.2s;min-height:42px;}
+.doc-shortcut:last-child{border-right:none;}
+.doc-shortcut:hover{color:#93c5fd;background:rgba(37,99,235,0.1);}
+.sc-badge{font-size:0.58rem;font-weight:700;letter-spacing:0.06em;padding:0.13rem 0.4rem;border-radius:99px;text-transform:uppercase;}
+.sc-available{background:rgba(34,197,94,0.15);color:#4ade80;}
+.sc-soon{background:rgba(255,255,255,0.06);color:#3a5878;}
+footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:auto;}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,0.05);}
+.footer-logo-name{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;color:white;display:block;margin-bottom:0.6rem;}
+.footer-logo-name em{font-style:normal;color:#60a5fa;}
+.footer-desc{font-size:0.8rem;color:#3a5878;line-height:1.65;max-width:220px;}
+.footer-col-title{font-size:0.64rem;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:#2a4060;margin-bottom:0.9rem;}
+.footer-col a{display:block;font-size:0.83rem;color:#3e5e7a;text-decoration:none;margin-bottom:0.5rem;transition:color 0.2s;padding:0.15rem 0;}
+.footer-col a:hover{color:#93c5fd;}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;}
+.footer-copy{font-size:0.75rem;color:#1e2e40;}
+.footer-legal{display:flex;gap:1.4rem;}
+.footer-legal a{font-size:0.75rem;color:#1e2e40;text-decoration:none;transition:color 0.2s;}
+.footer-legal a:hover{color:#60a5fa;}
+.article-layout{display:grid;grid-template-columns:1fr 300px;gap:3rem;max-width:1100px;margin:0 auto;padding:4rem 1.5rem 5rem;flex:1;align-items:start;}
+.article-hero{background:linear-gradient(160deg,#070e20 0%,#0b1630 40%,#0e1e44 75%,#0a1530 100%);padding:4.5rem 1.5rem 4rem;text-align:center;position:relative;overflow:hidden;}
+.article-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,0.055) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,0.055) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(ellipse 85% 90% at 50% 50%,black 25%,transparent 100%);}
+.article-hero-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;}
+.article-cat{display:inline-flex;align-items:center;gap:0.4rem;background:rgba(37,99,235,0.14);border:1px solid rgba(96,165,250,0.25);color:#93c5fd;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.32rem 0.85rem;border-radius:99px;margin-bottom:1.2rem;}
+.article-hero h1{font-family:'Lora',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:700;color:#eef4ff;line-height:1.18;margin-bottom:0.9rem;letter-spacing:-0.02em;}
+.article-hero-meta{display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;font-size:0.8rem;color:#4a7090;margin-top:1rem;}
+.prose h2{font-family:'Lora',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin:2.8rem 0 1rem;}
+.prose h2:first-child{margin-top:0;}
+.prose h3{font-family:'Lora',serif;font-size:1.12rem;font-weight:700;color:var(--navy);margin:2rem 0 0.65rem;}
+.prose p{font-size:0.97rem;color:#2e3340;line-height:1.88;margin-bottom:1.1rem;}
+.prose ul,.prose ol{margin:0.6rem 0 1.2rem 1.4rem;}
+.prose li{font-size:0.95rem;color:#2e3340;line-height:1.8;margin-bottom:0.4rem;}
+.prose strong{color:var(--navy);font-weight:700;}
+.prose a{color:var(--accent);text-decoration:underline;}
+.callout{background:#fff;border:1.5px solid var(--border);border-radius:12px;padding:1.5rem;margin:2rem 0;}
+.callout-title{font-weight:700;color:var(--navy);font-size:0.95rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem;}
+.callout-body{font-size:0.88rem;color:var(--muted);line-height:1.7;}
+.callout.accent{border-color:var(--accent);background:var(--accent-soft);}
+.callout.accent .callout-body{color:#1e40af;}
+.callout.warning{border-color:#f59e0b;background:#fffbeb;}
+.callout.warning .callout-body{color:#78350f;}
+.checklist{list-style:none;margin:1rem 0 1.5rem;}
+.checklist li{display:flex;align-items:flex-start;gap:0.7rem;padding:0.6rem 0;border-bottom:1px solid var(--border);font-size:0.93rem;color:#2e3340;line-height:1.6;}
+.checklist li:last-child{border-bottom:none;}
+.check-box{width:20px;height:20px;border-radius:5px;background:var(--accent-soft);border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;font-size:0.8rem;color:var(--accent);}
+.sidebar{position:sticky;top:80px;}
+.sidebar-card{background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:1.6rem;margin-bottom:1.2rem;}
+.sidebar-title{font-family:'Lora',serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:1rem;}
+.sidebar-toc a{display:block;font-size:0.84rem;color:var(--muted);text-decoration:none;padding:0.35rem 0;border-bottom:1px solid var(--border);transition:color 0.2s;}
+.sidebar-toc a:last-child{border-bottom:none;}
+.sidebar-toc a:hover{color:var(--accent);}
+.sidebar-cta{background:linear-gradient(145deg,#0b1630,#0e1e44);border-radius:14px;padding:1.6rem;text-align:center;margin-bottom:1.2rem;}
+.sidebar-cta h3{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:0.5rem;}
+.sidebar-cta p{font-size:0.82rem;color:#6a96be;line-height:1.6;margin-bottom:1.2rem;}
+.btn-sidebar{display:block;background:var(--accent);color:#fff;padding:0.8rem;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;text-align:center;margin-bottom:0.6rem;transition:background 0.2s;}
+.btn-sidebar:hover{background:#1d4ed8;}
+.btn-sidebar-ghost{display:block;color:#93c5fd;padding:0.7rem;border-radius:8px;font-weight:600;font-size:0.85rem;text-decoration:none;text-align:center;border:1px solid rgba(96,165,250,0.25);transition:all 0.2s;}
+.btn-sidebar-ghost:hover{border-color:rgba(147,197,253,0.5);color:#dbeafe;}
+.fine-box{background:linear-gradient(145deg,#0b1630,#0e1e44);border-radius:14px;padding:2rem;margin:2rem 0;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.fine-item{text-align:center;padding:1.2rem;background:rgba(255,255,255,0.05);border-radius:10px;border:1px solid rgba(255,255,255,0.08);}
+.fine-num{font-family:'Lora',serif;font-size:1.8rem;font-weight:700;color:#fff;display:block;margin-bottom:0.3rem;}
+.fine-num span{color:#60a5fa;}
+.fine-label{font-size:0.75rem;color:#4a7090;text-transform:uppercase;letter-spacing:0.06em;}
+@media(max-width:900px){.article-layout{grid-template-columns:1fr;}.sidebar{position:static;}.footer-top{grid-template-columns:1fr 1fr;gap:2rem;}.fine-box{grid-template-columns:1fr 1fr;}}
+@media(max-width:780px){.nav-desktop{display:none;}.nav-mobile-toggle{display:flex;}header{padding:0 1.2rem;}footer{padding:2.5rem 1.4rem 1.5rem;}}
+@media(max-width:480px){.footer-top{grid-template-columns:1fr;gap:1.5rem;}.article-hero{padding:3.5rem 1.2rem 3rem;}.article-layout{padding:2.5rem 1.2rem 3rem;}.fine-box{grid-template-columns:1fr;}}
+  
+    /* ── SHORTCUT DOT & PILL ── */
+    .sc-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+    .sc-dot.green { background: #4ade80; }
+    .sc-dot.gray { background: #334455; }
+    .sc-pill { font-size: 0.57rem; font-weight: 700; letter-spacing: 0.06em; padding: 0.12rem 0.4rem; border-radius: 99px; text-transform: uppercase; }
+    .sc-pill.available { background: rgba(34,197,94,0.14); color: #4ade80; }
+    .sc-pill.soon { background: rgba(255,255,255,0.05); color: #3a5570; }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">
+    <svg class="logo-mark" viewBox="0 0 36 36" fill="none"><defs><linearGradient id="sg" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#1d4ed8"/></linearGradient><linearGradient id="ag" x1="0" y1="0" x2="36" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#93c5fd"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient></defs><path d="M18 2L4 7.5V18c0 7.5 6 12.5 14 14.5 8-2 14-7 14-14.5V7.5L18 2Z" fill="url(#sg)"/><path d="M18 4.5L6 9.4V18c0 6.3 4.8 10.6 12 12.4 7.2-1.8 12-6.1 12-12.4V9.4L18 4.5Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><line x1="11" y1="13" x2="25" y2="13" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="11" x2="18" y2="23.5" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round"/><line x1="12.5" y1="13" x2="11" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><line x1="14" y1="13" x2="15.5" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><path d="M10 17 Q13.25 19.5 16.5 17" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round" fill="none"/><line x1="21.5" y1="13" x2="20" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><line x1="23" y1="13" x2="24.5" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><path d="M19.5 17 Q22.75 19.5 26 17" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round" fill="none"/><line x1="15.5" y1="23.5" x2="20.5" y2="23.5" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <div class="logo-wordmark"><div class="logo-name">Legaly<em>Jet</em></div><div class="logo-tagline">Legal Docs in Minutes</div></div>
+  </a>
+  <nav class="nav-desktop">
+    <a href="index.html">Home</a>
+    <a href="index.html#documents">Documents</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="legalyjet.html" class="nav-cta">Generate Free →</a>
+  </nav>
+  <button class="nav-mobile-toggle" onclick="toggleNav(this)" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+<nav class="nav-drawer" id="nav-drawer">
+  <span class="drawer-label">Generators</span>
+  <a href="legalyjet.html">🔒 Privacy Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="terms-generator.html">📋 Terms &amp; Conditions <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="index.html#documents" style="color:#4a6a8a;">🍪 Cookie Policy <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
+  <a href="index.html#documents" style="color:#4a6a8a;">📝 EULA <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
+  <hr class="drawer-divider"/>
+  <span class="drawer-label">Pages</span>
+  <a href="index.html">Home</a>
+  <a href="blog.html" class="active">Blog</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="legalyjet.html" class="drawer-cta">Generate Free →</a>
+</nav>
+<div class="doc-shortcuts">
+  <div class="doc-shortcuts-inner">
+    <a href="legalyjet.html" class="doc-shortcut"><span class="sc-dot green"></span> Privacy Policy <span class="sc-pill available">Live</span></a>
+    <a href="terms-generator.html" class="doc-shortcut"><span class="sc-dot green"></span> Terms &amp; Conditions <span class="sc-pill available">Live</span></a>
+    <a href="index.html#documents" class="doc-shortcut"><span class="sc-dot gray"></span> Cookie Policy <span class="sc-pill soon">Soon</span></a>
+    <a href="index.html#documents" class="doc-shortcut"><span class="sc-dot gray"></span> EULA <span class="sc-pill soon">Soon</span></a>
+    <a href="blog.html" class="doc-shortcut" style="border-left:1px solid rgba(255,255,255,0.06);margin-left:auto;">📖 Legal Guides</a>
+  </div>
+</div>
+
+
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="article-cat">🇪🇺 GDPR Guide</div>
+    <h1>GDPR Compliance for Small Businesses:<br/>What You Actually Need to Do</h1>
+    <div class="article-hero-meta">
+      <div>📅 January 2026</div>
+      <div>⏱ 12 min read</div>
+      <div>🌍 EU Privacy Law</div>
+    </div>
+  </div>
+</div>
+
+<div class="article-layout">
+  <main class="prose">
+
+    <p>GDPR — the General Data Protection Regulation — sounds intimidating. Hundreds of articles about it are written for compliance officers at large corporations. This one is different: it's written for solo founders, small business owners, freelancers, and developers who just want to understand what they actually need to do to comply, without the corporate legal jargon.</p>
+
+    <div class="callout warning">
+      <div class="callout-title">⚠️ Important disclaimer</div>
+      <div class="callout-body">This guide provides general educational information about GDPR, not legal advice. For specific compliance decisions for your business, especially in regulated industries, consult a qualified lawyer familiar with EU data protection law.</div>
+    </div>
+
+    <h2 id="who">Does GDPR Apply to You?</h2>
+    <p>This is the question that trips up many non-EU businesses. GDPR has extraterritorial reach — it doesn't just apply to businesses located in the EU. It applies to any organization that:</p>
+    <ul>
+      <li><strong>Offers goods or services to people in the EU</strong> (even for free), OR</li>
+      <li><strong>Monitors the behavior of people in the EU</strong> (e.g., using analytics or tracking pixels on your website)</li>
+    </ul>
+    <p>So if you're a developer in Nigeria running a SaaS app, a startup founder in India with EU customers, or a blogger in the US whose content attracts European readers — GDPR likely applies to you. The fact that it applies doesn't mean you'll be immediately fined; regulators generally prioritize larger violations. But ignorance isn't a defense, and compliance is both achievable and important.</p>
+
+    <h2 id="basics">GDPR Basics: The Core Principles</h2>
+    <p>GDPR is built on seven core principles that should guide every data processing decision you make:</p>
+    <ol>
+      <li><strong>Lawfulness, fairness, and transparency</strong> — You must process data legally, fairly, and be open about what you're doing</li>
+      <li><strong>Purpose limitation</strong> — Collect data for specific, explicit purposes, and don't use it for something else later</li>
+      <li><strong>Data minimisation</strong> — Only collect what you actually need</li>
+      <li><strong>Accuracy</strong> — Keep data accurate and up to date</li>
+      <li><strong>Storage limitation</strong> — Don't keep data longer than necessary</li>
+      <li><strong>Integrity and confidentiality</strong> — Protect data using appropriate security measures</li>
+      <li><strong>Accountability</strong> — You must be able to demonstrate your compliance</li>
+    </ol>
+
+    <h2 id="lawful-basis">Legal Bases for Processing Data</h2>
+    <p>One of the biggest differences between GDPR and earlier privacy regimes is that you can't just collect and use data freely. Every data processing activity needs a legal basis — a specific justification under GDPR. The six legal bases are:</p>
+
+    <h3>1. Consent</h3>
+    <p>The user has given clear, specific, informed, unambiguous consent to the processing. This sounds like the obvious one, but it's actually harder to rely on than most people think. Under GDPR, consent must be freely given (not bundled with service terms), specific (for each purpose), informed (user must know what they're consenting to), and revocable (users can withdraw at any time). Pre-ticked boxes and vague consent language don't count.</p>
+
+    <h3>2. Contract performance</h3>
+    <p>Processing is necessary to perform a contract with the user, or to take pre-contractual steps at their request. If someone creates an account on your SaaS platform, you can process their name and email to provide the service — that's contract performance.</p>
+
+    <h3>3. Legal obligation</h3>
+    <p>Processing is required to comply with a legal obligation. For example, keeping financial records for tax purposes.</p>
+
+    <h3>4. Vital interests</h3>
+    <p>Processing is necessary to protect someone's life. Rarely applicable for standard websites.</p>
+
+    <h3>5. Public task</h3>
+    <p>Processing is necessary for a task carried out in the public interest. Usually applies to government bodies.</p>
+
+    <h3>6. Legitimate interests</h3>
+    <p>Processing is necessary for your legitimate interests (or a third party's), provided those interests are not overridden by the user's rights and interests. This is the most flexible basis and is commonly used for things like fraud prevention, security monitoring, or direct marketing (with existing customers). It requires a balancing test.</p>
+
+    <div class="callout">
+      <div class="callout-title">💡 Which basis should you use?</div>
+      <div class="callout-body">For most small businesses: contract performance for account management and service delivery; legitimate interests for analytics and security; consent for marketing emails. Don't just pick "consent" as your default — it comes with ongoing obligations that legitimate interests may not.</div>
+    </div>
+
+    <h2 id="rights">User Rights You Must Respect</h2>
+    <p>GDPR gives individuals eight data rights. As a data processor, you must be able to honor requests to exercise these rights, typically within 30 days:</p>
+    <ul>
+      <li><strong>Right of access</strong> — Users can request to see all data you hold about them</li>
+      <li><strong>Right to rectification</strong> — Users can ask you to correct inaccurate data</li>
+      <li><strong>Right to erasure</strong> ("right to be forgotten") — Users can ask you to delete their data</li>
+      <li><strong>Right to restriction of processing</strong> — Users can limit how you use their data</li>
+      <li><strong>Right to data portability</strong> — Users can request their data in a machine-readable format</li>
+      <li><strong>Right to object</strong> — Users can object to processing based on legitimate interests</li>
+      <li><strong>Rights related to automated decision-making</strong> — Users have protections against purely automated decisions that affect them significantly</li>
+    </ul>
+
+    <h2 id="privacy-policy">Privacy Policy Requirements Under GDPR</h2>
+    <p>GDPR mandates specific content in your Privacy Policy. Under Articles 13 and 14, when collecting data from users, you must disclose:</p>
+    <ul>
+      <li>Your identity and contact details (and your DPO's, if applicable)</li>
+      <li>The purposes and legal basis for each data processing activity</li>
+      <li>Legitimate interests relied upon (if that's your basis)</li>
+      <li>Any recipients or categories of recipients of data</li>
+      <li>Transfers to third countries and safeguards used</li>
+      <li>Retention periods (or the criteria used to determine them)</li>
+      <li>All applicable user rights and how to exercise them</li>
+      <li>The right to withdraw consent at any time (where processing is based on consent)</li>
+      <li>The right to lodge a complaint with a supervisory authority</li>
+      <li>Whether provision of data is a contractual/statutory requirement</li>
+    </ul>
+
+    <div class="callout accent">
+      <div class="callout-title">🔒 Get a GDPR-ready Privacy Policy free</div>
+      <div class="callout-body">LegalyJet's Privacy Policy generator creates a document that addresses GDPR requirements — personalized to your actual business, not a generic template. <a href="legalyjet.html">Generate free →</a></div>
+    </div>
+
+    <h2 id="fines">GDPR Fines: How Serious Is This?</h2>
+    <p>GDPR has two tiers of fines:</p>
+
+    <div class="fine-box">
+      <div class="fine-item">
+        <span class="fine-num">€10<span>M</span></span>
+        <div class="fine-label">Or 2% global turnover — for less serious violations</div>
+      </div>
+      <div class="fine-item">
+        <span class="fine-num">€20<span>M</span></span>
+        <div class="fine-label">Or 4% global turnover — for the most serious violations</div>
+      </div>
+    </div>
+
+    <p>Those numbers are for the largest companies. In practice, most small business fines are far lower — typically thousands to tens of thousands of euros. But even smaller fines are painful, and reputational damage from a public GDPR enforcement action can be worse than the fine itself.</p>
+    <p>Importantly, regulators rarely go after well-intentioned small businesses that are making genuine efforts to comply. Their focus is on systematic violations, careless handling of sensitive data, and organizations that ignore their obligations entirely. That said, "we didn't know" is not a defense, and getting basic compliance right isn't difficult.</p>
+
+    <h2 id="checklist">Your GDPR Compliance Checklist</h2>
+    <p>For a typical small business website or SaaS product, here's what you need:</p>
+
+    <ul class="checklist">
+      <li><div class="check-box">✓</div><div><strong>GDPR-compliant Privacy Policy</strong> — covers all required disclosures under Articles 13/14</div></li>
+      <li><div class="check-box">✓</div><div><strong>Cookie consent mechanism</strong> — for non-essential cookies (analytics, advertising), you need prior informed consent from EU users</div></li>
+      <li><div class="check-box">✓</div><div><strong>Clear legal basis identified</strong> for each type of data processing</div></li>
+      <li><div class="check-box">✓</div><div><strong>Process for handling user rights requests</strong> — access, erasure, portability within 30 days</div></li>
+      <li><div class="check-box">✓</div><div><strong>Data retention schedule</strong> — know how long you keep each type of data and why</div></li>
+      <li><div class="check-box">✓</div><div><strong>Data Processing Agreements (DPAs)</strong> with third-party processors (your analytics provider, email service, hosting, CRM)</div></li>
+      <li><div class="check-box">✓</div><div><strong>Security measures</strong> — encryption in transit, access controls, regular updates</div></li>
+      <li><div class="check-box">✓</div><div><strong>Breach notification procedure</strong> — plan for how you'd report a data breach within 72 hours</div></li>
+      <li><div class="check-box">✓</div><div><strong>Consent records</strong> — if relying on consent, document that consent was given and when</div></li>
+      <li><div class="check-box">✓</div><div><strong>Data minimisation review</strong> — only collect data you actually need and use</div></li>
+    </ul>
+
+    <h2 id="cookies">Cookies and GDPR</h2>
+    <p>One of the most visible aspects of GDPR compliance is cookie consent. Under GDPR and the ePrivacy Directive, you may only place non-essential cookies on a user's device after obtaining their explicit, informed consent.</p>
+    <p><strong>Essential cookies</strong> (needed for the website to function — session cookies, login cookies) don't require consent. <strong>Non-essential cookies</strong> (analytics, advertising, personalization) do.</p>
+    <p>This means: if you're running Google Analytics on your EU-facing website, you need a cookie consent banner that gives users a real choice to decline analytics cookies before they're placed. The "by continuing to use this site, you consent" approach is explicitly not valid under GDPR.</p>
+
+    <h2 id="third-parties">Third-Party Services and GDPR</h2>
+    <p>Every third-party tool you use that processes user data makes you a data controller with responsibilities. You need Data Processing Agreements with these services. Most major providers already have these ready:</p>
+    <ul>
+      <li><strong>Google Analytics</strong> — Data Processing Agreement available in GA settings</li>
+      <li><strong>Stripe</strong> — DPA available on request</li>
+      <li><strong>Mailchimp</strong> — Data Processing Agreement in place</li>
+      <li><strong>AWS / Google Cloud / Azure</strong> — All offer standard DPAs</li>
+    </ul>
+    <p>The key rule: if a third party is processing personal data on your behalf, you need a written agreement covering what they can do with that data.</p>
+
+    <h2 id="start">Where to Start: Priority Actions</h2>
+    <p>If you're starting from scratch, focus on these three things first:</p>
+    <ol>
+      <li><strong>Write a proper Privacy Policy</strong> that covers GDPR requirements. Use LegalyJet to generate a personalized one for free.</li>
+      <li><strong>Add a cookie consent mechanism</strong>. If you use Google Analytics or any advertising tools, you need proper consent from EU visitors before those cookies are set.</li>
+      <li><strong>Map your data flows</strong>. Know what personal data you collect, where it goes, how long you keep it, and what your legal basis is. Even a simple spreadsheet covering these questions puts you ahead of most small businesses.</li>
+    </ol>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-cta">
+      <h3>Get a GDPR-ready Privacy Policy</h3>
+      <p>Personalized to your business. Free, no account needed.</p>
+      <a href="legalyjet.html" class="btn-sidebar">Generate Free Now →</a>
+      <a href="terms-generator.html" class="btn-sidebar-ghost">Terms &amp; Conditions →</a>
+    </div>
+    <div class="sidebar-card">
+      <div class="sidebar-title">In this guide</div>
+      <div class="sidebar-toc">
+        <a href="#who">Does GDPR apply to you?</a>
+        <a href="#basics">Core principles</a>
+        <a href="#lawful-basis">Legal bases for processing</a>
+        <a href="#rights">User rights</a>
+        <a href="#privacy-policy">Privacy Policy requirements</a>
+        <a href="#fines">Fines and enforcement</a>
+        <a href="#checklist">Compliance checklist</a>
+        <a href="#cookies">Cookies and GDPR</a>
+        <a href="#third-parties">Third-party services</a>
+        <a href="#start">Where to start</a>
+      </div>
+    </div>
+    <div class="sidebar-card">
+      <div class="sidebar-title">Related guides</div>
+      <div class="sidebar-toc">
+        <a href="blog-privacy-policy-guide.html">What is a Privacy Policy?</a>
+        <a href="blog-terms-and-conditions.html">What is a Terms &amp; Conditions?</a>
+        <a href="blog.html">All articles →</a>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="footer-logo-name">Legaly<em>Jet</em></span>
+      <p class="footer-desc">Free legal document generator for websites and apps. Personalized policies in minutes — no account needed.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Generators</div>
+      <a href="legalyjet.html">🔒 Privacy Policy</a>
+      <a href="terms-generator.html">📋 Terms &amp; Conditions</a>
+      <a href="index.html#documents">🍪 Cookie Policy <small style="color:#2a3e52;">(soon)</small></a>
+      <a href="index.html#documents">📝 EULA <small style="color:#2a3e52;">(soon)</small></a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Learn</div>
+      <a href="blog.html">Blog &amp; Guides</a>
+      <a href="blog-privacy-policy-guide.html">Privacy Policy Guide</a>
+      <a href="blog-terms-and-conditions.html">T&amp;C Guide</a>
+      <a href="blog-gdpr-guide.html">GDPR Guide</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Our Privacy Policy</a>
+      <a href="terms.html">Our Terms</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 LegalyJet. All rights reserved. Not a law firm. Documents are for informational purposes only.</div>
+    <div class="footer-legal">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav(btn){btn.classList.toggle('open');const d=document.getElementById('nav-drawer');d.classList.toggle('open');document.body.style.overflow=d.classList.contains('open')?'hidden':'';}
+document.addEventListener('click',e=>{const d=document.getElementById('nav-drawer');const t=document.querySelector('.nav-mobile-toggle');if(d&&d.classList.contains('open')&&!d.contains(e.target)&&!t.contains(e.target)){d.classList.remove('open');t.classList.remove('open');document.body.style.overflow='';}});
+</script>
+</body>
+</html>

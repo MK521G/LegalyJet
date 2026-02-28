@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Do You Need Terms & Conditions? A Plain-English Guide | LegalyJet</title>
+  <meta name="description" content="Learn what Terms & Conditions are, what they must cover for your business type, and why every website owner should have them."/>
+    <!-- SEO & Open Graph -->
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="LegalyJet"/>
+  <link rel="canonical" href="https://legalyjet.com/blog-terms-and-conditions.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Terms & Conditions Guide: What Every Website Needs — LegalyJet"/>
+  <meta property="og:description" content="Everything you need to know about Terms & Conditions: what to include, why they matter, and how to generate them free."/>
+  <meta property="og:url" content="https://legalyjet.com/blog-terms-and-conditions.html"/>
+  <meta property="og:site_name" content="LegalyJet"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Terms & Conditions Guide: What Every Website Needs — LegalyJet"/>
+  <meta name="twitter:description" content="Everything you need to know about Terms & Conditions: what to include, why they matter, and how to generate them free."/>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+/* ── LegalyJet Shared Styles ── */
+:root {
+  --navy: #0c1a3a; --navy-mid: #142247; --navy-dark: #070d1f;
+  --accent: #2563eb; --accent-lt: #3b82f6; --accent-soft: #dbeafe;
+  --text: #0f1117; --text-mid: #374151; --muted: #6b7280;
+  --border: #e2e8f4; --page-bg: #f4f7fd; --white: #ffffff;
+  --success: #16a34a; --error: #dc2626;
+  --header-h: 60px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { font-family: 'Source Sans 3', sans-serif; background: var(--page-bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; }
+
+/* ── HEADER ── */
+header {
+  background: rgba(7,13,31,0.97); backdrop-filter: blur(14px);
+  height: var(--header-h); padding: 0 2.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 200;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.logo { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; min-height: 44px; }
+.logo-mark { width: 34px; height: 34px; flex-shrink: 0; filter: drop-shadow(0 2px 8px rgba(59,130,246,0.4)); }
+.logo-wordmark { display: flex; flex-direction: column; line-height: 1; }
+.logo-name { font-family: 'Lora', serif; font-size: 1.15rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+.logo-name em { font-style: normal; color: #60a5fa; }
+.logo-tagline { font-size: 0.54rem; font-weight: 600; letter-spacing: 0.15em; color: #4a7aaa; text-transform: uppercase; margin-top: 0.12rem; }
+
+/* Desktop nav */
+.nav-desktop { display: flex; align-items: center; gap: 1.8rem; }
+.nav-desktop a { color: #7a9ec4; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; padding: 0.3rem 0; min-height: 44px; display: flex; align-items: center; }
+.nav-desktop a:hover, .nav-desktop a.active { color: #fff; }
+.nav-cta {
+  background: var(--accent) !important; color: #fff !important;
+  padding: 0.52rem 1.2rem !important; border-radius: 7px;
+  font-weight: 600 !important; white-space: nowrap;
+  box-shadow: 0 2px 10px rgba(37,99,235,0.35);
+  transition: background 0.2s, box-shadow 0.2s !important;
+}
+.nav-cta:hover { background: #1d4ed8 !important; box-shadow: 0 4px 18px rgba(37,99,235,0.5) !important; }
+
+/* Mobile hamburger */
+.nav-mobile-toggle {
+  display: none; flex-direction: column; justify-content: center;
+  gap: 5px; width: 44px; height: 44px; cursor: pointer;
+  background: none; border: none; padding: 10px; border-radius: 8px;
+  transition: background 0.2s;
+}
+.nav-mobile-toggle:hover { background: rgba(255,255,255,0.06); }
+.nav-mobile-toggle span { display: block; width: 22px; height: 2px; background: #93c5fd; border-radius: 2px; transition: all 0.3s; }
+.nav-mobile-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-mobile-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-mobile-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile drawer */
+.nav-drawer {
+  display: none; position: fixed; top: var(--header-h); left: 0; right: 0;
+  background: rgba(7,13,31,0.98); backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 1.5rem 1.6rem 2rem; z-index: 199;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  animation: slideDown 0.22s ease both;
+}
+.nav-drawer.open { display: block; }
+@keyframes slideDown { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
+.nav-drawer a {
+  display: flex; align-items: center; gap: 0.6rem;
+  color: #8aafd4; text-decoration: none; font-size: 1rem; font-weight: 500;
+  padding: 0.9rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05);
+  min-height: 52px; transition: color 0.2s;
+}
+.nav-drawer a:hover, .nav-drawer a.active { color: #fff; }
+.nav-drawer a:last-child { border-bottom: none; }
+.nav-drawer .drawer-cta {
+  margin-top: 1rem; background: var(--accent);
+  color: #fff !important; border-radius: 9px; padding: 1rem !important;
+  font-weight: 700 !important; text-align: center; justify-content: center;
+  border-bottom: none !important; font-size: 1rem !important;
+}
+.nav-drawer .drawer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 0.5rem 0; }
+.nav-drawer .drawer-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #2e4a65; padding: 0.5rem 0.5rem 0; display: block; }
+
+/* ── PAGE HERO ── */
+.page-hero {
+  background: linear-gradient(160deg, #070e20 0%, #0b1630 40%, #0e1e44 75%, #0a1530 100%);
+  padding: 4.5rem 1.5rem 4rem; text-align: center;
+  position: relative; overflow: hidden;
+}
+.page-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(59,130,246,0.055) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.055) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: radial-gradient(ellipse 85% 90% at 50% 50%, black 25%, transparent 100%);
+}
+.page-hero-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+.page-badge {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: rgba(37,99,235,0.14); border: 1px solid rgba(96,165,250,0.25);
+  color: #93c5fd; font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.32rem 0.85rem; border-radius: 99px; margin-bottom: 1.3rem;
+}
+.page-hero h1 { font-family: 'Lora', serif; font-size: clamp(1.9rem, 5vw, 2.8rem); font-weight: 700; color: #eef4ff; line-height: 1.18; margin-bottom: 0.9rem; letter-spacing: -0.02em; }
+.page-hero p { font-size: 1rem; color: #6a96be; line-height: 1.72; font-weight: 300; max-width: 540px; margin: 0 auto; }
+
+/* ── FOOTER ── */
+footer { background: var(--navy-dark); padding: 3rem 2.5rem 2rem; border-top: 1px solid rgba(255,255,255,0.05); margin-top: auto; }
+.footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.footer-brand .footer-logo-name { font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 700; color: white; display: block; margin-bottom: 0.6rem; }
+.footer-brand .footer-logo-name em { font-style: normal; color: #60a5fa; }
+.footer-brand .footer-desc { font-size: 0.8rem; color: #3a5878; line-height: 1.65; max-width: 220px; }
+.footer-col .footer-col-title { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #2a4060; margin-bottom: 0.9rem; }
+.footer-col a { display: block; font-size: 0.83rem; color: #3e5e7a; text-decoration: none; margin-bottom: 0.5rem; transition: color 0.2s; padding: 0.15rem 0; }
+.footer-col a:hover { color: #93c5fd; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.8rem; }
+.footer-copy { font-size: 0.75rem; color: #1e2e40; }
+.footer-legal { display: flex; gap: 1.4rem; }
+.footer-legal a { font-size: 0.75rem; color: #1e2e40; text-decoration: none; transition: color 0.2s; }
+.footer-legal a:hover { color: #60a5fa; }
+
+/* ── DOC SHORTCUTS STRIP ── */
+.doc-shortcuts {
+  background: rgba(255,255,255,0.025); border-bottom: 1px solid rgba(255,255,255,0.05);
+  overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
+}
+.doc-shortcuts::-webkit-scrollbar { display: none; }
+.doc-shortcuts-inner { display: flex; align-items: center; gap: 0; padding: 0 2.5rem; min-width: max-content; }
+.doc-shortcut {
+  display: flex; align-items: center; gap: 0.55rem;
+  padding: 0.7rem 1.2rem; text-decoration: none;
+  color: #6a8fb4; font-size: 0.8rem; font-weight: 500;
+  border-right: 1px solid rgba(255,255,255,0.05);
+  white-space: nowrap; transition: all 0.2s; min-height: 44px;
+}
+.doc-shortcut:hover { color: #93c5fd; background: rgba(37,99,235,0.08); }
+.doc-shortcut.active { color: #93c5fd; background: rgba(37,99,235,0.1); }
+.doc-shortcut .sc-badge {
+  font-size: 0.58rem; font-weight: 700; letter-spacing: 0.06em;
+  padding: 0.15rem 0.42rem; border-radius: 99px; text-transform: uppercase;
+}
+.sc-badge.available { background: rgba(34,197,94,0.15); color: #4ade80; }
+.sc-badge.soon { background: rgba(255,255,255,0.06); color: #4a6a8a; }
+
+/* ── SHARED SECTION STYLES ── */
+.section-wrap { max-width: 1100px; margin: 0 auto; padding: 5rem 1.5rem; }
+.section-eyebrow { display: inline-block; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
+.section-title { font-family: 'Lora', serif; font-size: clamp(1.65rem, 3.2vw, 2.25rem); font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
+.section-sub { font-size: 0.97rem; color: var(--muted); line-height: 1.72; }
+
+/* ── BUTTONS ── */
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white; padding: 0.85rem 1.9rem; border-radius: 9px;
+  font-size: 0.95rem; font-weight: 700; text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.4); transition: all 0.22s;
+  min-height: 48px;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(37,99,235,0.55); background: linear-gradient(135deg, #1d4ed8, #1e40af); }
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  color: var(--accent); padding: 0.85rem 1.6rem; border-radius: 9px;
+  font-size: 0.93rem; font-weight: 600; text-decoration: none;
+  border: 1.5px solid var(--border); background: white;
+  transition: all 0.2s; min-height: 48px;
+}
+.btn-secondary:hover { border-color: var(--accent); background: var(--accent-soft); }
+.btn-ghost-light {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  color: #93c5fd; padding: 0.85rem 1.6rem; border-radius: 9px;
+  font-size: 0.93rem; font-weight: 500; text-decoration: none;
+  border: 1.5px solid rgba(96,165,250,0.22); transition: all 0.2s; min-height: 48px;
+}
+.btn-ghost-light:hover { border-color: rgba(147,197,253,0.5); color: #dbeafe; background: rgba(255,255,255,0.04); }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.08s; } .reveal-d2 { transition-delay: 0.16s; } .reveal-d3 { transition-delay: 0.24s; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 780px) {
+  .nav-desktop { display: none; }
+  .nav-mobile-toggle { display: flex; }
+  header { padding: 0 1.2rem; }
+  .doc-shortcuts-inner { padding: 0 1rem; }
+  .section-wrap { padding: 3.5rem 1.2rem; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  footer { padding: 2.5rem 1.4rem 1.5rem; }
+}
+@media (max-width: 480px) {
+  .footer-top { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .page-hero { padding: 3.5rem 1.2rem 3rem; }
+}
+
+
+main { flex: 1; }
+.article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 3.5rem; max-width: 1040px; margin: 0 auto; padding: 4rem 1.5rem 5rem; align-items: start; }
+.article-content { min-width: 0; }
+.article-header { margin-bottom: 2.5rem; }
+.article-cats { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.article-cat-tag { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; background: var(--accent-soft); color: var(--accent); padding: 0.22rem 0.65rem; border-radius: 99px; }
+.article-title-main { font-family: 'Lora', serif; font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: 1rem; letter-spacing: -0.02em; }
+.article-byline { display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; padding: 1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-bottom: 1.8rem; }
+.byline-item { font-size: 0.82rem; color: var(--muted); display: flex; align-items: center; gap: 0.35rem; }
+.article-lede { font-size: 1.08rem; color: var(--text-mid); line-height: 1.8; margin-bottom: 2rem; font-weight: 400; border-left: 3px solid var(--accent); padding-left: 1.2rem; }
+.prose h2 { font-family: 'Lora', serif; font-size: 1.32rem; font-weight: 700; color: var(--navy); margin: 2.5rem 0 0.85rem; padding-top: 0.3rem; }
+.prose h3 { font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 700; color: var(--navy); margin: 1.8rem 0 0.6rem; }
+.prose p { font-size: 0.97rem; color: #2e3340; line-height: 1.88; margin-bottom: 1.1rem; }
+.prose ul, .prose ol { margin: 0.6rem 0 1.2rem 1.2rem; }
+.prose li { font-size: 0.97rem; color: #2e3340; line-height: 1.75; margin-bottom: 0.5rem; }
+.prose strong { color: var(--navy); font-weight: 600; }
+.prose a { color: var(--accent); text-decoration: none; }
+.prose a:hover { text-decoration: underline; }
+.prose hr { border: none; border-top: 1.5px solid var(--border); margin: 2.5rem 0; }
+.callout { border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1.5rem 0; }
+.callout-info { background: #eff6ff; border-left: 4px solid #3b82f6; }
+.callout-warn { background: #fffbeb; border-left: 4px solid #f59e0b; }
+.callout-success { background: #f0fdf4; border-left: 4px solid #22c55e; }
+.callout strong { display: block; margin-bottom: 0.3rem; font-size: 0.88rem; font-weight: 700; }
+.callout p { font-size: 0.88rem; margin: 0; line-height: 1.65; }
+.callout-info strong { color: #1d4ed8; }
+.callout-warn strong { color: #92400e; }
+.callout-success strong { color: #15803d; }
+.callout-info p { color: #1e3a5f; }
+.callout-warn p { color: #78350f; }
+.callout-success p { color: #14532d; }
+/* Article sidebar */
+.article-sidebar { position: sticky; top: 80px; }
+.toc-card { background: white; border: 1.5px solid var(--border); border-radius: 12px; padding: 1.4rem; margin-bottom: 1.2rem; }
+.toc-card .toc-title { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.9rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--border); }
+.toc-card a { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.83rem; color: var(--muted); text-decoration: none; padding: 0.38rem 0.5rem; border-radius: 6px; border-left: 2px solid transparent; transition: all 0.18s; margin-bottom: 0.05rem; line-height: 1.35; }
+.toc-card a:hover { color: var(--accent); background: #f0f5ff; border-left-color: var(--accent); }
+.share-card { background: white; border: 1.5px solid var(--border); border-radius: 12px; padding: 1.4rem; margin-bottom: 1.2rem; }
+.share-card .toc-title { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.9rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--border); }
+.article-nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.5rem 0; border-top: 1px solid var(--border); margin-top: 3rem; flex-wrap: wrap; }
+.article-nav a { font-size: 0.88rem; font-weight: 600; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 0.35rem; }
+.article-nav a:hover { color: var(--navy); }
+@media (max-width: 760px) { .article-layout { grid-template-columns: 1fr; padding: 2.5rem 1.2rem 4rem; } .article-sidebar { position: static; } .toc-card { display: none; } }
+
+  
+    /* ── SHORTCUT DOT & PILL ── */
+    .sc-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+    .sc-dot.green { background: #4ade80; }
+    .sc-dot.gray { background: #334455; }
+    .sc-pill { font-size: 0.57rem; font-weight: 700; letter-spacing: 0.06em; padding: 0.12rem 0.4rem; border-radius: 99px; text-transform: uppercase; }
+    .sc-pill.available { background: rgba(34,197,94,0.14); color: #4ade80; }
+    .sc-pill.soon { background: rgba(255,255,255,0.05); color: #3a5570; }
+
+  </style>
+</head>
+<body><header>
+  <a class="logo" href="index.html">
+    <svg class="logo-mark" viewBox="0 0 36 36" fill="none"><defs><linearGradient id="sg" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#1d4ed8"/></linearGradient><linearGradient id="ag" x1="0" y1="0" x2="36" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#93c5fd"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient></defs><path d="M18 2L4 7.5V18c0 7.5 6 12.5 14 14.5 8-2 14-7 14-14.5V7.5L18 2Z" fill="url(#sg)"/><path d="M18 4.5L6 9.4V18c0 6.3 4.8 10.6 12 12.4 7.2-1.8 12-6.1 12-12.4V9.4L18 4.5Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><line x1="11" y1="13" x2="25" y2="13" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="11" x2="18" y2="23.5" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round"/><line x1="12.5" y1="13" x2="11" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><line x1="14" y1="13" x2="15.5" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><path d="M10 17 Q13.25 19.5 16.5 17" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round" fill="none"/><line x1="21.5" y1="13" x2="20" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><line x1="23" y1="13" x2="24.5" y2="17" stroke="url(#ag)" stroke-width="1.2" stroke-linecap="round"/><path d="M19.5 17 Q22.75 19.5 26 17" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round" fill="none"/><line x1="15.5" y1="23.5" x2="20.5" y2="23.5" stroke="url(#ag)" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <div class="logo-wordmark"><div class="logo-name">Legaly<em>Jet</em></div><div class="logo-tagline">Legal Docs in Minutes</div></div>
+  </a>
+  <nav class="nav-desktop">
+    <a href="index.html">Home</a>
+    <a href="index.html#documents">Documents</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="legalyjet.html" class="nav-cta">Generate Free →</a>
+  </nav>
+  <button class="nav-mobile-toggle" onclick="toggleNav(this)" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+<nav class="nav-drawer" id="nav-drawer">
+  <span class="drawer-label">Generators</span>
+  <a href="legalyjet.html">🔒 Privacy Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="terms-generator.html">📋 Terms &amp; Conditions <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="index.html#documents" style="color:#4a6a8a;">🍪 Cookie Policy <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
+  <a href="index.html#documents" style="color:#4a6a8a;">📝 EULA <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
+  <hr class="drawer-divider"/>
+  <span class="drawer-label">Pages</span>
+  <a href="index.html">Home</a>
+  <a href="blog.html" class="active">Blog</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="legalyjet.html" class="drawer-cta">Generate Free →</a>
+</nav>
+<div class="doc-shortcuts">
+  <div class="doc-shortcuts-inner">
+    <a href="legalyjet.html" class="doc-shortcut"><span class="sc-dot green"></span> Privacy Policy <span class="sc-pill available">Live</span></a>
+    <a href="terms-generator.html" class="doc-shortcut"><span class="sc-dot green"></span> Terms &amp; Conditions <span class="sc-pill available">Live</span></a>
+    <a href="index.html#documents" class="doc-shortcut"><span class="sc-dot gray"></span> Cookie Policy <span class="sc-pill soon">Soon</span></a>
+    <a href="index.html#documents" class="doc-shortcut"><span class="sc-dot gray"></span> EULA <span class="sc-pill soon">Soon</span></a>
+    <a href="blog.html" class="doc-shortcut" style="border-left:1px solid rgba(255,255,255,0.06);margin-left:auto;">📖 Legal Guides</a>
+  </div>
+</div>
+
+
+<main>
+  <div class="article-layout">
+    <article class="article-content">
+      <div class="article-header">
+        <div class="article-cats">
+          <span class="article-cat-tag" style="background:#f0fdf4;color:#16a34a;">Terms &amp; Conditions</span>
+          <span class="article-cat-tag">Legal Compliance</span>
+        </div>
+        <h1 class="article-title-main">Do You Need Terms &amp; Conditions? A Plain-English Guide for Website Owners</h1>
+        <div class="article-byline">
+          <span class="byline-item">📅 January 2026</span>
+          <span class="byline-item">⏱️ 7 min read</span>
+          <span class="byline-item">✍️ LegalyJet Editorial</span>
+        </div>
+        <p class="article-lede">Terms &amp; Conditions aren't legally required in the way a Privacy Policy is — but not having them leaves your business exposed to disputes, abuse, and legal liability that could easily have been avoided.</p>
+      </div>
+
+      <div class="prose">
+        <h2 id="what-are">What are Terms &amp; Conditions?</h2>
+        <p>Terms &amp; Conditions (sometimes called Terms of Service, Terms of Use, or simply "Terms") is a legal agreement between you — the owner of a website, app, or online service — and the people who use it. When a user visits your site or uses your app, they agree to abide by your Terms &amp; Conditions.</p>
+        <p>Think of them as the rulebook for your platform. They define what users can and can't do, what rights they have, what happens if something goes wrong, and how disputes will be resolved. Without Terms &amp; Conditions, all of these questions are left unanswered — which is a problem for you, not your users.</p>
+
+        <h2 id="are-they-required">Are Terms &amp; Conditions legally required?</h2>
+        <p>Unlike a Privacy Policy, Terms &amp; Conditions are generally not legally required by specific privacy laws. However, they are:</p>
+        <ul>
+          <li><strong>Required by app stores:</strong> Apple's App Store and Google Play require apps to have Terms of Service</li>
+          <li><strong>Required by payment processors:</strong> If you accept payments via Stripe, PayPal, or similar services, their agreements require you to have your own Terms</li>
+          <li><strong>Strongly expected by users:</strong> The absence of Terms &amp; Conditions often signals an unprofessional or untrustworthy site</li>
+          <li><strong>Practically essential for legal protection:</strong> Without them, you have little recourse against user abuse, and your liability exposure is much higher</li>
+        </ul>
+
+        <div class="callout callout-warn">
+          <strong>⚠️ The risk of no Terms &amp; Conditions</strong>
+          <p>Without Terms &amp; Conditions, users can argue that no contract exists governing their use of your platform. This makes it far harder to terminate abusive accounts, enforce restrictions on your content, or limit your liability when something goes wrong.</p>
+        </div>
+
+        <h2 id="what-they-protect">What do Terms &amp; Conditions protect you from?</h2>
+        <p>Well-drafted Terms &amp; Conditions can protect your business in several important ways:</p>
+
+        <h3>Intellectual property</h3>
+        <p>Your Terms should state clearly that you own the content on your site — your text, images, code, brand, and design — and that users cannot copy or reproduce it without permission. If users can submit content (comments, uploads, reviews), your Terms should address who owns that content and what license you have to use it.</p>
+
+        <h3>Limitation of liability</h3>
+        <p>This is one of the most important clauses. A limitation of liability clause restricts how much financial responsibility you bear if something goes wrong — if your service is unavailable, if a user suffers a loss while using your platform, or if content on your site turns out to be inaccurate. Without this clause, your potential liability is unlimited.</p>
+
+        <h3>Acceptable use</h3>
+        <p>Clearly define what users can and cannot do on your platform. This gives you the legal basis to terminate accounts, remove content, and take action against users who violate your rules.</p>
+
+        <h3>Dispute resolution</h3>
+        <p>Specify how disputes will be handled — through arbitration, in which jurisdiction, and under which governing law. This can significantly reduce the cost of legal disputes if they arise.</p>
+
+        <h3>Refunds and payments</h3>
+        <p>If your site accepts payments, your Terms must clearly state your payment terms, refund policy, and what happens in the event of a payment dispute. Clear terms here can prevent most chargebacks before they happen.</p>
+
+        <h2 id="what-to-include">What should your Terms &amp; Conditions include?</h2>
+        <p>A comprehensive Terms &amp; Conditions document typically covers these sections:</p>
+        <ul>
+          <li><strong>Agreement to Terms</strong> — Establishing that use of your site constitutes agreement to your Terms</li>
+          <li><strong>Description of your service</strong> — What you offer and what it does</li>
+          <li><strong>User accounts</strong> — Registration requirements, account responsibilities, and what happens to inactive or banned accounts</li>
+          <li><strong>Acceptable use policy</strong> — What users can and cannot do</li>
+          <li><strong>Intellectual property</strong> — Ownership of your content and any user-generated content</li>
+          <li><strong>Payment and billing</strong> (if applicable) — Pricing, subscription terms, refund policy</li>
+          <li><strong>Disclaimer of warranties</strong> — "As-is" service provision</li>
+          <li><strong>Limitation of liability</strong> — Cap on your financial exposure</li>
+          <li><strong>Indemnification</strong> — User responsibility for their own actions on your platform</li>
+          <li><strong>Governing law and dispute resolution</strong> — Which jurisdiction's laws apply</li>
+          <li><strong>Termination</strong> — Your right to terminate accounts</li>
+          <li><strong>Changes to the Terms</strong> — How and when you can update them</li>
+          <li><strong>Contact information</strong> — How users can reach you</li>
+        </ul>
+
+        <div class="callout callout-info">
+          <strong>ℹ️ Terms vary by business type</strong>
+          <p>The exact content of your Terms &amp; Conditions will vary significantly based on your type of platform. An e-commerce store needs detailed payment and refund clauses. A SaaS product needs subscription and data processing terms. A content platform needs detailed rules about user-generated content. LegalyJet's generator adapts to your specific platform type.</p>
+        </div>
+
+        <h2 id="for-different-sites">Terms &amp; Conditions for different types of sites</h2>
+
+        <h3>E-commerce and online stores</h3>
+        <p>Online stores need comprehensive Terms covering product descriptions, pricing, order acceptance, shipping, returns, and refunds. Consumer protection laws in many countries also impose minimum requirements — such as cooling-off periods — that your Terms must reflect.</p>
+
+        <h3>SaaS and subscription products</h3>
+        <p>Software-as-a-service products need Terms that cover subscription billing cycles, what happens when payment fails, data handling and backups, uptime commitments (or disclaimers about uptime), and what users can do with your API or data exports.</p>
+
+        <h3>Content and media platforms</h3>
+        <p>If users can post content — comments, reviews, uploads, forum posts — you need clear Terms about what content is allowed, how reported content is handled, your DMCA compliance process, and the license users grant you to display their content.</p>
+
+        <h3>Mobile apps</h3>
+        <p>Mobile app Terms need to address in-app purchases, how the app handles device permissions, and how app updates might change functionality. Both Apple and Google require apps to have Terms of Service, and the content must align with their platform guidelines.</p>
+
+        <h3>Blogs and informational sites</h3>
+        <p>Even a simple blog needs Terms covering the accuracy of your content (especially if you give advice), affiliate marketing disclosures, comment policies, and intellectual property ownership. If your blog is monetized, your Terms should also address advertising relationships.</p>
+
+        <h2 id="where-to-display">Where to display your Terms &amp; Conditions</h2>
+        <p>For Terms &amp; Conditions to be legally enforceable, users must have a reasonable opportunity to read them before agreeing to them. Best practice:</p>
+        <ul>
+          <li>Link from your website footer on every page</li>
+          <li>Present during account registration with a checkbox ("I agree to the Terms &amp; Conditions")</li>
+          <li>Reference during checkout and before any purchase</li>
+          <li>Include in your app store listing</li>
+          <li>Include in any email communications about service changes</li>
+        </ul>
+        <p>A "browsewrap" agreement — where simply visiting a site constitutes agreement — is increasingly hard to enforce in court. A "clickwrap" agreement — where users actively check a box or click "I agree" — is much stronger. Use clickwrap wherever possible for important actions.</p>
+
+        <div class="callout callout-success">
+          <strong>✅ Generate your Terms &amp; Conditions free</strong>
+          <p>LegalyJet's Terms &amp; Conditions generator asks you about your platform type, payment methods, and legal requirements — then generates a comprehensive, personalized document. <a href="terms-generator.html">Generate yours now →</a></p>
+        </div>
+
+        <h2 id="updating">Updating your Terms &amp; Conditions</h2>
+        <p>Like your Privacy Policy, your Terms &amp; Conditions should be reviewed whenever your business changes — new features, new payment methods, changes to your acceptable use policy, or changes in the laws that apply to you. Always update the "Last updated" date, and notify existing users of material changes.</p>
+
+        <hr/>
+
+        <h2 id="bottom-line">The bottom line</h2>
+        <p>Terms &amp; Conditions are one of the most powerful tools you have to protect your business online. They establish the rules of engagement, limit your liability, and give you recourse when users violate your policies. Without them, you're operating on good faith — and good faith doesn't hold up in court.</p>
+        <p>The good news: generating a comprehensive Terms &amp; Conditions document for your specific platform takes less than 4 minutes with LegalyJet, and it's completely free.</p>
+      </div>
+
+      <div class="article-nav">
+        <a href="blog-privacy-policy-guide.html">← Privacy Policy Guide</a>
+        <a href="blog-gdpr-guide.html">Next: GDPR Guide →</a>
+      </div>
+    </article>
+
+    <aside class="article-sidebar">
+      <div class="toc-card">
+        <div class="toc-title">In this article</div>
+        <a href="#what-are">What are Terms &amp; Conditions?</a>
+        <a href="#are-they-required">Are they legally required?</a>
+        <a href="#what-they-protect">What do they protect?</a>
+        <a href="#what-to-include">What to include</a>
+        <a href="#for-different-sites">By site type</a>
+        <a href="#where-to-display">Where to display them</a>
+        <a href="#bottom-line">The bottom line</a>
+      </div>
+      <div class="gen-card">
+        <h3>Generate yours free</h3>
+        <p>Personalized T&amp;C in under 4 minutes.</p>
+        <a href="terms-generator.html" class="gen-btn">📋 Generate T&amp;C</a>
+      </div>
+      <div class="share-card">
+        <div class="toc-title">More articles</div>
+        <a href="blog-privacy-policy-guide.html" class="sidebar-link"><span class="sl-emoji">🔒</span> Privacy Policy guide</a>
+        <a href="blog-gdpr-guide.html" class="sidebar-link"><span class="sl-emoji">🇪🇺</span> GDPR for small businesses</a>
+      </div>
+    </aside>
+  </div>
+</main>
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="footer-logo-name">Legaly<em>Jet</em></span>
+      <p class="footer-desc">Free legal document generator for websites and apps. Personalized policies in minutes — no account needed.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Generators</div>
+      <a href="legalyjet.html">🔒 Privacy Policy</a>
+      <a href="terms-generator.html">📋 Terms &amp; Conditions</a>
+      <a href="index.html#documents">🍪 Cookie Policy <small style="color:#2a3e52;">(soon)</small></a>
+      <a href="index.html#documents">📝 EULA <small style="color:#2a3e52;">(soon)</small></a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Learn</div>
+      <a href="blog.html">Blog &amp; Guides</a>
+      <a href="blog-privacy-policy-guide.html">Privacy Policy Guide</a>
+      <a href="blog-terms-and-conditions.html">T&amp;C Guide</a>
+      <a href="blog-gdpr-guide.html">GDPR Guide</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Our Privacy Policy</a>
+      <a href="terms.html">Our Terms</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 LegalyJet. All rights reserved. Not a law firm. Documents are for informational purposes only.</div>
+    <div class="footer-legal">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer><script>
+function toggleNav(btn) {
+  btn.classList.toggle('open');
+  const drawer = document.getElementById('nav-drawer');
+  drawer.classList.toggle('open');
+  document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
+}
+// Close drawer on outside click
+document.addEventListener('click', e => {
+  const drawer = document.getElementById('nav-drawer');
+  const toggle = document.querySelector('.nav-mobile-toggle');
+  if (drawer && drawer.classList.contains('open') && !drawer.contains(e.target) && !toggle.contains(e.target)) {
+    drawer.classList.remove('open');
+    toggle.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
+// Scroll reveal
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script></body></html>
