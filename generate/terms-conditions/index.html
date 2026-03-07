@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LegalyJet — Privacy Policy Generator</title>
-  <meta name="description" content="Generate a free, personalized Privacy Policy for your website or app in under 4 minutes. GDPR &amp; CCPA compliant. No account required."/>
-  <!-- SEO -->
-  <meta name="robots" content="index, follow"/>
-  <meta name="author" content="LegalyJet"/>
-  <meta property="og:title" content="Free Privacy Policy Generator — LegalyJet"/>
-  <meta property="og:description" content="Generate a free, personalized Privacy Policy for your website or app in under 4 minutes."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:site_name" content="LegalyJet"/>
-  <link rel="canonical" href="https://legalyjet.com/generate/privacy-policy/"/>
+  <title>LegalyJet — Terms & Conditions Generator</title>
+  <meta name="description" content="Generate free Terms &amp; Conditions for your website or app in minutes. Covers payments, refunds, intellectual property, and liability. No account needed."/>
+    <meta property="og:title" content="Free Terms &amp; Conditions Generator — LegalyJet"/>
+  <meta property="og:description" content="Generate free Terms &amp; Conditions for your website or app in minutes."/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Free Terms &amp; Conditions Generator — LegalyJet"/>
+  <link rel="canonical" href="https://legalyjet.com/generate/terms-conditions/"/>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -278,7 +275,7 @@
       flex-shrink: 0;
     }
 
-    .input-wrap input {
+    .input-wrap input, .input-wrap select {
       flex: 1;
       border: none;
       outline: none;
@@ -500,8 +497,6 @@
     .contact-sub { display: none; margin: 0.2rem 0 0.45rem; animation: fadeUp 0.2s ease both; }
     .contact-sub.visible { display: block; }
 
-    .compliance-section { margin-bottom: 1.5rem; }
-
     /* ── ACTION BUTTONS (Step 4) ── */
     .action-btn {
       display: inline-flex; align-items: center; gap: 0.42rem;
@@ -670,15 +665,7 @@
       .doc-toolbar { top: 0; border-radius: 0; border-left: none; border-right: none; }
     }
   
-    /* ── SHORTCUT DOT & PILL ── */
-    .sc-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
-    .sc-dot.green { background: #4ade80; }
-    .sc-dot.gray { background: #334455; }
-    .sc-pill { font-size: 0.57rem; font-weight: 700; letter-spacing: 0.06em; padding: 0.12rem 0.4rem; border-radius: 99px; text-transform: uppercase; }
-    .sc-pill.available { background: rgba(34,197,94,0.14); color: #4ade80; }
-    .sc-pill.soon { background: rgba(255,255,255,0.05); color: #3a5570; }
-
-  
+    /* ── SHARED NAV ── */
     .nav-desktop { display: flex; align-items: center; gap: 1.8rem; }
     .nav-desktop a { color: #7a9ec4; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; min-height: 44px; display: flex; align-items: center; }
     .nav-desktop a:hover, .nav-desktop a.active { color: #fff; }
@@ -698,7 +685,7 @@
     .nav-drawer .drawer-cta { margin-top: 1rem; background: #2563eb; color: #fff !important; border-radius: 9px; padding: 1rem !important; font-weight: 700 !important; text-align: center; justify-content: center; border-bottom: none !important; }
     .nav-drawer .drawer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 0.5rem 0; }
     .nav-drawer .drawer-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #2e4a65; padding: 0.5rem 0.5rem 0; display: block; }
-    .doc-shortcuts { background: rgba(7,13,31,0.97); border-bottom: 1px solid rgba(255,255,255,0.07); overflow-x: auto; scrollbar-width: none; }
+    .doc-shortcuts { background: rgba(7,13,31,0.97); border-bottom: 1px solid rgba(255,255,255,0.07); overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
     .doc-shortcuts::-webkit-scrollbar { display: none; }
     .doc-shortcuts-inner { display: flex; align-items: center; min-width: max-content; }
     .doc-shortcut { display: flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.3rem; text-decoration: none; color: #557090; font-size: 0.79rem; font-weight: 500; border-right: 1px solid rgba(255,255,255,0.06); white-space: nowrap; transition: all 0.18s; min-height: 40px; }
@@ -715,7 +702,7 @@
 
   </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Privacy Policy Generator","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Generate a free, personalized Privacy Policy for your website or app in under 4 minutes. GDPR and CCPA compliant.","url":"https://legalyjet.com/generate/privacy-policy/"}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Terms & Conditions Generator","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Generate free Terms & Conditions for your website or app in minutes. Covers payments, refunds, intellectual property, and liability.","url":"https://legalyjet.com/generate/terms-conditions/"}
 </script>
 </head>
 <body>
@@ -729,7 +716,7 @@
     <a href="/">Home</a>
     <a href="/#documents">Documents</a>
     <a href="/blog/">Blog</a>
-    <a href="/about/" class="active">About</a>
+    <a href="/about/">About</a>
     <a href="/contact/">Contact</a>
     <a href="/generate/privacy-policy/" class="nav-cta">Generate Free →</a>
   </nav>
@@ -745,19 +732,18 @@
   <span class="drawer-label">Pages</span>
   <a href="/">Home</a>
   <a href="/blog/">Blog</a>
-  <a href="/about/" class="active">About</a>
+  <a href="/about/">About</a>
   <a href="/contact/">Contact</a>
   <a href="/generate/privacy-policy/" class="drawer-cta">Generate Free →</a>
 </nav>
 <div class="doc-shortcuts">
   <div class="doc-shortcuts-inner">
-    <a href="/generate/privacy-policy/" class="doc-shortcut sc-active"><span class="sc-dot green"></span> Privacy Policy <span class="sc-pill available">Live</span></a>
-    <a href="/generate/terms-conditions/" class="doc-shortcut"><span class="sc-dot green"></span> Terms &amp; Conditions <span class="sc-pill available">Live</span></a>
+    <a href="/generate/privacy-policy/" class="doc-shortcut" style="color:#557090;"><span class="sc-dot green"></span> Privacy Policy <span class="sc-pill available">Live</span></a>
+    <a href="/generate/terms-conditions/" class="doc-shortcut sc-active"><span class="sc-dot green"></span> Terms &amp; Conditions <span class="sc-pill available">Live</span></a>
     <a href="/#documents" class="doc-shortcut"><span class="sc-dot gray"></span> Cookie Policy <span class="sc-pill soon">Soon</span></a>
     <a href="/#documents" class="doc-shortcut"><span class="sc-dot gray"></span> EULA <span class="sc-pill soon">Soon</span></a>
     <a href="/blog/" class="doc-shortcut" style="border-left:1px solid rgba(255,255,255,0.06);margin-left:auto;">📖 Legal Guides</a>
   </div>
-</div>
 </div>
 
 <div class="step-indicator-wrap">
@@ -772,14 +758,14 @@
       <div class="step-bubble" id="bubble-4"><span class="bubble-num">4</span></div>
     </div>
     <div class="step-labels">
-        <div class="step-label-item active" id="lbl-1">About You</div>
-        <div class="step-label-spacer"></div>
-        <div class="step-label-item" id="lbl-2">Your Data</div>
-        <div class="step-label-spacer"></div>
-        <div class="step-label-item" id="lbl-3">Legal Setup</div>
-        <div class="step-label-spacer"></div>
-        <div class="step-label-item" id="lbl-4">Get Policy</div>
-      </div>
+      <div class="step-label-item active" id="lbl-1">About You</div>
+      <div class="step-label-spacer"></div>
+      <div class="step-label-item" id="lbl-2">Your Data</div>
+      <div class="step-label-spacer"></div>
+      <div class="step-label-item" id="lbl-3">Legal Setup</div>
+      <div class="step-label-spacer"></div>
+      <div class="step-label-item" id="lbl-4">Get Terms</div>
+    </div>
   </div>
 </div>
 
@@ -789,7 +775,7 @@
   <div class="step-panel active" id="step-1">
     <div class="card">
       <div class="card-title">About your business</div>
-      <div class="card-subtitle">Tell us about the platform this policy is for.</div>
+      <div class="card-subtitle">Tell us about the platform these Terms &amp; Conditions are for.</div>
 
       <div class="form-group">
         <div class="form-label">Platform <span class="req">*</span></div>
@@ -841,12 +827,12 @@
       <div class="form-group">
         <div class="form-label">Are you a Business or an Individual? <span class="req">*</span></div>
         <label class="radio-item" id="ri-business">
-          <input type="radio" name="entity-type" value="business" onchange="toggleEntity(); selectRadio(this)"/>
+          <input type="radio" name="entity-type" value="business" onchange="setEntityType('business'); selectRadio(this)"/>
           <span>🏢 Business</span>
         </label>
-        <div class="sub-card" id="business-fields">
+        <div class="sub-card" id="business-fields" style="display:none;">
           <div class="form-group">
-            <div class="form-label">Company Name <span class="req">*</span></div>
+            <div class="form-label">Company / Organisation Name <span class="req">*</span></div>
             <div class="input-wrap" id="wrap-company-name">
               <span class="input-icon">🏢</span>
               <input type="text" id="company-name" placeholder="Acme Inc." oninput="clearErr('wrap-company-name','err-company-name')"/>
@@ -854,19 +840,22 @@
             <div class="field-error" id="err-company-name">Please enter your company name.</div>
           </div>
           <div class="form-group" style="margin-bottom:0">
-            <div class="form-label">Company Address <span class="req">*</span></div>
+            <div class="form-label">Business / Registered Address <span class="req">*</span></div>
             <div class="input-wrap" id="wrap-company-address">
               <span class="input-icon">📍</span>
               <input type="text" id="company-address" placeholder="123 Main St, City, Country" oninput="clearErr('wrap-company-address','err-company-address')"/>
             </div>
-            <div class="field-error" id="err-company-address">Please enter your company address.</div>
+            <div class="field-error" id="err-company-address">Please enter your business address.</div>
           </div>
         </div>
         <label class="radio-item" id="ri-individual">
-          <input type="radio" name="entity-type" value="individual" onchange="toggleEntity(); selectRadio(this)"/>
+          <input type="radio" name="entity-type" value="individual" onchange="setEntityType('individual'); selectRadio(this)"/>
           <span>👤 Individual</span>
         </label>
-        <div class="field-error" id="err-entity">Please select one.</div>
+        <div id="individual-note" style="display:none;margin-top:0.5rem;background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:8px;padding:0.75rem 1rem;font-size:0.83rem;color:#1e3a5f;line-height:1.6;">
+          <strong>Individual mode:</strong> Your Terms &amp; Conditions will use "Operator" instead of "Company" and will not include a personal address. Only your country and contact details are required.
+        </div>
+        <div class="field-error" id="err-entity-type">Please select one.</div>
       </div>
 
       <hr class="section-divider"/>
@@ -887,7 +876,7 @@
           <span style="color:var(--muted)">📅</span>
         </div>
         <div class="field-error" id="err-date">Please select an effective date.</div>
-        <div class="hint-text">The date your privacy policy officially becomes active.</div>
+        <div class="hint-text">The date your Terms &amp; Conditions officially become active.</div>
       </div>
     </div>
     <div class="nav-bar">
@@ -899,7 +888,7 @@
   <!-- ══════════ STEP 2 ══════════ -->
   <div class="step-panel" id="step-2">
     <div class="card">
-      <div class="card-title">Data & Tracking</div>
+      <div class="card-title">Data &amp; Tracking</div>
       <div class="card-subtitle">Tell us how you collect and use data from your users.</div>
 
       <div class="form-group">
@@ -983,7 +972,6 @@
         <label class="check-item"><input type="checkbox" class="tracking" value="Cookies and/or web beacons"/> <span>Cookies and/or web beacons</span></label>
         <label class="check-item"><input type="checkbox" class="tracking" value="Local Storage"/> <span>Local Storage</span></label>
         <label class="check-item"><input type="checkbox" class="tracking" value="Sessions"/> <span>Sessions</span></label>
-        <label class="check-item"><input type="checkbox" class="tracking" value="Log Data"/> <span>Log Data</span></label>
       </div>
     </div>
     <div class="nav-bar">
@@ -995,7 +983,7 @@
   <!-- ══════════ STEP 3 ══════════ -->
   <div class="step-panel" id="step-3">
     <div class="card">
-      <div class="card-title">Compliance & Settings</div>
+      <div class="card-title">Legal Setup</div>
       <div class="card-subtitle">Final details about your users, services, and legal compliance.</div>
 
       <div class="form-group">
@@ -1043,7 +1031,6 @@
         <div class="contact-sub" id="contact-contact-page-wrap">
           <div class="input-wrap"><span class="input-icon">🔗</span><input type="url" id="contact-page-url" placeholder="https://yoursite.com/contact"/></div>
         </div>
-
         <div class="field-error" id="err-contact">Please select at least one contact method.</div>
       </div>
 
@@ -1068,7 +1055,8 @@
           <div class="form-label" style="margin-bottom:0.6rem;">How do you charge your clients? <span class="req">*</span></div>
           <label class="radio-item"><input type="radio" name="payment-type" value="One Time Payments" onchange="selectRadio(this)"/> <span>One Time Payments</span></label>
           <label class="radio-item"><input type="radio" name="payment-type" value="Recurring Payments" onchange="selectRadio(this)"/> <span>Recurring Payments</span></label>
-          <label class="radio-item"><input type="radio" name="payment-type" value="One Time & Recurring Payments" onchange="selectRadio(this)"/> <span>One Time & Recurring Payments</span></label>
+          <label class="radio-item"><input type="radio" name="payment-type" value="One Time &amp; Recurring Payments" onchange="selectRadio(this)"/> <span>One Time &amp; Recurring Payments</span></label>
+          <div class="field-error" id="err-payment-type">Please select how you charge clients.</div>
         </div>
         <label class="radio-item" id="ri-pay-no"><input type="radio" name="payments" value="no" onchange="togglePayments(); selectRadio(this)"/> <span>No, we do not accept payments</span></label>
         <div class="field-error" id="err-payments">Please select one.</div>
@@ -1076,55 +1064,20 @@
 
       <hr class="section-divider"/>
 
-      <div class="compliance-section">
-        <div class="question-title">Do you want your privacy policy to be CalOPPA compliant? <span class="req">*</span></div>
-        <div class="info-box">
-          <div class="info-box-icon">📋</div>
-          <div class="info-box-body">
-            <div class="info-box-title">California Online Privacy Protection Act</div>
-            Requires websites collecting personal information from California consumers to disclose this within their Privacy Policy. Effective January 1, 2004.
-          </div>
+      <div class="form-group" style="margin-bottom:0">
+        <div class="question-title">Governing law jurisdiction <span class="req">*</span></div>
+        <div class="question-hint">Which country's laws will govern these Terms &amp; Conditions?</div>
+        <div class="input-wrap" id="wrap-jurisdiction">
+          <span class="input-icon">⚖️</span>
+          <input type="text" id="jurisdiction" placeholder="e.g. United States, United Kingdom, Nigeria…" oninput="clearErr('wrap-jurisdiction','err-jurisdiction')"/>
         </div>
-        <label class="radio-item" id="ri-cal-yes"><input type="radio" name="caloppa" value="yes" onchange="selectRadio(this)"/> <span>Yes, adapt my Privacy Policy to be CalOPPA compliant</span></label>
-        <label class="radio-item" id="ri-cal-no"><input type="radio" name="caloppa" value="no" onchange="selectRadio(this)"/> <span>No</span></label>
-        <div class="field-error" id="err-caloppa">Please select one.</div>
-      </div>
-
-      <hr class="section-divider"/>
-
-      <div class="compliance-section">
-        <div class="question-title">Do you want your privacy policy to be GDPR compliant? <span class="req">*</span></div>
-        <div class="info-box">
-          <div class="info-box-icon">📋</div>
-          <div class="info-box-body">
-            <div class="info-box-title">General Data Protection Regulation</div>
-            Protects EU individuals' fundamental rights regarding their personal data. Effective May 28, 2018.
-          </div>
-        </div>
-        <label class="radio-item" id="ri-gdpr-yes"><input type="radio" name="gdpr" value="yes" onchange="selectRadio(this)"/> <span>Yes, adapt my Privacy Policy to be GDPR compliant</span></label>
-        <label class="radio-item" id="ri-gdpr-no"><input type="radio" name="gdpr" value="no" onchange="selectRadio(this)"/> <span>No</span></label>
-        <div class="field-error" id="err-gdpr">Please select one.</div>
-      </div>
-
-      <hr class="section-divider"/>
-
-      <div class="compliance-section" style="margin-bottom:0">
-        <div class="question-title">Do you want your privacy policy to be CCPA compliant? <span class="req">*</span></div>
-        <div class="info-box">
-          <div class="info-box-icon">📋</div>
-          <div class="info-box-body">
-            <div class="info-box-title">California Consumer Privacy Act</div>
-            Regulates how businesses handle the personal information of California residents. Effective January 1, 2020.
-          </div>
-        </div>
-        <label class="radio-item" id="ri-ccpa-yes"><input type="radio" name="ccpa" value="yes" onchange="selectRadio(this)"/> <span>Yes, adapt my Privacy Policy to be CCPA compliant</span></label>
-        <label class="radio-item" id="ri-ccpa-no"><input type="radio" name="ccpa" value="no" onchange="selectRadio(this)"/> <span>No</span></label>
-        <div class="field-error" id="err-ccpa">Please select one.</div>
+        <div class="field-error" id="err-jurisdiction">Please enter your governing jurisdiction.</div>
+        <div class="hint-text">This is typically the country where your company is registered.</div>
       </div>
     </div>
     <div class="nav-bar">
       <button class="btn-back" onclick="goToStep(2)">← Back</button>
-      <button class="btn-continue" onclick="validateStep3()">Continue →</button>
+      <button class="btn-continue" onclick="validateStep3()">Generate Terms &amp; Conditions →</button>
     </div>
   </div>
 
@@ -1137,7 +1090,7 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
       </div>
       <div>
-        <div class="doc-success-title">Your Privacy Policy is Ready!</div>
+        <div class="doc-success-title">Your Terms &amp; Conditions are Ready!</div>
         <div class="doc-success-sub">Generated from your inputs · Review, copy, or download below</div>
       </div>
     </div>
@@ -1145,15 +1098,15 @@
     <!-- Sticky toolbar -->
     <div class="doc-toolbar">
       <div>
-        <div class="doc-toolbar-title">Privacy Policy</div>
+        <div class="doc-toolbar-title">Terms &amp; Conditions</div>
         <div class="doc-toolbar-sub">Ready to publish on your website or app</div>
       </div>
       <div class="doc-toolbar-btns">
-        <button class="action-btn" onclick="copyPolicy()">
+        <button class="action-btn" onclick="copyTerms()">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
           Copy Text
         </button>
-        <button class="action-btn action-btn-pdf" onclick="downloadPDF()">
+        <button class="action-btn action-btn-pdf" onclick="window.print()">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download PDF
         </button>
@@ -1163,11 +1116,11 @@
 
     <!-- A4 paper document -->
     <div class="doc-paper-wrap">
-      <div class="doc-paper" id="policy-output"></div>
+      <div class="doc-paper" id="terms-output"></div>
     </div>
 
     <div class="doc-disclaimer">
-      <p>⚠ This document is generated for informational purposes only. LegalyJet is not a law firm and this is not legal advice. Consider having a licensed attorney review your policy before publishing.</p>
+      <p>⚠ This document is generated for informational purposes only. LegalyJet is not a law firm and this is not legal advice. Consider having a licensed attorney review your Terms &amp; Conditions before publishing.</p>
     </div>
   </div>
 
@@ -1187,11 +1140,14 @@
   </div>
 </footer>
 
+<div class="toast" id="toast">Copied to clipboard!</div>
+
 <script>
   // ── Utility ──
   const $ = id => document.getElementById(id);
   const radioVal = name => document.querySelector(`input[name="${name}"]:checked`)?.value ?? null;
-  const fieldVal = id => $( id)?.value.trim() || '';
+  const fieldVal = id => $(id)?.value.trim() || '';
+  let entityType = null;
 
   function showErr(id, show) {
     const el = $(id);
@@ -1213,9 +1169,7 @@
     showErr('err-date', false);
   }
 
-  // ── Navigation ──
-  // goToStep defined below
-
+  // ── Bubbles ──
   function updateBubbles(active) {
     for (let i = 1; i <= 4; i++) {
       const b = $(`bubble-${i}`), l = $(`line-${i}`), lbl = $(`lbl-${i}`);
@@ -1227,27 +1181,22 @@
     }
   }
 
-  // ── Selected radio highlight + clear error ──
+  // ── Radio highlight ──
   function selectRadio(radio) {
     document.querySelectorAll(`input[name="${radio.name}"]`).forEach(r => {
       r.closest('.radio-item')?.classList.remove('selected');
     });
     radio.closest('.radio-item')?.classList.add('selected');
-    // Clear any error associated with this radio group
     const errMap = {
-      'entity-type': 'err-entity',
       'collect-personal': 'err-collect-personal',
-      'send-emails': 'err-send-emails',
-      'analytics': 'err-analytics',
-      'show-ads': 'err-show-ads',
-      'fb-pixel': 'err-fb-pixel',
-      'retargeting': 'err-retargeting',
-      'under13': 'err-under13',
-      'payments': 'err-payments',
-      'payment-type': 'err-payments',
-      'caloppa': 'err-caloppa',
-      'gdpr': 'err-gdpr',
-      'ccpa': 'err-ccpa',
+      'send-emails':      'err-send-emails',
+      'analytics':        'err-analytics',
+      'show-ads':         'err-show-ads',
+      'fb-pixel':         'err-fb-pixel',
+      'retargeting':      'err-retargeting',
+      'under13':          'err-under13',
+      'payments':         'err-payments',
+      'payment-type':     'err-payment-type',
     };
     const errId = errMap[radio.name];
     if (errId) showErr(errId, false);
@@ -1259,12 +1208,6 @@
     $('website-fields').classList.toggle('visible', w);
     $('app-fields').classList.toggle('visible', a);
     if (w || a) showErr('err-platform', false);
-  }
-
-  function toggleEntity() {
-    const v = radioVal('entity-type');
-    $('business-fields').classList.toggle('visible', v === 'business');
-    showErr('err-entity', false);
   }
 
   function togglePersonalData() {
@@ -1282,44 +1225,82 @@
     if ($(`contact-${type}-wrap`)) {
       $(`contact-${type}-wrap`).classList.toggle('visible', cb.checked);
     }
-    // Clear contact error as soon as any option is checked
     if (document.querySelectorAll('.contact-method:checked').length > 0) {
       showErr('err-contact', false);
     }
   }
 
-  // ── Step 1 Validation ──
+  // ── Step navigation ──
+  function goToStep(n) {
+    document.querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
+    $(`step-${n}`).classList.add('active');
+    updateBubbles(n);
+    if (n === 4) {
+      $('terms-output').innerHTML = buildTerms();
+      // Re-trigger success banner animation
+      const banner = $('success-banner');
+      if (banner) {
+        banner.style.animation = 'none';
+        banner.offsetHeight; // reflow
+        banner.style.animation = '';
+      }
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function scrollToFirstError() {
+    const first = document.querySelector('.field-error.show');
+    if (first) {
+      const parent = first.closest('.form-group, .compliance-section') || first;
+      parent.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  // ── Validation ──
+  function setEntityType(type) {
+    entityType = type;
+    const bf   = $('business-fields');
+    const note = $('individual-note');
+    if (type === 'individual') {
+      if (bf)   bf.style.display   = 'none';
+      if (note) note.style.display = 'block';
+      const cn = $('company-name');    if (cn) cn.value = '';
+      const ca = $('company-address'); if (ca) ca.value = '';
+      wrapErr('wrap-company-name',    false); showErr('err-company-name',    false);
+      wrapErr('wrap-company-address', false); showErr('err-company-address', false);
+    } else {
+      if (bf)   bf.style.display   = '';
+      if (note) note.style.display = 'none';
+    }
+    showErr('err-entity-type', false);
+  }
+
   function validateStep1() {
     let ok = true;
-
     const w = $('plat-website').checked, a = $('plat-app').checked;
     if (!w && !a) { showErr('err-platform', true); ok = false; }
     else showErr('err-platform', false);
-
     if (w) {
-      if (!fieldVal('website-url')) { wrapErr('wrap-website-url', true); showErr('err-website-url', true); ok = false; }
+      if (!fieldVal('website-url'))  { wrapErr('wrap-website-url', true);  showErr('err-website-url', true);  ok = false; }
       if (!fieldVal('website-name')) { wrapErr('wrap-website-name', true); showErr('err-website-name', true); ok = false; }
     }
     if (a) {
       if (!fieldVal('app-name')) { wrapErr('wrap-app-name', true); showErr('err-app-name', true); ok = false; }
     }
-
-    if (!radioVal('entity-type')) { showErr('err-entity', true); ok = false; }
-    else {
-      showErr('err-entity', false);
-      if (radioVal('entity-type') === 'business') {
-        if (!fieldVal('company-name')) { wrapErr('wrap-company-name', true); showErr('err-company-name', true); ok = false; }
-        if (!fieldVal('company-address')) { wrapErr('wrap-company-address', true); showErr('err-company-address', true); ok = false; }
-      }
+    // Entity type required
+    const entityType = document.querySelector('input[name="entity-type"]:checked')?.value;
+    if (!entityType) { showErr('err-entity-type', true); ok = false; }
+    else showErr('err-entity-type', false);
+    // Company name only required for business
+    if (entityType === 'business') {
+      if (!fieldVal('company-name')) { wrapErr('wrap-company-name', true); showErr('err-company-name', true); ok = false; }
     }
-
-    if (!fieldVal('country')) { wrapErr('wrap-country', true); showErr('err-country', true); ok = false; }
-    if (!fieldVal('effective-date')) { $('wrap-date').classList.add('error'); showErr('err-date', true); ok = false; }
-
+    if (entityType === 'business' && !fieldVal('company-address')) { wrapErr('wrap-company-address', true); showErr('err-company-address', true); ok = false; }
+    if (!fieldVal('country'))         { wrapErr('wrap-country', true);         showErr('err-country', true);         ok = false; }
+    if (!fieldVal('effective-date'))  { $('wrap-date').classList.add('error'); showErr('err-date', true);            ok = false; }
     if (ok) goToStep(2); else scrollToFirstError();
   }
 
-  // ── Step 2 Validation ──
   function validateStep2() {
     let ok = true;
     const checks = [
@@ -1337,344 +1318,262 @@
     if (ok) goToStep(3); else scrollToFirstError();
   }
 
-  // ── Step 3 Validation ──
   function validateStep3() {
     let ok = true;
-
     if (!radioVal('under13')) { showErr('err-under13', true); ok = false; } else showErr('err-under13', false);
-
     const contactOk = document.querySelectorAll('.contact-method:checked').length > 0;
     showErr('err-contact', !contactOk); if (!contactOk) ok = false;
-
     if (!radioVal('payments')) { showErr('err-payments', true); ok = false; } else showErr('err-payments', false);
-    if (!radioVal('caloppa')) { showErr('err-caloppa', true); ok = false; } else showErr('err-caloppa', false);
-    if (!radioVal('gdpr')) { showErr('err-gdpr', true); ok = false; } else showErr('err-gdpr', false);
-    if (!radioVal('ccpa')) { showErr('err-ccpa', true); ok = false; } else showErr('err-ccpa', false);
-
+    if (radioVal('payments') === 'yes' && !radioVal('payment-type')) {
+      showErr('err-payment-type', true); ok = false;
+    } else showErr('err-payment-type', false);
+    if (!fieldVal('jurisdiction')) { wrapErr('wrap-jurisdiction', true); showErr('err-jurisdiction', true); ok = false; }
     if (ok) goToStep(4); else scrollToFirstError();
   }
 
-  function scrollToFirstError() {
-    // Find first visible error - either field-error or radio-group-error
-    const first = document.querySelector('.field-error.show, .radio-group-error.show');
-    if (first) {
-      // Scroll to the parent form group for better UX
-      const parent = first.closest('.form-group, .compliance-section, .question-title')?.parentElement || first;
-      parent.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  }
-
-  // Set today as default effective date
+  // ── Set today's date ──
   (function() {
     const today = new Date();
     const yyyy = today.getFullYear();
-    const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const dd = String(today.getDate()).padStart(2, '0');
-    const el = document.getElementById('effective-date');
-    if (el) el.value = yyyy + '-' + mm + '-' + dd;
+    const mm   = String(today.getMonth() + 1).padStart(2, '0');
+    const dd   = String(today.getDate()).padStart(2, '0');
+    const el   = $('effective-date');
+    if (el) el.value = `${yyyy}-${mm}-${dd}`;
+    // Pre-fill jurisdiction from country if user fills country first
+    const country = $('country');
+    const juris   = $('jurisdiction');
+    if (country && juris) {
+      country.addEventListener('input', () => { if (!juris.value) juris.value = country.value; });
+    }
   })();
 
-  // ══════════════════════════════════
-  //  STEP 4 — POLICY GENERATOR
-  // ══════════════════════════════════
-
+  // ── Helpers ──
   function getChecked(cls) {
     return Array.from(document.querySelectorAll('.' + cls + ':checked')).map(c => c.value);
   }
 
-  function buildPolicy() {
-    // Gather Step 1
-    const hasWebsite   = $('plat-website').checked;
-    const hasApp       = $('plat-app').checked;
-    const websiteURL   = fieldVal('website-url')  || '[Website URL]';
-    const websiteName  = fieldVal('website-name') || '[Website Name]';
-    const appName      = fieldVal('app-name')     || '[App Name]';
-    const isBusiness   = radioVal('entity-type') === 'business';
-    const companyName  = fieldVal('company-name')    || websiteName;
-    const companyAddr  = fieldVal('company-address') || '[Company Address]';
-    const country      = fieldVal('country')         || '[Country]';
-    const effDate      = fieldVal('effective-date')  || '[Date]';
-    const siteName     = hasWebsite ? websiteName : appName;
-    const siteURL      = hasWebsite ? websiteURL  : '[App Store]';
+  // ══════════════════════════════════
+  //  TERMS BUILDER
+  // ══════════════════════════════════
+  function buildTerms() {
+    const hasWebsite  = $('plat-website').checked;
+    const hasApp      = $('plat-app').checked;
+    const websiteURL  = fieldVal('website-url')  || '[Website URL]';
+    const websiteName = fieldVal('website-name') || '[Website Name]';
+    const appName     = fieldVal('app-name')     || '[App Name]';
+    const entityType  = document.querySelector('input[name="entity-type"]:checked')?.value || 'business';
+    const isIndividual = entityType === 'individual';
+    const companyName = isIndividual ? (fieldVal('website-name') || fieldVal('app-name') || siteName) : (fieldVal('company-name') || websiteName);
+    const companyAddr = fieldVal('company-address') || '[Address]';
+    const country     = fieldVal('country') || '[Country]';
+    const effDate     = fieldVal('effective-date') || '[Date]';
+    const jurisdiction = fieldVal('jurisdiction') || country;
+    const siteName    = hasWebsite ? websiteName : appName;
+    const siteURL     = hasWebsite ? websiteURL  : '[App Store]';
+    const platforms   = [hasWebsite ? 'website' : null, hasApp ? 'mobile application' : null].filter(Boolean).join(' and ');
+    const plat        = platforms;
 
-    // Gather Step 2
     const collectsPersonal = radioVal('collect-personal') === 'yes';
     const personalData     = getChecked('pdata');
     const sendsEmails      = radioVal('send-emails') === 'yes';
-    const usesAnalytics    = radioVal('analytics')   === 'yes';
-    const showsAds         = radioVal('show-ads')    === 'yes';
-    const hasFBPixel       = radioVal('fb-pixel')    === 'yes';
+    const usesAnalytics    = radioVal('analytics') === 'yes';
+    const showsAds         = radioVal('show-ads') === 'yes';
+    const hasFBPixel       = radioVal('fb-pixel') === 'yes';
     const usesRetargeting  = radioVal('retargeting') === 'yes';
     const trackingTech     = getChecked('tracking');
 
-    // Gather Step 3
     const socialLogins   = getChecked('social');
     const allowsUnder13  = radioVal('under13') === 'yes';
     const contactEmail   = fieldVal('contact-email');
     const contactPhone   = fieldVal('contact-phone');
     const contactPage    = fieldVal('contact-page-url');
-    const contactAddr    = fieldVal('contact-address');
     const deviceServices = getChecked('device-service');
-    const acceptsPayments= radioVal('payments') === 'yes';
+    const acceptsPayments = radioVal('payments') === 'yes';
     const paymentType    = radioVal('payment-type') || '';
-    const caloppa        = radioVal('caloppa') === 'yes';
-    const gdpr           = radioVal('gdpr')    === 'yes';
-    const ccpa           = radioVal('ccpa')    === 'yes';
-
-    const platforms = [hasWebsite ? 'website' : null, hasApp ? 'mobile application' : null].filter(Boolean).join(' and ');
-    const entityDesc = isBusiness ? `${companyName}, ${companyAddr}` : siteName;
 
     const li = items => items.length ? '<ul>' + items.map(i => `<li>${i}</li>`).join('') + '</ul>' : '';
 
     let html = `
-      <h1>Privacy Policy</h1>
+      <h1>Terms &amp; Conditions</h1>
       <div class="doc-updated">Updated at ${effDate}</div>
 
-      <p>${siteName} ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by ${siteName}. This Privacy Policy applies to our ${platforms}, <strong>${siteURL}</strong>, and its associated subdomains (collectively, our "Service"). By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our Terms of Service.</p>
+      <h2>General Terms</h2>
+      <p>By accessing and placing an order with <strong>${siteName}</strong>, you confirm that you are in agreement with and bound by the terms of service contained in the Terms &amp; Conditions outlined below. These terms apply to the entire ${plat} and any email or other type of communication between you and <strong>${siteName}</strong>.</p>
+      <p>Under no circumstances shall <strong>${siteName}</strong> be liable for any direct, indirect, special, incidental or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this ${plat}, even if <strong>${siteName}</strong> or an authorized representative has been advised of the possibility of such damages. If your use of materials from this ${plat} results in the need for servicing, repair or correction of equipment or data, you assume any costs thereof.</p>
+      <p><strong>${siteName}</strong> will not be responsible for any outcome that may occur during the course of usage of our resources. We reserve the rights to change prices and revise the resources usage policy at any moment.</p>
 
-      <h2>Definitions and key terms</h2>
-      <p>To help explain things as clearly as possible in this Privacy Policy, every time any of these terms are referenced, are strictly defined as:</p>
+      <h2>License</h2>
+      <p><strong>${siteName}</strong> grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the ${plat} strictly in accordance with the terms of this Agreement.</p>
+      <p>These Terms &amp; Conditions are a contract between you and <strong>${companyName}</strong> (referred to in these Terms &amp; Conditions as "<strong>${siteName}</strong>", "us", "we" or "our"), the provider of the <strong>${siteName}</strong> ${plat} and the services accessible from the <strong>${siteName}</strong> ${plat} (which are collectively referred to in these Terms &amp; Conditions as the "<strong>${siteName} Service</strong>").</p>
+      <p>You are agreeing to be bound by these Terms &amp; Conditions. If you do not agree to these Terms &amp; Conditions, please do not use the <strong>${siteName} Service</strong>. In these Terms &amp; Conditions, "you" refers both to you as an individual and to the entity you represent. If you violate any of these Terms &amp; Conditions, we reserve the right to cancel your account or block access to your account without notice.</p>
+
+      <h2>Definitions and Key Terms</h2>
+      <p>To help explain things as clearly as possible in these Terms &amp; Conditions, every time any of the following terms are referenced, they are strictly defined as:</p>
       <ul>
-        <li><strong>Cookie:</strong> small amount of data generated by a website and saved by your web browser. It is used to identify your browser, provide analytics, remember information about you such as your language preference or login information.</li>
-        <li><strong>Company:</strong> when this policy mentions "Company," "we," "us," or "our," it refers to ${entityDesc} that is responsible for your information under this Privacy Policy.</li>
-        <li><strong>Country:</strong> where ${siteName} or the owners/founders of ${siteName} are based, in this case is <strong>${country}</strong>.</li>
-        <li><strong>Customer:</strong> refers to the company, organization or person that signs up to use the ${siteName} Service to manage the relationships with your consumers or service users.</li>
-        <li><strong>Device:</strong> any internet connected device such as a phone, tablet, computer or any other device that can be used to visit ${siteName} and use the services.</li>
-        <li><strong>IP address:</strong> Every device connected to the Internet is assigned a number known as an Internet protocol (IP) address. These numbers are usually assigned in geographic blocks. An IP address can often be used to identify the location from which a device is connecting to the Internet.</li>
-        <li><strong>Personnel:</strong> refers to those individuals who are employed by ${siteName} or are under contract to perform a service on behalf of one of the parties.</li>
-        <li><strong>Personal Data:</strong> any information that directly, indirectly, or in connection with other information — including a personal identification number — allows for the identification or identifiability of a natural person.</li>
-        <li><strong>Service:</strong> refers to the service provided by ${siteName} as described in the relative terms (if available) and on this platform.</li>
-        <li><strong>Third-party service:</strong> refers to advertisers, contest sponsors, promotional and marketing partners, and others who provide our content or whose products or services we think may interest you.</li>
-        <li><strong>Website:</strong> ${siteName}'s site, which can be accessed via this URL: <strong>${siteURL}</strong></li>
-        <li><strong>You:</strong> a person or entity that is registered with ${siteName} to use the Services.</li>
+        <li><strong>Cookie:</strong> A small amount of data generated by a website and saved by your web browser. It is used to identify your browser, provide analytics, and remember information about you such as your language preference or login information.</li>
+        <li><strong>${isIndividual ? 'Operator' : 'Company'}:</strong> When these Terms mention "${isIndividual ? 'Operator' : 'Company'}," "we," "us," or "our," it refers to <strong>${companyName}</strong>${isIndividual ? '' : ', ' + companyAddr}, the individual or entity responsible for this ${plat} and these Terms &amp; Conditions.</li>
+        <li><strong>Country:</strong> Where <strong>${siteName}</strong> or its owners/founders are based — in this case, <strong>${country}</strong>.</li>
+        <li><strong>Device:</strong> Any internet-connected device such as a phone, tablet, computer, or any other device that can be used to visit <strong>${siteName}</strong> and use the services.</li>
+        <li><strong>Service:</strong> Refers to the service provided by <strong>${siteName}</strong> as described in the relative terms (if available) and on this platform.</li>
+        <li><strong>Third-party service:</strong> Refers to advertisers, contest sponsors, promotional and marketing partners, and others who provide our content or whose products or services we think may interest you.</li>
+        <li><strong>Website:</strong> <strong>${siteName}</strong>'s site, which can be accessed via this URL: <strong>${siteURL}</strong></li>
+        <li><strong>You:</strong> A person or entity that is registered with <strong>${siteName}</strong> to use the Services.</li>
       </ul>
 
-      <h2>Information automatically collected</h2>
-      <p>There is some information like your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our platform. This information may be used to connect your computer to the Internet. Other information collected automatically could be a login, e-mail address, password, computer and connection information such as browser plug-in types and versions and time zone setting, operating systems and platforms, purchase history (we sometimes aggregate with similar information from other Users), the full Uniform Resource Locator (URL) clickstream to, through and from our ${hasWebsite ? 'Website' : 'App'}. We may also collect technical information to help us identify your device for fraud prevention and diagnostic purposes.</p>
-    `;
-
-    // What info we collect
-    if (collectsPersonal && personalData.length > 0) {
-      html += `
-      <h2>What Information Do We Collect?</h2>
-      <p>We collect information from you when you visit our ${platforms}, register on our site, place an order, subscribe to our newsletter, respond to a survey or fill out a form. The personal information you provide may include:</p>
-      ${li(personalData)}
-      `;
-    }
-
-    // Mobile device services
-    if (deviceServices.length > 0) {
-      html += `<p>We also collect information from devices for a better user experience, although these features are completely optional:</p><ul>`;
-      if (deviceServices.includes('Geolocation')) html += `<li><strong>Location (GPS):</strong> Location data helps to create an accurate representation of your interests, and this can be used to bring more targeted and relevant ads to potential customers.</li>`;
-      if (deviceServices.includes('Contacts')) html += `<li><strong>Phonebook (Contacts list):</strong> Your contacts list allows ${siteName} to be much more easy to use by the user, since accessing your contacts from the app makes you save tons of time.</li>`;
-      if (deviceServices.includes('Camera Access')) html += `<li><strong>Camera (Pictures):</strong> Granting camera permission allows the user to upload any picture straight from the ${siteName}, you can safely deny camera permissions for this ${siteName}.</li>`;
-      if (deviceServices.includes('Photo Gallery Access')) html += `<li><strong>Photo Gallery (Pictures):</strong> Granting photo gallery access allows the user to upload any picture from their photo gallery, you can safely deny photo gallery access for this ${siteName}.</li>`;
-      if (deviceServices.includes('Microphone Access')) html += `<li><strong>Microphone:</strong> Granting microphone access allows you to interact with ${siteName} using voice input. You can safely deny microphone permissions at any time.</li>`;
-      html += `</ul>`;
-    }
-
-    html += `
-      <h2>How Do We Use The Information We Collect?</h2>
-      <p>Any of the information we collect from you may be used in one of the following ways:</p>
+      <h2>Restrictions</h2>
+      <p>You agree not to, and you will not permit others to:</p>
       <ul>
-        <li>To personalize your experience (your information helps us to better respond to your individual needs)</li>
-        <li>To improve our ${platforms} (we continually strive to improve our ${siteName} offerings based on the information and feedback we receive from you)</li>
-        <li>To improve customer service (your information helps us to more effectively respond to your customer service requests and support needs)</li>
-        <li>To process transactions</li>
-        <li>To administer a contest, promotion, survey or other site feature</li>
-        ${sendsEmails ? '<li>To send periodic emails and updates</li>' : ''}
-      </ul>
-
-      <h2>When does ${siteName} use end user information from third parties?</h2>
-      <p>${siteName} will collect End User Data necessary to provide the ${siteName} services to our customers. End users may voluntarily provide us with information they have made available on social media websites. If you provide us with any such information, we may collect publicly available information from the social media websites you have indicated. You can control how much of your information social media websites make public by visiting these websites and changing your privacy settings.</p>
-
-      <h2>When does ${siteName} use customer information from third parties?</h2>
-      <p>We receive some information from the third parties when you contact us. For example, when you submit your email address to us to show interest in becoming a ${siteName} customer, we receive information from a third party that provides automated fraud detection services to ${siteName}. We also occasionally collect information that is made publicly available on social media websites.</p>
-
-      <h2>Do we share the information we collect with third parties?</h2>
-      <p>We may share the information that we collect, both personal and non-personal, with third parties such as advertisers, contest sponsors, promotional and marketing partners, and others who provide our content or whose products or services we think may interest you. We may also share it with our current and future affiliated companies and business partners, and if we are involved in a merger, asset sale or other business reorganization, we may also share or transfer your personal and non-personal information to our successors-in-interest.</p>
-      <p>We may engage trusted third party service providers to perform functions and provide services to us, such as hosting and maintaining our servers and the ${platforms}, database storage and management, e-mail management, storage marketing, credit card processing, customer service and fulfilling orders for products and services you may purchase through the ${platforms}. We will likely share your personal information, and possibly some non-personal information, with these third parties to enable them to perform these services for us and for you.</p>
-
-      <h2>Where and when is information collected from customers and end users?</h2>
-      <p>${siteName} will collect personal information that you submit to us. We may also receive personal information about you from third parties as described above.</p>
-    `;
-
-    if (sendsEmails) {
-      html += `
-      <h2>How Do We Use Your Email Address?</h2>
-      <p>By submitting your email address on this ${platforms}, you agree to receive emails from us. You can cancel your participation in any of these email lists at any time by clicking on the opt-out link or other unsubscribe option that is included in the respective email. We only send emails to people who have authorized us to contact them, either directly, or through a third party. We do not send unsolicited commercial emails, because we hate spam as much as you do. By submitting your email address, you also agree to allow us to use your email address for customer audience targeting on sites like Facebook, where we display custom advertising to specific people who have opted-in to receive communications from us.</p>
-      `;
-    }
-
-    html += `
-      <h2>How Long Do We Keep Your Information?</h2>
-      <p>We keep your information only so long as we need it to provide ${siteName} to you and fulfil the purposes described in this policy. When we no longer need to use your information and there is no need for us to keep it to comply with our legal or regulatory obligations, we'll either remove it from our systems or depersonalize it so that we can't identify you.</p>
-
-      <h2>How Do We Protect Your Information?</h2>
-      <p>We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information. We offer the use of a secure server. All supplied sensitive/credit information is transmitted via Secure Socket Layer (SSL) technology and then encrypted into our payment gateway providers database only to be accessible by those authorized with special access rights to such systems, and are required to keep the information confidential.</p>
-
-      <h2>Could my information be transferred to other countries?</h2>
-      <p>${siteName} is incorporated in ${country}. Information collected via our ${platforms}, through direct interactions with you, or from use of our help services may be transferred from time to time to our offices or personnel, or to third parties, located throughout the world, and may be viewed and hosted anywhere in the world. By using any of the above, you voluntarily consent to the trans-border transfer and hosting of such information.</p>
-
-      <h2>Is the information collected through the ${siteName} Service secure?</h2>
-      <p>We take precautions to protect the security of your information. We have physical, electronic, and managerial procedures to help safeguard, prevent unauthorized access, maintain data security, and correctly use your information. However, neither people nor security systems are foolproof, including encryption systems. Therefore, while we use reasonable efforts to protect your personal information, we cannot guarantee its absolute security.</p>
-
-      <h2>Can I update or correct my information?</h2>
-      <p>The rights you have to request updates or corrections to the information ${siteName} collects depend on your relationship with ${siteName}. You can contact us in order to (1) update or correct your personally identifiable information, (2) change your preferences with respect to communications and other information you receive from us, or (3) delete the personally identifiable information maintained about you on our systems by contacting us.</p>
-    `;
-
-    if (isBusiness) {
-      html += `
-      <h2>Personnel</h2>
-      <p>If you are a ${siteName} worker or applicant, we collect information you voluntarily provide to us. We use the information collected for Human Resources purposes in order to administer benefits to workers and screen applicants.</p>
-
-      <h2>Sale of Business</h2>
-      <p>We reserve the right to transfer information to a third party in the event of a sale, merger or other transfer of all or substantially all of the assets of ${companyName}, provided that the third party agrees to adhere to the terms of this Privacy Policy.</p>
-
-      <h2>Affiliates</h2>
-      <p>We may disclose information (including personal information) about you to our Corporate Affiliates. For purposes of this Privacy Policy, "Corporate Affiliate" means any person or entity which directly or indirectly controls, is controlled by or is under common control with ${companyName}. Any information relating to you that we provide to our Corporate Affiliates will be treated by those Corporate Affiliates in accordance with the terms of this Privacy Policy.</p>
-      `;
-    }
-
-    html += `
-      <h2>Governing Law</h2>
-      <p>This Privacy Policy is governed by the laws of ${country} without regard to its conflict of laws provision. You consent to the exclusive jurisdiction of the courts in connection with any action or dispute arising between the parties under or in connection with this Privacy Policy.</p>
-      <p>The laws of ${country}, excluding its conflicts of law rules, shall govern this Agreement and your use of the ${platforms}. Your use of the ${platforms} may also be subject to other local, state, national, or international laws.</p>
-
-      <h2>Your Consent</h2>
-      <p>We've updated our Privacy Policy to provide you with complete transparency into what is being set when you visit our site and how it's being used. By using our ${platforms}, registering an account, or making a purchase, you hereby consent to our Privacy Policy and agree to its terms.</p>
-
-      <h2>Links to Other Websites</h2>
-      <p>This Privacy Policy applies only to the Services. The Services may contain links to other websites not operated or controlled by ${siteName}. We are not responsible for the content, accuracy or opinions expressed in such websites, and such websites are not investigated, monitored or checked for accuracy or completeness by us. Please remember that when you use a link to go from the Services to another website, our Privacy Policy is no longer in effect.</p>
-    `;
-
-    if (showsAds) {
-      html += `
-      <h2>Advertising</h2>
-      <p>This ${platforms} may contain third party advertisements and links to third party sites. ${siteName} does not make any representation as to the accuracy or suitability of any of the information contained in those advertisements or sites and does not accept any responsibility or liability for the conduct or content of those advertisements and sites.</p>
-      <p>Advertising keeps ${siteName} and many of the websites and services you use free of charge. We work hard to make sure that ads are safe, unobtrusive, and as relevant as possible.</p>
-      `;
-    }
-
-    if (trackingTech.includes('Cookies and/or web beacons') || trackingTech.includes('Local Storage') || trackingTech.includes('Sessions')) {
-      html += `<h2>Cookies</h2>
-      <p>${siteName} uses "Cookies" to identify the areas of our ${hasWebsite ? 'website' : 'app'} that you have visited. A Cookie is a small piece of data stored on your computer or mobile device by your web browser. We use Cookies to enhance the performance and functionality of our ${platforms} but are non-essential to their use. However, without these cookies, certain functionality like videos may become unavailable or you would be required to enter your login details every time you visit the ${platforms}. Most web browsers can be set to disable the use of Cookies. However, if you disable Cookies, you may not be able to access functionality on our ${hasWebsite ? 'website' : 'app'} correctly or at all.</p>
-      <h2>Blocking and disabling cookies and similar technologies</h2>
-      <p>Wherever you're located you may also set your browser to block cookies and similar technologies, but this action may block our essential cookies and prevent our ${hasWebsite ? 'website' : 'app'} from functioning properly. You should also be aware that you may also lose some saved information (e.g. saved login details, site preferences) if you block cookies on your browser.</p>`;
-    }
-
-    if (usesRetargeting) {
-      html += `
-      <h2>Remarketing Services</h2>
-      <p>We use remarketing services. Remarketing (or retargeting) is the practice of serving ads across the internet to people who have already visited your website. It allows your company to seem like they're "following" people around the internet by serving ads on the websites and platforms they use most.</p>
-      `;
-    }
-
-    if (hasFBPixel) {
-      html += `
-      <h2>Facebook Pixel</h2>
-      <p>Facebook pixel is an analytics tool that allows you to measure the effectiveness of your advertising by understanding the actions people take on your website. You can use the pixel to make sure your ads are shown to the right people. Facebook pixel may collect information from your device when you use the service. Facebook pixel collects information that is held in accordance with its Privacy Policy.</p>
-      `;
-    }
-
-    if (trackingTech.length > 0) {
-      html += `<h2>Tracking Technologies</h2>`;
-      if (trackingTech.includes('Google Maps APIs')) {
-        html += `<h3>Google Maps APIs</h3><p>Google Maps API is a robust tool that can be used to create a custom map, a searchable map, check-in functions, display live data synching with location, plan routes, or create a mashup. Google Maps API may collect information from you and from your device for security purposes. Google Maps API collects information that is held in accordance with its Privacy Policy.</p>`;
-      }
-      if (trackingTech.includes('Local Storage')) {
-        html += `<h3>Local Storage</h3><p>Local Storage, sometimes known as DOM storage, provides web apps with methods and protocols for storing client-side data. Web storage supports persistent data storage, similar to cookies but with a greatly enhanced capacity and no information stored in the HTTP request header.</p>`;
-      }
-      if (trackingTech.includes('Sessions')) {
-        html += `<h3>Sessions</h3><p>${siteName} uses "Sessions" to identify the areas of our ${hasWebsite ? 'website' : 'app'} that you have visited. A Session is a small piece of data stored on your computer or mobile device by your web browser.</p>`;
-      }
-    }
+        <li>License, sell, rent, lease, assign, distribute, transmit, host, outsource, disclose, or otherwise commercially exploit the ${plat} or make the platform available to any third party.</li>
+        <li>Modify, make derivative works of, disassemble, decrypt, reverse compile, or reverse engineer any part of the <strong>${siteName}</strong> ${plat}.</li>
+        <li>Remove, alter, or obscure any proprietary notice (including any notice of copyright or trademark) of <strong>${siteName}</strong> or its affiliates, partners, suppliers, or licensors.</li>
+      </ul>`;
 
     if (acceptsPayments) {
       html += `
-      <h2>Payment Details</h2>
-      <p>In respect to any credit card or other payment processing details you have provided us, we commit that this confidential information will be stored in the most secure manner possible. We accept ${paymentType ? paymentType.toLowerCase() : 'online payments'}.</p>
-      `;
+      <h2>Payment</h2>
+      <p>If you register to any of our payment plans, you agree to pay all fees or charges to your account for the Service in accordance with the fees, charges, and billing terms in effect at the time that each fee or charge is due and payable. You must provide <strong>${siteName}</strong> with a valid credit card (Visa, MasterCard, or any other issuer accepted by us) as a condition to signing up. We accept <strong>${paymentType ? paymentType.toLowerCase() : 'online payments'}</strong>.</p>
+      <p><strong>${siteName}</strong> reserves the right at any time to change its prices and billing methods, either immediately upon posting on our ${plat} or by e-mail delivery to your organization's administrator(s).</p>
+      <p>Any attorney fees, court costs, or other costs incurred in collection of delinquent undisputed amounts shall be the responsibility of and paid for by you.</p>
+      <p>No contract will exist between you and <strong>${siteName}</strong> for the Service until <strong>${siteName}</strong> accepts your order by a confirmatory e-mail, SMS/MMS message, or other appropriate means of communication.</p>
+      <p>You are responsible for any third-party fees that you may incur when using the Service.</p>
+
+      <h2>Return and Refund Policy</h2>
+      <p>Thanks for shopping at <strong>${siteName}</strong>. We appreciate that you like to buy the products and services we build. We also want to make sure you have a rewarding experience while you're exploring, evaluating, and purchasing from us.</p>
+      <p>As with any shopping experience, there are terms and conditions that apply to transactions at <strong>${siteName}</strong>. The main thing to remember is that by placing an order or making a purchase at <strong>${siteName}</strong>, you agree to the terms along with <strong>${siteName}</strong>'s Privacy Policy.</p>
+      <p>If, for any reason, you are not completely satisfied with any good or service that we provide, don't hesitate to contact us and we will discuss any of the issues you are experiencing with our product.</p>`;
+    }
+
+    html += `
+      <h2>Your Suggestions</h2>
+      <p>Any feedback, comments, ideas, improvements, or suggestions (collectively, "Suggestions") provided by you to <strong>${siteName}</strong> with respect to the ${plat} shall remain the sole and exclusive property of <strong>${siteName}</strong>. <strong>${siteName}</strong> shall be free to use, copy, modify, publish, or redistribute the Suggestions for any purpose and in any way without any credit or any compensation to you.</p>
+
+      <h2>Your Consent</h2>
+      <p>We've updated our Terms &amp; Conditions to provide you with complete transparency into what is being set when you visit our ${plat} and how it's being used. By using our ${plat}${acceptsPayments ? ', registering an account, or making a purchase' : ''}, you hereby consent to our Terms &amp; Conditions.</p>
+
+      <h2>Links to Other Websites</h2>
+      <p>These Terms &amp; Conditions apply only to the Services. The Services may contain links to other websites not operated or controlled by <strong>${siteName}</strong>. We are not responsible for the content, accuracy, or opinions expressed in such websites, and such websites are not investigated, monitored, or checked for accuracy or completeness by us. When you use a link to go from the Services to another website, our Terms &amp; Conditions are no longer in effect. Your browsing and interaction on any other website is subject to that website's own rules and policies.</p>`;
+
+    if (trackingTech.includes('Cookies and/or web beacons') || trackingTech.includes('Local Storage') || trackingTech.includes('Sessions') || collectsPersonal) {
+      html += `
+      <h2>Cookies</h2>
+      <p><strong>${siteName}</strong> uses "Cookies" to identify the areas of our ${plat} that you have visited. A Cookie is a small piece of data stored on your computer or mobile device by your web browser. We use Cookies to enhance the performance and functionality of our ${plat} but are non-essential to their use. However, without these cookies, certain functionality may become unavailable or you would be required to enter your login details every time you visit. Most web browsers can be set to disable the use of Cookies. However, if you disable Cookies, you may not be able to access functionality on our ${plat} correctly or at all. We never place Personally Identifiable Information in Cookies.</p>`;
+    }
+
+    html += `
+      <h2>Changes to Our Terms &amp; Conditions</h2>
+      <p>You acknowledge and agree that <strong>${siteName}</strong> may stop (permanently or temporarily) providing the Service (or any features within the Service) to you or to users generally at <strong>${siteName}</strong>'s sole discretion, without prior notice to you. You may stop using the Service at any time. You do not need to specifically inform <strong>${siteName}</strong> when you stop using the Service.</p>
+      <p>If we decide to change our Terms &amp; Conditions, we will post those changes on this page and update the modification date above.</p>
+
+      <h2>Modifications to Our ${hasApp ? 'App' : 'Website'}</h2>
+      <p><strong>${siteName}</strong> reserves the right to modify, suspend, or discontinue, temporarily or permanently, the ${plat} or any service to which it connects, with or without notice and without liability to you.</p>
+
+      <h2>Updates to Our ${hasApp ? 'App' : 'Website'}</h2>
+      <p><strong>${siteName}</strong> may from time to time provide enhancements or improvements to the features and functionality of the ${plat}, which may include patches, bug fixes, updates, upgrades, and other modifications ("Updates"). Updates may modify or delete certain features and/or functionalities of the ${plat}. You agree that <strong>${siteName}</strong> has no obligation to provide any Updates, or to continue to provide or enable any particular features and/or functionalities of the ${plat} to you.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>We may display, include, or make available third-party content (including data, information, applications, and other products and services) or provide links to third-party websites or services ("Third-Party Services"). You acknowledge and agree that <strong>${siteName}</strong> shall not be responsible for any Third-Party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality, or any other aspect thereof. <strong>${siteName}</strong> does not assume and shall not have any liability or responsibility to you or any other person or entity for any Third-Party Services.</p>`;
+
+    if (socialLogins.length > 0) {
+      html += `<p>Our ${plat} supports the following social media login providers: <strong>${socialLogins.join(', ')}</strong>. By using these login options, you agree to those providers' respective terms and privacy policies.</p>`;
+    }
+
+    html += `
+      <h2>Term and Termination</h2>
+      <p>This Agreement shall remain in effect until terminated by you or <strong>${siteName}</strong>. <strong>${siteName}</strong> may, in its sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice.</p>
+      <p>This Agreement will terminate immediately, without prior notice from <strong>${siteName}</strong>, in the event that you fail to comply with any provision of this Agreement. You may also terminate this Agreement by deleting the ${plat} and all copies thereof from your computer or device.</p>
+      <p>Upon termination of this Agreement, you shall cease all use of the ${plat} and delete all copies from your device. Termination of this Agreement will not limit any of <strong>${siteName}</strong>'s rights or remedies at law or in equity in case of breach by you of any of your obligations under this Agreement.</p>
+
+      <h2>Copyright Infringement Notice</h2>
+      <p>If you are a copyright owner or such owner's agent and believe any material on our ${plat} constitutes an infringement on your copyright, please contact us with the following information: (a) a physical or electronic signature of the copyright owner or authorized person; (b) identification of the infringing material; (c) your contact information, including address, telephone number, and email; (d) a statement of good faith belief that the use is not authorized by the copyright owner; and (e) a statement that the notification is accurate and, under penalty of perjury, you are authorized to act on behalf of the owner.</p>
+
+      <h2>Indemnification</h2>
+      <p>You agree to indemnify and hold <strong>${siteName}</strong> and its parents, subsidiaries, affiliates, officers, employees, agents, partners, and licensors (if any) harmless from any claim or demand, including reasonable attorneys' fees, due to or arising out of your: (a) use of the ${plat}; (b) violation of this Agreement or any law or regulation; or (c) violation of any right of a third party.</p>
+
+      <h2>No Warranties</h2>
+      <p>The ${plat} is provided to you "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, <strong>${siteName}</strong>, on its own behalf and on behalf of its affiliates and respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory, or otherwise, with respect to the ${plat}, including all implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement.</p>
+      <p>Some jurisdictions do not allow the exclusion of implied warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to you.</p>
+
+      <h2>Limitation of Liability</h2>
+      <p>Notwithstanding any damages that you might incur, the entire liability of <strong>${siteName}</strong> and any of its suppliers under any provision of this Agreement and your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by you for the ${plat}.</p>
+      <p>To the maximum extent permitted by applicable law, in no event shall <strong>${siteName}</strong> or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever, including but not limited to damages for loss of profits, loss of data or other information, business interruption, personal injury, or loss of privacy arising out of or in any way related to the use of or inability to use the ${plat}, even if <strong>${siteName}</strong> or any supplier has been advised of the possibility of such damages.</p>
+
+      <h2>Severability</h2>
+      <p>If any provision of this Agreement is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law, and the remaining provisions will continue in full force and effect.</p>
+
+      <h2>Waiver</h2>
+      <p>Except as provided herein, the failure to exercise a right or to require performance of an obligation under this Agreement shall not affect a party's ability to exercise such right or require such performance at any time thereafter, nor shall the waiver of a breach constitute a waiver of any subsequent breach. No failure to exercise, and no delay in exercising, on the part of either party, any right or power under this Agreement shall operate as a waiver of that right or power.</p>
+
+      <h2>Amendments to This Agreement</h2>
+      <p><strong>${siteName}</strong> reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our ${plat} after any revisions become effective, you agree to be bound by the revised terms.</p>
+
+      <h2>Entire Agreement</h2>
+      <p>This Agreement constitutes the entire agreement between you and <strong>${siteName}</strong> regarding your use of the ${plat} and supersedes all prior and contemporaneous written or oral agreements between you and <strong>${siteName}</strong>. You may be subject to additional terms and conditions that apply when you use or purchase other services from <strong>${siteName}</strong>.</p>
+
+      <h2>Intellectual Property</h2>
+      <p>The <strong>${siteName}</strong> ${plat} and its entire contents, features, and functionality — including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof — are owned by <strong>${siteName}</strong>, its licensors, or other providers of such material and are protected by copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws. The material may not be copied, modified, reproduced, downloaded, or distributed in any way without the express prior written permission of <strong>${siteName}</strong>.</p>
+
+      <h2>Agreement to Arbitrate</h2>
+      <p>This section applies to any dispute except it doesn't include a dispute relating to claims for injunctive or equitable relief regarding the enforcement or validity of your or <strong>${siteName}</strong>'s intellectual property rights. "Dispute" means any dispute, action, or other controversy between you and <strong>${siteName}</strong> concerning the Services or this Agreement, whether in contract, warranty, tort, statute, regulation, ordinance, or any other legal or equitable basis. "Dispute" will be given the broadest possible meaning allowable under law.</p>
+
+      <h2>Notice of Dispute</h2>
+      <p>In the event of a dispute, you or <strong>${siteName}</strong> must give the other a Notice of Dispute — a written statement setting forth the name, address, and contact information of the party giving it, the facts giving rise to the dispute, and the relief requested. You must send any Notice of Dispute via email to: <strong>${contactEmail || '[contact@yoursite.com]'}</strong>. <strong>${siteName}</strong> will send any Notice of Dispute to you by mail to your address on file, or otherwise to your email address. You and <strong>${siteName}</strong> will attempt to resolve any dispute through informal negotiation within sixty (60) days from the date the Notice of Dispute is sent. After sixty (60) days, you or <strong>${siteName}</strong> may commence arbitration.</p>
+
+      <h2>Binding Arbitration</h2>
+      <p>If you and <strong>${siteName}</strong> don't resolve any dispute by informal negotiation, any other effort to resolve the dispute will be conducted exclusively by binding arbitration. You are giving up the right to litigate all disputes in court before a judge or jury. The dispute shall be settled by binding arbitration in accordance with the commercial arbitration rules of the American Arbitration Association. Either party may seek interim or preliminary injunctive relief from any court of competent jurisdiction as necessary to protect the party's rights or property pending the completion of arbitration.</p>`;
+
+    if (usesAnalytics || showsAds || hasFBPixel || usesRetargeting) {
+      html += `<h2>Tracking &amp; Advertising</h2>`;
+      if (usesAnalytics) html += `<p><strong>${siteName}</strong> uses tracking solutions to measure ${plat} traffic and user behavior, helping us improve our services and understand how users interact with our platform.</p>`;
+      if (hasFBPixel) html += `<p>We have the Facebook Pixel installed on our ${plat} to track conversions and optimize our advertising campaigns. Facebook pixel collects information that is held in accordance with Facebook's Privacy Policy.</p>`;
+      if (usesRetargeting) html += `<p>We use remarketing (retargeting) services to advertise to people who have previously visited our ${plat} through platforms such as Facebook Ads, Google Ads, Twitter Ads, and Pinterest Ads.</p>`;
+      if (showsAds) html += `<p>Our ${plat} may contain third-party advertisements and links to third-party sites. <strong>${siteName}</strong> does not make any representation as to the accuracy or suitability of any information contained in those advertisements or sites and does not accept any responsibility or liability for the conduct or content of those advertisements and sites.</p>`;
+    }
+
+    if (sendsEmails) {
+      html += `
+      <h2>Email Communications</h2>
+      <p>By submitting your email address on our ${plat}, you agree to receive emails from us. You can cancel your participation in any of these email lists at any time by clicking on the opt-out link or other unsubscribe option included in the respective email. We only send emails to people who have authorized us to contact them, either directly or through a third party. We do not send unsolicited commercial emails.</p>`;
+    }
+
+    if (deviceServices.length > 0) {
+      html += `
+      <h2>Device Permissions</h2>
+      <p>Our ${plat} may request access to the following device features: <strong>${deviceServices.join(', ')}</strong>. These permissions are required to enable certain functionality within the Service. You may revoke these permissions at any time through your device settings, though doing so may limit certain features of the ${plat}.</p>`;
     }
 
     if (!allowsUnder13) {
       html += `
-      <h2>Kids' Privacy</h2>
-      <p>We do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your child has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from anyone under the age of 13 without verification of parental consent, we take steps to remove that information from our servers.</p>
-      `;
+      <h2>Children's Privacy</h2>
+      <p>We do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us. If we become aware that we have collected personal data from anyone under the age of 13 without verification of parental consent, we take steps to remove that information from our servers.</p>`;
+    } else {
+      html += `
+      <h2>Children's Privacy (COPPA)</h2>
+      <p>Our ${plat} is offered to users including those under the age of 13. We collect information from children under the age of 13 in compliance with the Children's Online Privacy Protection Act (COPPA). We require parental or guardian consent before collecting personal information from children under 13. Parents or guardians may review, request deletion of, or refuse further collection of their child's personal information by contacting us.</p>`;
     }
 
-    if (socialLogins.length > 0) {
+    if (collectsPersonal) {
       html += `
-      <h2>Social Media Login</h2>
-      <p>We offer you the ability to register and login using your ${socialLogins.join(', ')} account(s). Where you do so, we will receive certain profile information about you from your social media provider. The profile information we receive may vary depending on the social media provider concerned, but will often include your name, email address, and profile picture.</p>
-      `;
+      <h2>Submissions and Privacy</h2>
+      <p>In the event that you submit or post any ideas, creative suggestions, designs, photographs, information, advertisements, data, or proposals, you expressly agree that such submissions will automatically be treated as non-confidential and non-proprietary and will become the sole property of <strong>${siteName}</strong> without any compensation or credit to you whatsoever. <strong>${siteName}</strong> and its affiliates shall have no obligations with respect to such submissions and may use the ideas contained in such submissions for any purposes in any medium in perpetuity.</p>`;
     }
 
     html += `
-      <h2>Changes To Our Privacy Policy</h2>
-      <p>We may change our Service and policies, and we may need to make changes to this Privacy Policy so that they accurately reflect our Service and policies. Unless otherwise required by law, we will notify you (for example, through our Service) before we make changes to this Privacy Policy and give you an opportunity to review them before they go into effect. Then, if you continue to use the Service, you will be bound by the updated Privacy Policy. If you do not want to agree to this or any updated Privacy Policy, you can delete your account.</p>
+      <h2>Miscellaneous</h2>
+      <p>If for any reason a court of competent jurisdiction finds any provision or portion of these Terms &amp; Conditions to be unenforceable, the remainder of these Terms &amp; Conditions will continue in full force and effect. <strong>${siteName}</strong> operates and controls the <strong>${siteName}</strong> Service from ${isIndividual ? "a location in" : "its offices in"} <strong>${country}</strong>. The Service is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation.</p>
 
-      <h2>Third-Party Services</h2>
-      <p>We may display, include or make available third-party content (including data, information, applications and other products services) or provide links to third-party websites or services ("Third-Party Services"). You acknowledge and agree that ${siteName} shall not be responsible for any Third-Party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect thereof.</p>
-    `;
+      <h2>Disclaimer</h2>
+      <p><strong>${siteName}</strong> is not responsible for any content, code, or any other imprecision. <strong>${siteName}</strong> does not provide warranties or guarantees. In no event shall <strong>${siteName}</strong> be liable for any special, direct, indirect, consequential, or incidental damages, or any damages whatsoever, whether in an action of contract, negligence, or other tort, arising out of or in connection with the use of the Service or the contents of the Service. <strong>${siteName}</strong> reserves the right to make additions, deletions, or modifications to the contents on the Service at any time without prior notice.</p>
 
-    if (gdpr) {
-      html += `
-      <h2>Information about General Data Protection Regulation (GDPR)</h2>
-      <p>We may be collecting and using information from you if you are from the European Economic Area (EEA), and in this section of our Privacy Policy we are going to explain exactly how and why this data is collected, and how we maintain this data under protection from being replicated or used in the wrong way.</p>
-      <h3>What is GDPR?</h3>
-      <p>GDPR is an EU-wide privacy and data protection law that regulates how EU residents' data is protected by companies and enhances the control the EU residents have over their personal data. The GDPR is relevant to any globally operating company and not just the EU-based businesses and EU residents. Our customers' data is important irrespective of where they are located, which is why we have implemented GDPR controls as our baseline standard for all our operations worldwide.</p>
-      <h3>What is personal data?</h3>
-      <p>Any data that relates to an identifiable or identified individual. GDPR covers a broad spectrum of information that could be used to identify a person. Personal data extends beyond a person's name or email address. Some examples include financial information, political opinions, genetic data, biometric data, IP addresses, physical address, sexual orientation, and ethnicity.</p>
-      <p>The Data Protection Principles include requirements such as:</p>
-      <ul>
-        <li>Personal data collected must be processed in a fair, legal, and transparent way and should only be used in a way that a person would reasonably expect.</li>
-        <li>Personal data should only be collected to fulfil a specific purpose and it should only be used for that purpose.</li>
-        <li>Personal data should be held no longer than necessary to fulfil its purpose.</li>
-        <li>People covered by the GDPR have the right to access their own personal data. They can also request a copy of their data, and that their data be updated, deleted, restricted, or moved to another organization.</li>
-      </ul>
-      <h3>Individual Data Subject's Rights — Data Access, Portability and Deletion</h3>
-      <p>We are committed to helping our customers meet the data subject rights requirements of GDPR. ${siteName} processes or stores all personal data in fully vetted, DPA compliant vendors. We are aware that if you are working with EU customers, you need to provide them with the ability to access, update, retrieve and remove personal data.</p>
-      `;
-    }
+      <h2>Governing Law</h2>
+      <p>These Terms &amp; Conditions and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of <strong>${jurisdiction}</strong>. You consent to the exclusive jurisdiction of the courts in <strong>${jurisdiction}</strong> in connection with any action or dispute arising between the parties under or in connection with these Terms &amp; Conditions.</p>`;
 
-    if (ccpa) {
-      html += `
-      <h2>California Residents</h2>
-      <p>The California Consumer Privacy Act (CCPA) requires us to disclose categories of Personal Information we collect and how we use it, the categories of sources from whom we collect Personal Information, and the third parties with whom we share it. California residents may exercise the following rights:</p>
-      <ul>
-        <li><strong>Right to Equal Service.</strong> We will not discriminate against you if you exercise your privacy rights.</li>
-        <li><strong>Right to Delete.</strong> You may submit a verifiable request to close your account and we will delete Personal Information about you that we have collected.</li>
-        <li><strong>Right to Know and Access.</strong> You may submit a verifiable request for information regarding the categories of Personal Information we collect, use, or share; purposes for which we collect Personal Information; and specific pieces of Personal Information we have collected about you.</li>
-        <li><strong>Right to request</strong> that a business that sells a consumer's personal data, not sell the consumer's personal data.</li>
-      </ul>
-      <p>If you make a request, we have one month to respond to you. We do not sell the Personal Information of our users. For more information about these rights, please contact us.</p>
-      `;
-    }
-
-    if (caloppa) {
-      html += `
-      <h2>California Online Privacy Protection Act (CalOPPA)</h2>
-      <p>CalOPPA requires us to disclose categories of Personal Information we collect and how we use it, the categories of sources from whom we collect Personal Information, and the third parties with whom we share it. CalOPPA users have the following rights:</p>
-      <ul>
-        <li><strong>Right to Know and Access.</strong> You may submit a verifiable request for information regarding the categories of Personal Information we collect, use, or share.</li>
-        <li><strong>Right to Equal Service.</strong> We will not discriminate against you if you exercise your privacy rights.</li>
-        <li><strong>Right to Delete.</strong> You may submit a verifiable request to close your account and we will delete Personal Information about you that we have collected.</li>
-        <li><strong>Right to request</strong> that a business that sells a consumer's personal data, not sell the consumer's personal data.</li>
-      </ul>
-      <p>If you make a request, we have one month to respond to you. We do not sell the Personal Information of our users.</p>
-      `;
-    }
-
-    // Contact section
-    const hasContact = contactEmail || contactPhone || contactPage || contactAddr;
+    // Contact
+    const hasContact = contactEmail || contactPhone || contactPage;
     if (hasContact) {
-      html += `<h2>Contact Us</h2><p>Don't hesitate to contact us if you have any questions.</p><ul>`;
+      html += `<h2>Contact Us</h2><p>Don't hesitate to contact us if you have any questions about these Terms &amp; Conditions.</p>${isIndividual ? '<p style=\"margin-bottom:0.8rem;\">This platform is operated by an individual.</p>' : ''}<ul>`;
       if (contactEmail) html += `<li><strong>Via Email:</strong> ${contactEmail}</li>`;
       if (contactPhone) html += `<li><strong>Via Phone Number:</strong> ${contactPhone}</li>`;
       if (contactPage)  html += `<li><strong>Via this Link:</strong> ${contactPage}</li>`;
-      if (contactAddr)  html += `<li><strong>Via this Address:</strong> ${contactAddr}</li>`;
       html += `</ul>`;
     }
 
@@ -1682,40 +1581,15 @@
   }
 
   // ── Copy text ──
-  function copyPolicy() {
-    const text = document.getElementById('policy-output').innerText;
+  function copyTerms() {
+    const text = $('terms-output').innerText;
     navigator.clipboard.writeText(text).then(() => {
       const t = $('toast');
       t.classList.add('show');
       setTimeout(() => t.classList.remove('show'), 2500);
     });
   }
-
-  // ── Download PDF ──
-  function downloadPDF() {
-    window.print();
-  }
-
-  // ── Override goToStep to build policy on step 4 ──
-  const _origGoToStep = goToStep;
-  function goToStep(n) {
-    document.querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
-    $(`step-${n}`).classList.add('active');
-    updateBubbles(n);
-    if (n === 4) {
-      $('policy-output').innerHTML = buildPolicy();
-      // Re-trigger success banner animation
-      const banner = $('success-banner');
-      if (banner) {
-        banner.style.animation = 'none';
-        banner.offsetHeight; // reflow
-        banner.style.animation = '';
-      }
-    }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
 </script>
-<div class="toast" id="toast">Copied to clipboard!</div>
 <script>
 function toggleNav(btn) {
   btn.classList.toggle('open');
@@ -1733,12 +1607,19 @@ document.addEventListener('click', e => {
   }
 });
 </script>
+
 <script>
 (function(){
-  var path = window.location.pathname.replace(/\/$/,'') || '/';
+  var path = window.location.pathname;
+  // Normalise trailing slash
+  if(path !== '/' && path.endsWith('/')) path = path.slice(0,-1);
   document.querySelectorAll('.nav-desktop a, .nav-drawer a').forEach(function(a){
-    var href = a.getAttribute('href').replace(/\/$/,'') || '/';
-    if(href === path || (href !== '/' && path.startsWith(href))) {
+    var href = a.getAttribute('href');
+    if(!href) return;
+    // Remove trailing slash for comparison
+    var h = href.endsWith('/') && href !== '/' ? href.slice(0,-1) : href;
+    // Exact match, or non-root prefix match
+    if(h === path || (h.length > 1 && path.startsWith(h))) {
       a.classList.add('active');
     }
   });
