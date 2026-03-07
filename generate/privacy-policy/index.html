@@ -729,7 +729,7 @@
     <a href="/">Home</a>
     <a href="/#documents">Documents</a>
     <a href="/blog/">Blog</a>
-    <a href="/about/" class="active">About</a>
+    <a href="/about/">About</a>
     <a href="/contact/">Contact</a>
     <a href="/generate/privacy-policy/" class="nav-cta">Generate Free →</a>
   </nav>
@@ -745,7 +745,7 @@
   <span class="drawer-label">Pages</span>
   <a href="/">Home</a>
   <a href="/blog/">Blog</a>
-  <a href="/about/" class="active">About</a>
+  <a href="/about/">About</a>
   <a href="/contact/">Contact</a>
   <a href="/generate/privacy-policy/" class="drawer-cta">Generate Free →</a>
 </nav>
@@ -1733,12 +1733,19 @@ document.addEventListener('click', e => {
   }
 });
 </script>
+
 <script>
 (function(){
-  var path = window.location.pathname.replace(/\/$/,'') || '/';
+  var path = window.location.pathname;
+  // Normalise trailing slash
+  if(path !== '/' && path.endsWith('/')) path = path.slice(0,-1);
   document.querySelectorAll('.nav-desktop a, .nav-drawer a').forEach(function(a){
-    var href = a.getAttribute('href').replace(/\/$/,'') || '/';
-    if(href === path || (href !== '/' && path.startsWith(href))) {
+    var href = a.getAttribute('href');
+    if(!href) return;
+    // Remove trailing slash for comparison
+    var h = href.endsWith('/') && href !== '/' ? href.slice(0,-1) : href;
+    // Exact match, or non-root prefix match
+    if(h === path || (h.length > 1 && path.startsWith(h))) {
       a.classList.add('active');
     }
   });
