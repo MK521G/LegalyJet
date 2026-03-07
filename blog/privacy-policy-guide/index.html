@@ -415,12 +415,19 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
 function toggleNav(btn){btn.classList.toggle('open');const d=document.getElementById('nav-drawer');d.classList.toggle('open');document.body.style.overflow=d.classList.contains('open')?'hidden':'';}
 document.addEventListener('click',e=>{const d=document.getElementById('nav-drawer');const t=document.querySelector('.nav-mobile-toggle');if(d&&d.classList.contains('open')&&!d.contains(e.target)&&!t.contains(e.target)){d.classList.remove('open');t.classList.remove('open');document.body.style.overflow='';}});
 </script>
+
 <script>
 (function(){
-  var path = window.location.pathname.replace(/\/$/,'') || '/';
+  var path = window.location.pathname;
+  // Normalise trailing slash
+  if(path !== '/' && path.endsWith('/')) path = path.slice(0,-1);
   document.querySelectorAll('.nav-desktop a, .nav-drawer a').forEach(function(a){
-    var href = a.getAttribute('href').replace(/\/$/,'') || '/';
-    if(href === path || (href !== '/' && path.startsWith(href))) {
+    var href = a.getAttribute('href');
+    if(!href) return;
+    // Remove trailing slash for comparison
+    var h = href.endsWith('/') && href !== '/' ? href.slice(0,-1) : href;
+    // Exact match, or non-root prefix match
+    if(h === path || (h.length > 1 && path.startsWith(h))) {
       a.classList.add('active');
     }
   });
