@@ -221,4 +221,75 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
     <p>LegalyJet is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
 
     <h2>8. Security</h2>
-    <p>We implement reasonable technical and organizational measures to protect the limited information we hold. Because document generation happens in your browser and data is not transmitted to
+    <p>We implement reasonable technical and organizational measures to protect the limited information we hold. Because document generation happens in your browser and data is not transmitted to us, the risk of a server-side breach exposing your business information is eliminated by design.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we'll update the "Last updated" date at the top of this page. Continued use of LegalyJet after changes constitutes your acceptance of the updated policy.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or how we handle your data, please reach out via our <a href="/contact/">contact page</a>. We aim to respond to all privacy inquiries within 5 business days.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="footer-logo-name">Legaly<em>Jet</em></span>
+      <p class="footer-desc">Free legal document generator for websites and apps. Personalized policies in minutes — no account needed.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Documents</div>
+      <a href="/generate/privacy-policy/">Privacy Policy</a>
+      <a href="/generate/terms-conditions/">Terms &amp; Conditions</a>
+      <a href="/#documents">Cookie Policy <small style="color:#2a3e52;">(soon)</small></a>
+      <a href="/#documents">EULA <small style="color:#2a3e52;">(soon)</small></a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Learn</div>
+      <a href="/blog/">Blog &amp; Guides</a>
+      <a href="/blog/privacy-policy-guide/">Privacy Policy Guide</a>
+      <a href="/blog/terms-and-conditions/">T&amp;C Guide</a>
+      <a href="/blog/gdpr-guide/">GDPR Guide</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 LegalyJet. All rights reserved. Not a law firm. Documents are for informational purposes only.</div>
+    <div class="footer-legal">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav(btn){btn.classList.toggle('open');const d=document.getElementById('nav-drawer');d.classList.toggle('open');document.body.style.overflow=d.classList.contains('open')?'hidden':'';}
+document.addEventListener('click',e=>{const d=document.getElementById('nav-drawer');const t=document.querySelector('.nav-mobile-toggle');if(d&&d.classList.contains('open')&&!d.contains(e.target)&&!t.contains(e.target)){d.classList.remove('open');t.classList.remove('open');document.body.style.overflow='';}});
+</script>
+
+<script>
+(function(){
+  var path = window.location.pathname;
+  // Normalise trailing slash
+  if(path !== '/' && path.endsWith('/')) path = path.slice(0,-1);
+  document.querySelectorAll('.nav-desktop a, .nav-drawer a').forEach(function(a){
+    var href = a.getAttribute('href');
+    if(!href) return;
+    // Remove trailing slash for comparison
+    var h = href.endsWith('/') && href !== '/' ? href.slice(0,-1) : href;
+    // Exact match, or non-root prefix match
+    if(h === path || (h.length > 1 && path.startsWith(h))) {
+      a.classList.add('active');
+    }
+  });
+})();
+</script>
+</body>
+</html>
