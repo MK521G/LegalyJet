@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
+<head><meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LegalyJet — Privacy Policy Generator</title>
   <meta name="description" content="Generate a free, personalized Privacy Policy for your website or app in under 4 minutes. GDPR &amp; CCPA compliant. No account required."/>
@@ -664,7 +663,7 @@
       .doc-paper::after { display: none; }
       main { padding: 0; }
     }
-    @media (max-width: 640px) {
+    @media (max-width: 780px) {
       .doc-paper { padding: 1.8rem 1.1rem; }
       .doc-paper-wrap { padding: 1rem 0.5rem; }
       .doc-toolbar { top: 0; border-radius: 0; border-left: none; border-right: none; }
@@ -717,6 +716,11 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Privacy Policy Generator","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Generate a free, personalized Privacy Policy for your website or app in under 4 minutes. GDPR and CCPA compliant.","url":"https://legalyjet.com/generate/privacy-policy/"}
 </script>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png"/>
 </head>
 <body>
 
@@ -1747,6 +1751,20 @@ document.addEventListener('click', e => {
     // Exact match, or non-root prefix match
     if(h === path || (h.length > 1 && path.startsWith(h))) {
       a.classList.add('active');
+    }
+  });
+})();
+</script>
+<script>
+(function(){
+  // Detect if on GitHub Pages subfolder
+  var base = window.location.pathname.startsWith('/legalyjet') ? '/legalyjet' : '';
+  if(!base) return; // On Vercel/custom domain, links already correct
+  // On GitHub Pages, prefix all internal links with /legalyjet
+  document.querySelectorAll('a[href]').forEach(function(a){
+    var h = a.getAttribute('href');
+    if(h && h.startsWith('/') && !h.startsWith('/legalyjet') && !h.startsWith('//')) {
+      a.setAttribute('href', '/legalyjet' + h);
     }
   });
 })();
