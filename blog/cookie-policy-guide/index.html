@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
+<head><meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>What is a Cookie Policy? Does Your Website Need One? | LegalyJet</title>
   <meta name="description" content="Learn what a Cookie Policy is, whether your website needs one, what it must include under GDPR and ePrivacy rules, and how to write one that's actually compliant."/>
@@ -123,6 +122,11 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Cookie Policy Guide: Does Your Website Need One?","datePublished":"2026-02-10","dateModified":"2026-02-10","author":{"@type":"Organization","name":"LegalyJet"},"publisher":{"@type":"Organization","name":"LegalyJet","url":"https://legalyjet.com"},"url":"https://legalyjet.com/blog/cookie-policy-guide/","description":"Free guide on cookie policy guide: does your website need one? — written for founders, not lawyers."}
 </script>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png"/>
 </head>
 <body>
 <header>
@@ -337,6 +341,20 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
     // Exact match, or non-root prefix match
     if(h === path || (h.length > 1 && path.startsWith(h))) {
       a.classList.add('active');
+    }
+  });
+})();
+</script>
+<script>
+(function(){
+  // Detect if on GitHub Pages subfolder
+  var base = window.location.pathname.startsWith('/legalyjet') ? '/legalyjet' : '';
+  if(!base) return; // On Vercel/custom domain, links already correct
+  // On GitHub Pages, prefix all internal links with /legalyjet
+  document.querySelectorAll('a[href]').forEach(function(a){
+    var h = a.getAttribute('href');
+    if(h && h.startsWith('/') && !h.startsWith('/legalyjet') && !h.startsWith('//')) {
+      a.setAttribute('href', '/legalyjet' + h);
     }
   });
 })();
