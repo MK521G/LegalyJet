@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
+<head><meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Legal Glossary for Website Owners — Plain-English Definitions | LegalyJet</title>
   <link rel="canonical" href="https://legalyjet.com/glossary/"/>
@@ -116,6 +115,11 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
     .sc-pill.soon { background: rgba(255,255,255,0.05); color: #3a5570; }
 
   </style>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png"/>
 </head>
 <body>
 
@@ -478,6 +482,20 @@ document.addEventListener('click',e=>{const d=document.getElementById('nav-drawe
     // Exact match, or non-root prefix match
     if(h === path || (h.length > 1 && path.startsWith(h))) {
       a.classList.add('active');
+    }
+  });
+})();
+</script>
+<script>
+(function(){
+  // Detect if on GitHub Pages subfolder
+  var base = window.location.pathname.startsWith('/legalyjet') ? '/legalyjet' : '';
+  if(!base) return; // On Vercel/custom domain, links already correct
+  // On GitHub Pages, prefix all internal links with /legalyjet
+  document.querySelectorAll('a[href]').forEach(function(a){
+    var h = a.getAttribute('href');
+    if(h && h.startsWith('/') && !h.startsWith('/legalyjet') && !h.startsWith('//')) {
+      a.setAttribute('href', '/legalyjet' + h);
     }
   });
 })();
