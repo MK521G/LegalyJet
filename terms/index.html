@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
+<head><meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Terms of Service — LegalyJet</title>
   <meta name="description" content="LegalyJet's Terms of Service. Read the terms and conditions for using our free legal document generator."/>
@@ -114,6 +113,11 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebPage","name":"Terms & Conditions — LegalyJet","url":"https://legalyjet.com/terms/"}
 </script>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png"/>
 </head>
 <body>
 <header>
@@ -282,6 +286,35 @@
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 LegalyJet. All rights reserved. Not a law firm. For informational purposes only.</div>
     <div class="footer-legal">
-      <a href="/privacy/"><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+            <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+<script>
+
 function toggleNav(btn){btn.classList.toggle('open');const d=document.getElementById('nav-drawer');d.classList.toggle('open');document.body.style.overflow=d.classList.contains('open')?'hidden':'';}
-document.addEventListener('click',e=>{const d=document.getElementById('nav-drawer');const 
+document.addEventListener('click',e=>{const d=document.getElementById('nav-drawer');const t=document.querySelector('.nav-mobile-toggle');if(d&&d.classList.contains('open')&&!d.contains(e.target)&&!t.contains(e.target)){d.classList.remove('open');t.classList.remove('open');document.body.style.overflow='';}});
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+// Active nav
+(function(){const p=window.location.pathname;document.querySelectorAll('.nav-desktop a,.nav-drawer a').forEach(a=>{if(a.getAttribute('href')===p||a.getAttribute('href')===p+'/'){a.classList.add('active');}});})();
+
+</script>
+<script>
+(function(){
+  // Detect if on GitHub Pages subfolder
+  var base = window.location.pathname.startsWith('/legalyjet') ? '/legalyjet' : '';
+  if(!base) return; // On Vercel/custom domain, links already correct
+  // On GitHub Pages, prefix all internal links with /legalyjet
+  document.querySelectorAll('a[href]').forEach(function(a){
+    var h = a.getAttribute('href');
+    if(h && h.startsWith('/') && !h.startsWith('/legalyjet') && !h.startsWith('//')) {
+      a.setAttribute('href', '/legalyjet' + h);
+    }
+  });
+})();
+</script>
+</body>
+</html>
