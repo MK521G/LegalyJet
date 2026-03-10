@@ -148,7 +148,7 @@
     }
 
     .step-bubble.done .bubble-num { display: none; }
-    .step-bubble.done::after { content: '✓'; font-weight: 700; }
+    .step-bubble.done::after { content: ''; width: 8px; height: 5px; border-left: 2px solid white; border-bottom: 2px solid white; transform: rotate(-45deg); margin-bottom: 2px; }
 
     .step-connector {
       width: 52px; height: 2px;
@@ -320,7 +320,7 @@
     }
 
     .field-error.show { display: flex; }
-    .field-error::before { content: '⚠'; font-size: 0.75rem; }
+    .field-error::before { content: '!'; font-size: 0.75rem; }
 
     /* Platform items */
     .platform-item {
@@ -736,10 +736,10 @@
 </header>
 <nav class="nav-drawer" id="nav-drawer">
   <span class="drawer-label">Generators</span>
-  <a href="/generate/privacy-policy/">🔒 Privacy Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/generate/terms-conditions/">📋 Terms &amp; Conditions <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/generate/cookie-policy/">🍪 Cookie Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/#documents" style="color:#4a6a8a;">📝 EULA <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
+  <a href="/generate/privacy-policy/">Privacy Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="/generate/terms-conditions/">Terms &amp; Conditions <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="/generate/cookie-policy/">Cookie Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="/#documents" style="color:#4a6a8a;">EULA <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
   <hr class="drawer-divider"/>
   <span class="drawer-label">Pages</span>
   <a href="/">Home</a>
@@ -754,7 +754,7 @@
     <a href="/generate/terms-conditions/" class="doc-shortcut"><span class="sc-dot green"></span> Terms &amp; Conditions <span class="sc-pill available">Live</span></a>
     <a href="/generate/cookie-policy/" class="doc-shortcut"><span class="sc-dot green"></span> Cookie Policy <span class="sc-pill available">Live</span></a>
     <a href="/#documents" class="doc-shortcut"><span class="sc-dot gray"></span> EULA <span class="sc-pill soon">Soon</span></a>
-    <a href="/blog/" class="doc-shortcut" style="border-left:1px solid rgba(255,255,255,0.06);margin-left:auto;">📖 Legal Guides</a>
+    <a href="/blog/" class="doc-shortcut" style="border-left:1px solid rgba(255,255,255,0.06);margin-left:auto;">Legal Guides</a>
   </div>
 </div>
 </div>
@@ -794,11 +794,11 @@
         <div class="form-label">Platform <span class="req">*</span></div>
         <label class="platform-item">
           <input type="checkbox" id="plat-website" onchange="togglePlatform()"/>
-          <span>🌐 Website</span>
+          <span>Website</span>
         </label>
         <label class="platform-item">
           <input type="checkbox" id="plat-app" onchange="togglePlatform()"/>
-          <span>📱 Mobile App</span>
+          <span>Mobile App</span>
         </label>
         <div class="field-error" id="err-platform">Please select at least one platform.</div>
       </div>
@@ -808,7 +808,7 @@
         <div class="form-group">
           <div class="form-label">Website URL <span class="req">*</span></div>
           <div class="input-wrap" id="wrap-website-url">
-            <span class="input-icon">🔗</span>
+            <span class="input-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
             <input type="url" id="website-url" placeholder="https://yoursite.com" oninput="clearErr('wrap-website-url','err-website-url')"/>
           </div>
           <div class="field-error" id="err-website-url">Please enter your website URL.</div>
@@ -816,7 +816,7 @@
         <div class="form-group" style="margin-bottom:0">
           <div class="form-label">Website Name <span class="req">*</span></div>
           <div class="input-wrap" id="wrap-website-name">
-            <span class="input-icon">🏷️</span>
+            <span class="input-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></span>
             <input type="text" id="website-name" placeholder="Your website name" oninput="clearErr('wrap-website-name','err-website-name')"/>
           </div>
           <div class="field-error" id="err-website-name">Please enter your website name.</div>
@@ -828,7 +828,7 @@
         <div class="form-group" style="margin-bottom:0">
           <div class="form-label">App Name <span class="req">*</span></div>
           <div class="input-wrap" id="wrap-app-name">
-            <span class="input-icon">📱</span>
+            <span class="input-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></span>
             <input type="text" id="app-name" placeholder="Your app name" oninput="clearErr('wrap-app-name','err-app-name')"/>
           </div>
           <div class="field-error" id="err-app-name">Please enter your app name.</div>
@@ -841,13 +841,13 @@
         <div class="form-label">Are you a Business or an Individual? <span class="req">*</span></div>
         <label class="radio-item" id="ri-business">
           <input type="radio" name="entity-type" value="business" onchange="toggleEntity(); selectRadio(this)"/>
-          <span>🏢 Business</span>
+          <span>Business</span>
         </label>
         <div class="sub-card" id="business-fields">
           <div class="form-group">
             <div class="form-label">Company Name <span class="req">*</span></div>
             <div class="input-wrap" id="wrap-company-name">
-              <span class="input-icon">🏢</span>
+              <span class="input-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
               <input type="text" id="company-name" placeholder="Acme Inc." oninput="clearErr('wrap-company-name','err-company-name')"/>
             </div>
             <div class="field-error" id="err-company-name">Please enter your company name.</div>
@@ -855,7 +855,7 @@
           <div class="form-group" style="margin-bottom:0">
             <div class="form-label">Company Address <span class="req">*</span></div>
             <div class="input-wrap" id="wrap-company-address">
-              <span class="input-icon">📍</span>
+              <span class="input-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
               <input type="text" id="company-address" placeholder="123 Main St, City, Country" oninput="clearErr('wrap-company-address','err-company-address')"/>
             </div>
             <div class="field-error" id="err-company-address">Please enter your company address.</div>
@@ -863,7 +863,7 @@
         </div>
         <label class="radio-item" id="ri-individual">
           <input type="radio" name="entity-type" value="individual" onchange="toggleEntity(); selectRadio(this)"/>
-          <span>👤 Individual</span>
+          <span>Individual</span>
         </label>
         <div class="field-error" id="err-entity">Please select one.</div>
       </div>
@@ -873,7 +873,7 @@
       <div class="form-group">
         <div class="form-label">Your Country <span class="req">*</span></div>
         <div class="input-wrap" id="wrap-country">
-          <span class="input-icon">🌍</span>
+          <span class="input-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
           <input type="text" id="country" placeholder="e.g. United States, Nigeria, India…" oninput="clearErr('wrap-country','err-country')"/>
         </div>
         <div class="field-error" id="err-country">Please enter your country.</div>
@@ -883,7 +883,7 @@
         <div class="form-label">Policy Effective Date <span class="req">*</span></div>
         <div class="date-wrap" id="wrap-date">
           <input type="date" id="effective-date" oninput="clearDateErr()"/>
-          <span style="color:var(--muted)">📅</span>
+          <span style="color:var(--muted);display:flex;align-items:center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
         </div>
         <div class="field-error" id="err-date">Please select an effective date.</div>
         <div class="hint-text">The date your privacy policy officially becomes active.</div>
@@ -1026,21 +1026,21 @@
           <span>Email</span>
         </label>
         <div class="contact-sub" id="contact-email-wrap">
-          <div class="input-wrap"><span class="input-icon">✉️</span><input type="email" id="contact-email" placeholder="contact@yoursite.com"/></div>
+          <div class="input-wrap"><span class="input-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span><input type="email" id="contact-email" placeholder="contact@yoursite.com"/></div>
         </div>
         <label class="check-item">
           <input type="checkbox" class="contact-method" value="phone" onchange="toggleContactField('phone')"/>
           <span>Phone number</span>
         </label>
         <div class="contact-sub" id="contact-phone-wrap">
-          <div class="input-wrap"><span class="input-icon">📞</span><input type="tel" id="contact-phone" placeholder="+1 555 000 0000" inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9+\- ]/g,'')"/></div>
+          <div class="input-wrap"><span class="input-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.38 2 2 0 0 1 3.55 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 5.9 5.9l1.06-.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><input type="tel" id="contact-phone" placeholder="+1 555 000 0000" inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9+\- ]/g,'')"/></div>
         </div>
         <label class="check-item">
           <input type="checkbox" class="contact-method" value="contact-page" onchange="toggleContactField('contact-page')"/>
           <span>Visiting a page on your site</span>
         </label>
         <div class="contact-sub" id="contact-contact-page-wrap">
-          <div class="input-wrap"><span class="input-icon">🔗</span><input type="url" id="contact-page-url" placeholder="https://yoursite.com/contact"/></div>
+          <div class="input-wrap"><span class="input-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><input type="url" id="contact-page-url" placeholder="https://yoursite.com/contact"/></div>
         </div>
 
         <div class="field-error" id="err-contact">Please select at least one contact method.</div>
@@ -1078,7 +1078,7 @@
       <div class="compliance-section">
         <div class="question-title">Do you want your privacy policy to be CalOPPA compliant? <span class="req">*</span></div>
         <div class="info-box">
-          <div class="info-box-icon">📋</div>
+          <div class="info-box-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></div>
           <div class="info-box-body">
             <div class="info-box-title">California Online Privacy Protection Act</div>
             Requires websites collecting personal information from California consumers to disclose this within their Privacy Policy. Effective January 1, 2004.
@@ -1094,7 +1094,7 @@
       <div class="compliance-section">
         <div class="question-title">Do you want your privacy policy to be GDPR compliant? <span class="req">*</span></div>
         <div class="info-box">
-          <div class="info-box-icon">📋</div>
+          <div class="info-box-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></div>
           <div class="info-box-body">
             <div class="info-box-title">General Data Protection Regulation</div>
             Protects EU individuals' fundamental rights regarding their personal data. Effective May 28, 2018.
@@ -1110,7 +1110,7 @@
       <div class="compliance-section" style="margin-bottom:0">
         <div class="question-title">Do you want your privacy policy to be CCPA compliant? <span class="req">*</span></div>
         <div class="info-box">
-          <div class="info-box-icon">📋</div>
+          <div class="info-box-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></div>
           <div class="info-box-body">
             <div class="info-box-title">California Consumer Privacy Act</div>
             Regulates how businesses handle the personal information of California residents. Effective January 1, 2020.
@@ -1166,7 +1166,7 @@
     </div>
 
     <div class="doc-disclaimer">
-      <p>⚠ This document is generated for informational purposes only. LegalyJet is not a law firm and this is not legal advice. Consider having a licensed attorney review your policy before publishing.</p>
+      <p>Note: This document is generated for informational purposes only. LegalyJet is not a law firm and this is not legal advice. Consider having a licensed attorney review your policy before publishing.</p>
     </div>
   </div>
 
