@@ -128,6 +128,53 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
     .sc-pill.soon { background: rgba(255,255,255,0.05); color: #3a5570; }
 
   .logo-mark { width: 58px; height: 58px; object-fit: cover; }
+    /* ── SCROLL TO TOP ── */
+    .scroll-top-btn {
+      position: fixed; bottom: 2rem; right: 2rem;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--accent); color: white;
+      border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 18px rgba(37,99,235,0.35);
+      z-index: 90;
+      opacity: 0; transform: translateY(12px);
+      transition: opacity 0.3s, transform 0.3s, background 0.2s;
+      pointer-events: none;
+    }
+    .scroll-top-btn.visible {
+      opacity: 1; transform: translateY(0);
+      pointer-events: auto;
+    }
+    .scroll-top-btn:hover {
+      background: #1d4ed8;
+      box-shadow: 0 6px 24px rgba(37,99,235,0.5);
+    }
+    .scroll-top-btn:focus-visible {
+      outline: 2px solid #93c5fd;
+      outline-offset: 2px;
+    }
+
+    /* ── ENHANCED FOCUS STYLES ── */
+    a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+      outline: 2px solid var(--accent-lt, #3b82f6);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* ── NAV UNDERLINE ANIMATION ── */
+    .nav-desktop a {
+      position: relative;
+    }
+    .nav-desktop a::after {
+      content: ''; position: absolute; bottom: 16px; left: 0; right: 0;
+      height: 2px; background: #60a5fa; border-radius: 1px;
+      transform: scaleX(0); transform-origin: center;
+      transition: transform 0.25s ease;
+    }
+    .nav-desktop a:hover::after,
+    .nav-desktop a.active::after { transform: scaleX(1); }
+    .nav-desktop a.nav-cta::after { display: none; }
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"GDPR Compliance Guide for Websites & Apps","datePublished":"2026-01-25","dateModified":"2026-01-25","author":{"@type":"Organization","name":"LegalyJet"},"publisher":{"@type":"Organization","name":"LegalyJet","url":"https://legalyjet.com"},"url":"https://legalyjet.com/blog/gdpr-guide/","description":"Free guide on gdpr compliance guide for websites & apps — written for founders, not lawyers."}
@@ -410,6 +457,18 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
 </footer>
 
 <script>
+  // Scroll to top button
+  var scrollTopBtn = document.getElementById('scroll-top');
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', function() {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    scrollTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>
+<script>
 function toggleNav(btn){btn.classList.toggle('open');const d=document.getElementById('nav-drawer');d.classList.toggle('open');document.body.style.overflow=d.classList.contains('open')?'hidden':'';}
 document.addEventListener('click',e=>{const d=document.getElementById('nav-drawer');const t=document.querySelector('.nav-mobile-toggle');if(d&&d.classList.contains('open')&&!d.contains(e.target)&&!t.contains(e.target)){d.classList.remove('open');t.classList.remove('open');document.body.style.overflow='';}});
 </script>
@@ -445,5 +504,9 @@ document.addEventListener('click',e=>{const d=document.getElementById('nav-drawe
   });
 })();
 </script>
+<!-- Scroll to top button -->
+<button class="scroll-top-btn" id="scroll-top" aria-label="Scroll to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
 </body>
 </html>
