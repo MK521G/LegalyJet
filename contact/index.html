@@ -223,7 +223,7 @@ main { flex: 1; }
 .contact-info > p { font-size: 0.93rem; color: var(--muted); line-height: 1.75; margin-bottom: 2rem; }
 .info-card { display: flex; gap: 0.9rem; align-items: flex-start; padding: 1.1rem 0; border-bottom: 1px solid var(--border); }
 .info-card:first-of-type { border-top: 1px solid var(--border); }
-.info-icon { width: 42px; height: 42px; border-radius: 10px; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+.info-icon { width: 42px; height: 42px; border-radius: 10px; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--accent); }
 .info-label { font-size: 0.72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.2rem; }
 .info-value { font-size: 0.92rem; color: #2e3340; line-height: 1.55; }
 .info-value a { color: var(--accent); text-decoration: none; }
@@ -244,14 +244,14 @@ main { flex: 1; }
 .input-wrap { display: flex; align-items: center; border: 1.5px solid var(--border); border-radius: 8px; background: #f8fafc; transition: border-color 0.2s, box-shadow 0.2s; overflow: hidden; }
 .input-wrap:focus-within { border-color: var(--accent); background: white; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
 .input-wrap.err { border-color: #fca5a5 !important; background: #fff5f5 !important; }
-.input-icon { padding: 0 0.75rem; color: var(--muted); font-size: 0.95rem; flex-shrink: 0; }
+.input-icon { padding: 0 0.75rem; color: var(--muted); flex-shrink: 0; display: flex; align-items: center; }
 .input-wrap input, .input-wrap select { flex: 1; border: none; outline: none; background: transparent; font-family: 'Source Sans 3', sans-serif; font-size: 0.92rem; color: var(--text); padding: 0.75rem 0.75rem 0.75rem 0; min-height: 48px; }
 textarea { width: 100%; border: 1.5px solid var(--border); border-radius: 8px; background: #f8fafc; font-family: 'Source Sans 3', sans-serif; font-size: 0.92rem; color: var(--text); padding: 0.75rem 1rem; outline: none; resize: vertical; min-height: 140px; transition: border-color 0.2s, box-shadow 0.2s; }
 textarea:focus { border-color: var(--accent); background: white; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
 textarea.err { border-color: #fca5a5 !important; background: #fff5f5 !important; }
 .field-error { display: none; font-size: 0.77rem; color: var(--error); margin-top: 0.35rem; font-weight: 500; align-items: center; gap: 0.3rem; }
 .field-error.show { display: flex; }
-.field-error::before { content: "⚠"; font-size: 0.75rem; }
+.field-error::before { content: "!"; font-size: 0.75rem; }
 .btn-submit { width: 100%; background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; border-radius: 9px; padding: 0.95rem; font-family: 'Source Sans 3', sans-serif; font-size: 0.98rem; font-weight: 700; cursor: pointer; margin-top: 0.4rem; transition: all 0.2s; box-shadow: 0 4px 14px rgba(37,99,235,0.35); min-height: 52px; letter-spacing: 0.01em; }
 .btn-submit:hover { background: linear-gradient(135deg, #1d4ed8, #1e40af); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(37,99,235,0.45); }
 .success-msg { display: none; background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 10px; padding: 1.2rem 1.4rem; margin-top: 1rem; align-items: center; gap: 0.8rem; }
@@ -295,10 +295,10 @@ textarea.err { border-color: #fca5a5 !important; background: #fff5f5 !important;
 </header>
 <nav class="nav-drawer" id="nav-drawer">
   <span class="drawer-label">Generators</span>
-  <a href="/generate/privacy-policy/">🔒 Privacy Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/generate/terms-conditions/">📋 Terms &amp; Conditions <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/generate/cookie-policy/">🍪 Cookie Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/#documents" style="color:#4a6a8a;">📝 EULA <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
+  <a href="/generate/privacy-policy/">Privacy Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="/generate/terms-conditions/">Terms &amp; Conditions <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="/generate/cookie-policy/">Cookie Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
+  <a href="/#documents" style="color:#4a6a8a;">EULA <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
   <hr class="drawer-divider"/>
   <span class="drawer-label">Pages</span>
   <a href="/">Home</a>
@@ -313,7 +313,7 @@ textarea.err { border-color: #fca5a5 !important; background: #fff5f5 !important;
     <a href="/generate/terms-conditions/" class="doc-shortcut"><span class="sc-dot green"></span> Terms &amp; Conditions <span class="sc-pill available">Live</span></a>
     <a href="/generate/cookie-policy/" class="doc-shortcut"><span class="sc-dot green"></span> Cookie Policy <span class="sc-pill available">Live</span></a>
     <a href="/#documents" class="doc-shortcut"><span class="sc-dot gray"></span> EULA <span class="sc-pill soon">Soon</span></a>
-    <a href="/blog/" class="doc-shortcut" style="border-left:1px solid rgba(255,255,255,0.06);margin-left:auto;">📖 Legal Guides</a>
+    <a href="/blog/" class="doc-shortcut" style="border-left:1px solid rgba(255,255,255,0.06);margin-left:auto;">Legal Guides</a>
   </div>
 </div>
 
@@ -333,28 +333,28 @@ textarea.err { border-color: #fca5a5 !important; background: #fff5f5 !important;
       <p>We're a small team building LegalyJet to make legal protection accessible to everyone. Your feedback directly shapes what we build next — we read every message.</p>
 
       <div class="info-card">
-        <div class="info-icon">✉️</div>
+        <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
         <div>
           <div class="info-label">Email</div>
           <div class="info-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8d0ddd4d4d7f8d4dddfd9d4c1d2ddcc96dbd7d5">[email&#160;protected]</a></div>
         </div>
       </div>
       <div class="info-card">
-        <div class="info-icon">⏱️</div>
+        <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         <div>
           <div class="info-label">Response Time</div>
           <div class="info-value">We typically respond within 24–48 hours on business days.</div>
         </div>
       </div>
       <div class="info-card">
-        <div class="info-icon">🐛</div>
+        <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
         <div>
           <div class="info-label">Bug Reports</div>
           <div class="info-value">Found something broken? Tell us what happened and which generator you were using — we fix issues fast.</div>
         </div>
       </div>
       <div class="info-card">
-        <div class="info-icon">💡</div>
+        <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
         <div>
           <div class="info-label">Feature Requests</div>
           <div class="info-value">Want a new document type or a better question in the generator? We want to hear your ideas.</div>
@@ -363,10 +363,10 @@ textarea.err { border-color: #fca5a5 !important; background: #fff5f5 !important;
 
       <div class="also-check">
         <h3>Also helpful</h3>
-        <a href="/about/" class="also-link">📖 About LegalyJet & our FAQ</a>
-        <a href="/generate/privacy-policy/" class="also-link">🔒 Privacy Policy Generator</a>
-        <a href="/generate/terms-conditions/" class="also-link">📋 Terms &amp; Conditions Generator</a>
-        <a href="/blog/" class="also-link">📰 Blog &amp; Guides</a>
+        <a href="/about/" class="also-link">About LegalyJet &amp; our FAQ</a>
+        <a href="/generate/privacy-policy/" class="also-link">Privacy Policy Generator</a>
+        <a href="/generate/terms-conditions/" class="also-link">Terms &amp; Conditions Generator</a>
+        <a href="/blog/" class="also-link">Blog &amp; Guides</a>
       </div>
     </div>
 
@@ -378,7 +378,7 @@ textarea.err { border-color: #fca5a5 !important; background: #fff5f5 !important;
         <div class="form-group">
           <label class="form-label">Full Name <span class="req">*</span></label>
           <div class="input-wrap" id="w-name">
-            <span class="input-icon">👤</span>
+            <span class="input-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
             <input type="text" id="f-name" placeholder="Your name" oninput="ce('w-name','e-name')"/>
           </div>
           <div class="field-error" id="e-name">Please enter your name.</div>
@@ -386,7 +386,7 @@ textarea.err { border-color: #fca5a5 !important; background: #fff5f5 !important;
         <div class="form-group">
           <label class="form-label">Email Address <span class="req">*</span></label>
           <div class="input-wrap" id="w-email">
-            <span class="input-icon">✉️</span>
+            <span class="input-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
             <input type="email" id="f-email" placeholder="you@example.com" oninput="ce('w-email','e-email')"/>
           </div>
           <div class="field-error" id="e-email">Please enter a valid email.</div>
@@ -396,7 +396,7 @@ textarea.err { border-color: #fca5a5 !important; background: #fff5f5 !important;
       <div class="form-group">
         <label class="form-label">Subject <span class="req">*</span></label>
         <div class="input-wrap" id="w-subject">
-          <span class="input-icon">📌</span>
+          <span class="input-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
           <select id="f-subject" onchange="ce('w-subject','e-subject')">
             <option value="">Select a subject…</option>
             <option>General Question</option>
@@ -419,7 +419,7 @@ textarea.err { border-color: #fca5a5 !important; background: #fff5f5 !important;
       <button class="btn-submit" onclick="submitForm()">Send Message →</button>
 
       <div class="success-msg" id="success-msg">
-        <span style="font-size:1.5rem;">✅</span>
+        <span style="display:flex;align-items:center;justify-content:center;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="20 6 9 17 4 12"/></svg></span>
         <span>Message sent! We'll get back to you within 24–48 hours.</span>
       </div>
     </div>
