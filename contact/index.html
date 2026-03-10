@@ -223,7 +223,7 @@ main { flex: 1; }
 .contact-info > p { font-size: 0.93rem; color: var(--muted); line-height: 1.75; margin-bottom: 2rem; }
 .info-card { display: flex; gap: 0.9rem; align-items: flex-start; padding: 1.1rem 0; border-bottom: 1px solid var(--border); }
 .info-card:first-of-type { border-top: 1px solid var(--border); }
-.info-icon { width: 42px; height: 42px; border-radius: 10px; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+.info-icon { width: 42px; height: 42px; border-radius: 10px; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--accent); }
 .info-label { font-size: 0.72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.2rem; }
 .info-value { font-size: 0.92rem; color: #2e3340; line-height: 1.55; }
 .info-value a { color: var(--accent); text-decoration: none; }
@@ -244,7 +244,7 @@ main { flex: 1; }
 .input-wrap { display: flex; align-items: center; border: 1.5px solid var(--border); border-radius: 8px; background: #f8fafc; transition: border-color 0.2s, box-shadow 0.2s; overflow: hidden; }
 .input-wrap:focus-within { border-color: var(--accent); background: white; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
 .input-wrap.err { border-color: #fca5a5 !important; background: #fff5f5 !important; }
-.input-icon { padding: 0 0.75rem; color: var(--muted); font-size: 0.95rem; flex-shrink: 0; }
+.input-icon { padding: 0 0.75rem; color: var(--muted); flex-shrink: 0; display: flex; align-items: center; }
 .input-wrap input, .input-wrap select { flex: 1; border: none; outline: none; background: transparent; font-family: 'Source Sans 3', sans-serif; font-size: 0.92rem; color: var(--text); padding: 0.75rem 0.75rem 0.75rem 0; min-height: 48px; }
 textarea { width: 100%; border: 1.5px solid var(--border); border-radius: 8px; background: #f8fafc; font-family: 'Source Sans 3', sans-serif; font-size: 0.92rem; color: var(--text); padding: 0.75rem 1rem; outline: none; resize: vertical; min-height: 140px; transition: border-color 0.2s, box-shadow 0.2s; }
 textarea:focus { border-color: var(--accent); background: white; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
@@ -340,7 +340,7 @@ textarea.err { border-color: #fca5a5 !important; background: #fff5f5 !important;
         </div>
       </div>
       <div class="info-card">
-        <div class="info-icon">⏱️</div>
+        <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         <div>
           <div class="info-label">Response Time</div>
           <div class="info-value">We typically respond within 24–48 hours on business days.</div>

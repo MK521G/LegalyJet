@@ -145,7 +145,7 @@
     }
 
     .step-bubble.done .bubble-num { display: none; }
-    .step-bubble.done::after { content: ''; width: 8px; height: 5px; border-left: 2px solid white; border-bottom: 2px solid white; transform: rotate(-45deg); margin-bottom: 2px; }
+    .step-bubble.done::after { content: '\2713'; font-weight: 700; }
 
     .step-connector {
       width: 52px; height: 2px;
@@ -265,8 +265,9 @@
     .input-icon {
       padding: 0 0.8rem;
       color: var(--muted);
-      font-size: 0.95rem;
       flex-shrink: 0;
+      display: flex;
+      align-items: center;
     }
 
     .input-wrap input, .input-wrap select {
