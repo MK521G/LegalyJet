@@ -23,6 +23,7 @@
       --blue-mid: #dce8f8;
       --blue-bg: #eaf2fd;
       --accent: #1a56db;
+      --accent-lt: #3b82f6;
       --text: #12151f;
       --muted: #5f6880;
       --border: #cdd5e5;
@@ -707,6 +708,53 @@
     .sc-pill.available { background: rgba(34,197,94,0.14); color: #4ade80; }
     .sc-pill.soon { background: rgba(255,255,255,0.05); color: #3a5570; }
     @media (max-width: 780px) { .nav-desktop { display: none; } .nav-mobile-toggle { display: flex; } }
+
+    /* ── SCROLL TO TOP ── */
+    .scroll-top-btn {
+      position: fixed; bottom: 2rem; right: 2rem;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--accent); color: white;
+      border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 18px rgba(37,99,235,0.35);
+      z-index: 90;
+      opacity: 0; transform: translateY(12px);
+      transition: opacity 0.3s, transform 0.3s, background 0.2s;
+      pointer-events: none;
+    }
+    .scroll-top-btn.visible {
+      opacity: 1; transform: translateY(0);
+      pointer-events: auto;
+    }
+    .scroll-top-btn:hover {
+      background: #1d4ed8;
+      box-shadow: 0 6px 24px rgba(37,99,235,0.5);
+    }
+    .scroll-top-btn:focus-visible {
+      outline: 2px solid #93c5fd;
+      outline-offset: 2px;
+    }
+
+    /* ── ENHANCED FOCUS STYLES ── */
+    a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+      outline: 2px solid var(--accent-lt, #3b82f6);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* ── NAV UNDERLINE ANIMATION ── */
+    .nav-desktop a {
+      position: relative;
+    }
+    .nav-desktop a::after {
+      content: ''; position: absolute; bottom: 16px; left: 0; right: 0;
+      height: 2px; background: #60a5fa; border-radius: 1px;
+      transform: scaleX(0); transform-origin: center;
+      transition: transform 0.25s ease;
+    }
+    .nav-desktop a:hover::after,
+    .nav-desktop a.active::after { transform: scaleX(1); }
+    .nav-desktop a.nav-cta::after { display: none; }
 
   </style>
 <script type="application/ld+json">
@@ -1717,6 +1765,18 @@
 </script>
 <div class="toast" id="toast">Copied to clipboard!</div>
 <script>
+  // Scroll to top button
+  var scrollTopBtn = document.getElementById('scroll-top');
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', function() {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    scrollTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>
+<script>
 function toggleNav(btn) {
   btn.classList.toggle('open');
   const drawer = document.getElementById('nav-drawer');
@@ -1765,5 +1825,9 @@ document.addEventListener('click', e => {
   });
 })();
 </script>
+<!-- Scroll to top button -->
+<button class="scroll-top-btn" id="scroll-top" aria-label="Scroll to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
 </body>
 </html>
