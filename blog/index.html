@@ -13,6 +13,9 @@
   <meta property="og:description" content="Free guides on Privacy Policies, Terms & Conditions, GDPR, CCPA, Cookie Policies and website legal compliance. Written for founders, not lawyers."/>
   <meta property="og:url" content="https://legalyjet.com/blog/"/>
   <meta property="og:site_name" content="LegalyJet"/>
+  <meta property="og:image" content="https://legalyjet.com/og-image.svg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:title" content="Blog & Legal Guides — LegalyJet"/>
   <meta name="twitter:description" content="Free guides on Privacy Policies, Terms & Conditions, GDPR, CCPA, Cookie Policies and website legal compliance. Written for founders, not lawyers."/>
@@ -191,10 +194,6 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
 {"@context":"https://schema.org","@type":"Blog","name":"LegalyJet Blog","url":"https://legalyjet.com/blog/","description":"Free guides on Privacy Policies, Terms & Conditions, GDPR, CCPA, and website legal compliance."}
 </script>
   <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png"/>
 </head>
 <body>
 
@@ -249,15 +248,15 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
 <div class="blog-layout">
   <main>
     <div class="cat-filters">
-      <a href="#" class="cat-btn active" onclick="return false;">All articles</a>
-      <a href="#" class="cat-btn" onclick="return false;">Privacy Policy</a>
-      <a href="#" class="cat-btn" onclick="return false;">GDPR</a>
-      <a href="#" class="cat-btn" onclick="return false;">Terms &amp; Conditions</a>
-      <a href="#" class="cat-btn" onclick="return false;">Compliance</a>
+      <a href="#" class="cat-btn active" data-filter="All" onclick="filterArticles(this);return false;">All articles</a>
+      <a href="#" class="cat-btn" data-filter="Privacy Policy" onclick="filterArticles(this);return false;">Privacy Policy</a>
+      <a href="#" class="cat-btn" data-filter="GDPR" onclick="filterArticles(this);return false;">GDPR</a>
+      <a href="#" class="cat-btn" data-filter="Terms &amp; Conditions" onclick="filterArticles(this);return false;">Terms &amp; Conditions</a>
+      <a href="#" class="cat-btn" data-filter="Compliance" onclick="filterArticles(this);return false;">Compliance</a>
     </div>
 
     <!-- Featured Article -->
-    <a href="/blog/privacy-policy-guide/" class="article-card featured reveal">
+    <a href="/blog/privacy-policy-guide/" class="article-card featured reveal" data-category="Privacy Policy">
       <div class="article-accent" style="background:linear-gradient(90deg,#2563eb,#60a5fa);"></div>
       <div class="article-body">
         <div class="article-meta">
@@ -279,7 +278,7 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
       </div>
     </a>
 
-    <a href="/blog/gdpr-guide/" class="article-card reveal reveal-d1">
+    <a href="/blog/gdpr-guide/" class="article-card reveal reveal-d1" data-category="GDPR">
       <div class="article-accent" style="background:linear-gradient(90deg,#1d4ed8,#3b82f6);"></div>
       <div class="article-body">
         <div class="article-meta">
@@ -300,7 +299,7 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
       </div>
     </a>
 
-    <a href="/blog/terms-and-conditions/" class="article-card reveal reveal-d2">
+    <a href="/blog/terms-and-conditions/" class="article-card reveal reveal-d2" data-category="Terms &amp; Conditions">
       <div class="article-accent" style="background:linear-gradient(90deg,#16a34a,#4ade80);"></div>
       <div class="article-body">
         <div class="article-meta">
@@ -321,7 +320,7 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
       </div>
     </a>
 
-    <a href="/blog/ccpa-guide/" class="article-card reveal reveal-d1">
+    <a href="/blog/ccpa-guide/" class="article-card reveal reveal-d1" data-category="Compliance">
       <div class="article-accent" style="background:linear-gradient(90deg,#0369a1,#38bdf8);"></div>
       <div class="article-body">
         <div class="article-meta">
@@ -337,7 +336,7 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
       </div>
     </a>
 
-    <a href="/blog/cookie-policy-guide/" class="article-card reveal reveal-d2">
+    <a href="/blog/cookie-policy-guide/" class="article-card reveal reveal-d2" data-category="Privacy Policy">
       <div class="article-accent" style="background:linear-gradient(90deg,#d97706,#fcd34d);"></div>
       <div class="article-body">
         <div class="article-meta">
@@ -353,7 +352,7 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
       </div>
     </a>
 
-    <a href="/blog/legal-checklist/" class="article-card reveal reveal-d3">
+    <a href="/blog/legal-checklist/" class="article-card reveal reveal-d3" data-category="Compliance">
       <div class="article-accent" style="background:linear-gradient(90deg,#16a34a,#86efac);"></div>
       <div class="article-body">
         <div class="article-meta">
@@ -371,7 +370,7 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
 
 
 
-    <a href="/glossary/" class="article-card reveal">
+    <a href="/glossary/" class="article-card reveal" data-category="Compliance">
       <div class="article-accent" style="background:linear-gradient(90deg,#7c3aed,#a78bfa);"></div>
       <div class="article-body">
         <div class="article-meta">
@@ -391,33 +390,6 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
         </div>
       </div>
     </a>
-
-    <!-- Coming soon article teasers -->
-    <div style="padding:2rem 0 0.5rem;"><div style="font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);">Coming soon</div></div>
-
-    <div class="article-card" style="opacity:0.55;cursor:default;pointer-events:none;">
-      <div class="article-accent" style="background:linear-gradient(90deg,#f59e0b,#fcd34d);"></div>
-      <div class="article-body">
-        <div class="article-meta">
-          <span class="article-cat" style="background:#fffbeb;color:#b45309;">Cookie Policy</span>
-          <span class="article-read">Coming soon</span>
-        </div>
-        <div class="article-title">Cookie Policies &amp; Consent: The Complete Guide</div>
-        <p class="article-excerpt">What cookies actually are, which ones need consent, how to implement a compliant cookie banner, and what the ePrivacy Directive really requires of your website.</p>
-      </div>
-    </div>
-
-    <div class="article-card" style="opacity:0.55;cursor:default;pointer-events:none;">
-      <div class="article-accent" style="background:linear-gradient(90deg,#6366f1,#818cf8);"></div>
-      <div class="article-body">
-        <div class="article-meta">
-          <span class="article-cat" style="background:#eef2ff;color:#4f46e5;">CCPA</span>
-          <span class="article-read">Coming soon</span>
-        </div>
-        <div class="article-title">CCPA Compliance Guide: What Non-US Businesses Need to Know</div>
-        <p class="article-excerpt">The California Consumer Privacy Act affects many businesses outside California and the US. Here's how to know if you're covered and what to do about it.</p>
-      </div>
-    </div>
 
   </main>
 
@@ -486,6 +458,16 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
   </div>
 </footer>
 
+<script>
+function filterArticles(btn) {
+  var cat = btn.dataset.filter;
+  document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('.article-card').forEach(function(card) {
+    card.style.display = (cat === 'All' || card.dataset.category === cat) ? '' : 'none';
+  });
+}
+</script>
 <script>
   // Scroll to top button
   var scrollTopBtn = document.getElementById('scroll-top');
