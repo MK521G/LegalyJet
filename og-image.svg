@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0c1a3a"/>
+  <rect width="1200" height="630" fill="url(#grad)" opacity="0.5"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#142247;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <!-- Logo mark - shield icon -->
+  <g transform="translate(480, 180)">
+    <path d="M120 0 L240 48 L240 144 C240 216 120 264 120 264 C120 264 0 216 0 144 L0 48 Z" fill="none" stroke="#2563eb" stroke-width="8"/>
+    <path d="M120 60 L192 90 L192 150 C192 198 120 228 120 228 C120 228 48 198 48 150 L48 90 Z" fill="#2563eb" opacity="0.3"/>
+  </g>
+  <!-- Title -->
+  <text x="600" y="390" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#ffffff" text-anchor="middle">LegalyJet</text>
+  <!-- Subtitle -->
+  <text x="600" y="460" font-family="Arial, sans-serif" font-size="32" fill="#94a3b8" text-anchor="middle">Free Legal Document Generator</text>
+  <!-- Tagline -->
+  <text x="600" y="510" font-family="Arial, sans-serif" font-size="24" fill="#64748b" text-anchor="middle">Privacy Policies · Terms &amp; Conditions · Cookie Policies</text>
+  <!-- URL -->
+  <text x="600" y="570" font-family="Arial, sans-serif" font-size="20" fill="#475569" text-anchor="middle">legalyjet.com</text>
+</svg>
