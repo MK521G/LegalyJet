@@ -44,7 +44,7 @@
 
     /* ── HEADER ── */
     header {
-      background: var(--navy);
+      background: #ffffff;
       padding: 0 2.5rem;
       height: 60px;
       display: flex;
@@ -52,7 +52,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
 
     .logo {
@@ -63,7 +63,7 @@
       user-select: none;
     }
 
-    .logo-mark { width: 58px; height: 58px; object-fit: cover; }
+    .logo-mark { width: 66px; height: 66px; object-fit: cover; }
 
     .logo-wordmark {
       display: flex;
@@ -76,7 +76,7 @@
       font-family: 'Lora', serif;
       font-size: 1.18rem;
       font-weight: 700;
-      color: #ffffff;
+      color: #0c1a3a;
       letter-spacing: -0.02em;
     }
 
@@ -90,7 +90,7 @@
       font-size: 0.58rem;
       font-weight: 500;
       letter-spacing: 0.13em;
-      color: #7aa8d8;
+      color: #6b7280;
       text-transform: uppercase;
     }
 
@@ -99,8 +99,8 @@
       font-size: 0.6rem;
       font-weight: 600;
       letter-spacing: 0.1em;
-      color: #93c5fd;
-      border: 1px solid #2a4578;
+      color: #2563eb;
+      border: 1px solid #dbeafe;
       padding: 0.18rem 0.6rem;
       border-radius: 99px;
       text-transform: uppercase;
@@ -663,37 +663,37 @@
   
     /* ── SHARED NAV ── */
     .nav-desktop { display: flex; align-items: center; gap: 1.8rem; }
-    .nav-desktop a { color: #7a9ec4; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; min-height: 44px; display: flex; align-items: center; }
-    .nav-desktop a:hover, .nav-desktop a.active { color: #fff; }
+    .nav-desktop a { color: #4b5563; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; min-height: 44px; display: flex; align-items: center; }
+    .nav-desktop a:hover, .nav-desktop a.active { color: #2563eb; }
     .nav-cta { background: #2563eb !important; color: #fff !important; padding: 0.52rem 1.2rem !important; border-radius: 7px; font-weight: 600 !important; white-space: nowrap; box-shadow: 0 2px 10px rgba(37,99,235,0.35); }
     .nav-cta:hover { background: #1d4ed8 !important; }
     .nav-mobile-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; cursor: pointer; background: none; border: none; padding: 10px; border-radius: 8px; }
-    .nav-mobile-toggle span { display: block; width: 22px; height: 2px; background: #93c5fd; border-radius: 2px; transition: all 0.3s; }
+    .nav-mobile-toggle span { display: block; width: 22px; height: 2px; background: #374151; border-radius: 2px; transition: all 0.3s; }
     .nav-mobile-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .nav-mobile-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
     .nav-mobile-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
     .nav-drawer { display: none; position: fixed; top: 60px; left: 0; right: 0; background: rgba(7,13,31,0.98); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 1.5rem 1.6rem 2rem; z-index: 199; box-shadow: 0 8px 32px rgba(0,0,0,0.4); animation: slideDown 0.22s ease both; }
     .nav-drawer.open { display: block; }
     @keyframes slideDown { from{opacity:0;transform:translateY(-8px)} to{opacity:1;transform:translateY(0)} }
-    .nav-drawer a { display: flex; align-items: center; gap: 0.6rem; color: #8aafd4; text-decoration: none; font-size: 1rem; font-weight: 500; padding: 0.9rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); min-height: 52px; transition: color 0.2s; }
+    .nav-drawer a { display: flex; align-items: center; gap: 0.6rem; color: #8aafd4; text-decoration: none; font-size: 1rem; font-weight: 500; padding: 0.9rem 0.5rem; border-bottom: 1px solid #e5e7eb; min-height: 52px; transition: color 0.2s; }
     .nav-drawer a:hover, .nav-drawer a.active { color: #fff; }
     .nav-drawer a:last-child { border-bottom: none; }
     .nav-drawer .drawer-cta { margin-top: 1rem; background: #2563eb; color: #fff !important; border-radius: 9px; padding: 1rem !important; font-weight: 700 !important; text-align: center; justify-content: center; border-bottom: none !important; }
     .nav-drawer .drawer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 0.5rem 0; }
     .nav-drawer .drawer-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #2e4a65; padding: 0.5rem 0.5rem 0; display: block; }
-    .doc-shortcuts { background: rgba(7,13,31,0.97); border-bottom: 1px solid rgba(255,255,255,0.07); overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .doc-shortcuts { background: #f9fafb; border-bottom: 1px solid #e5e7eb; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
     .doc-shortcuts::-webkit-scrollbar { display: none; }
     .doc-shortcuts-inner { display: flex; align-items: center; min-width: max-content; }
-    .doc-shortcut { display: flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.3rem; text-decoration: none; color: #557090; font-size: 0.79rem; font-weight: 500; border-right: 1px solid rgba(255,255,255,0.06); white-space: nowrap; transition: all 0.18s; min-height: 40px; }
+    .doc-shortcut { display: flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.3rem; text-decoration: none; color: #4b5563; font-size: 0.79rem; font-weight: 500; border-right: 1px solid #e5e7eb; white-space: nowrap; transition: all 0.18s; min-height: 40px; }
     .doc-shortcut:first-child { padding-left: 2rem; }
-    .doc-shortcut:hover { color: #93c5fd; background: rgba(37,99,235,0.09); }
-    .doc-shortcut.sc-active { color: #93c5fd; background: rgba(37,99,235,0.12); }
+    .doc-shortcut:hover { color: #2563eb; background: rgba(37,99,235,0.09); }
+    .doc-shortcut.sc-active { color: #2563eb; background: rgba(37,99,235,0.12); }
     .sc-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
     .sc-dot.green { background: #4ade80; }
-    .sc-dot.gray { background: #334455; }
+    .sc-dot.gray { background: #d1d5db; }
     .sc-pill { font-size: 0.57rem; font-weight: 700; letter-spacing: 0.06em; padding: 0.12rem 0.4rem; border-radius: 99px; text-transform: uppercase; }
-    .sc-pill.available { background: rgba(34,197,94,0.14); color: #4ade80; }
-    .sc-pill.soon { background: rgba(255,255,255,0.05); color: #3a5570; }
+    .sc-pill.available { background: #f0fdf4; color: #16a34a; }
+    .sc-pill.soon { background: rgba(255,255,255,0.05); color: #6b7280; }
     @media (max-width: 780px) { .nav-desktop { display: none; } .nav-mobile-toggle { display: flex; } }
 
     /* ── SCROLL TO TOP ── */
@@ -772,10 +772,10 @@
 </header>
 <nav class="nav-drawer" id="nav-drawer">
   <span class="drawer-label">Generators</span>
-  <a href="/generate/privacy-policy/">Privacy Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/generate/terms-conditions/">Terms &amp; Conditions <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/generate/cookie-policy/">Cookie Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/#documents" style="color:#4a6a8a;">EULA <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
+  <a href="/generate/privacy-policy/">Privacy Policy <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
+  <a href="/generate/terms-conditions/">Terms &amp; Conditions <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
+  <a href="/generate/cookie-policy/">Cookie Policy <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
+  <a href="/#documents" style="color:#6b7280;">EULA <span style="font-size:0.7rem;color:#6b7280;margin-left:auto;">Soon</span></a>
   <hr class="drawer-divider"/>
   <span class="drawer-label">Pages</span>
   <a href="/">Home</a>
@@ -786,7 +786,7 @@
 </nav>
 <div class="doc-shortcuts">
   <div class="doc-shortcuts-inner">
-    <a href="/generate/privacy-policy/" class="doc-shortcut" style="color:#557090;"><span class="sc-dot green"></span> Privacy Policy <span class="sc-pill available">Live</span></a>
+    <a href="/generate/privacy-policy/" class="doc-shortcut" style="color:#4b5563;"><span class="sc-dot green"></span> Privacy Policy <span class="sc-pill available">Live</span></a>
     <a href="/generate/terms-conditions/" class="doc-shortcut sc-active"><span class="sc-dot green"></span> Terms &amp; Conditions <span class="sc-pill available">Live</span></a>
     <a href="/generate/cookie-policy/" class="doc-shortcut"><span class="sc-dot green"></span> Cookie Policy <span class="sc-pill available">Live</span></a>
     <a href="/#documents" class="doc-shortcut"><span class="sc-dot gray"></span> EULA <span class="sc-pill soon">Soon</span></a>

@@ -33,24 +33,24 @@ body { font-family: 'Source Sans 3', sans-serif; background: var(--page-bg); col
 
 /* ── HEADER ── */
 header {
-  background: rgba(7,13,31,0.97); backdrop-filter: blur(14px);
+  background: #ffffff; 
   height: var(--header-h); padding: 0 2.5rem;
   display: flex; align-items: center; justify-content: space-between;
   position: sticky; top: 0; z-index: 200;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 .logo { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; min-height: 44px; }
-.logo-mark { width: 58px; height: 58px; object-fit: cover; }
+.logo-mark { width: 66px; height: 66px; object-fit: cover; }
 .logo-wordmark { display: flex; flex-direction: column; justify-content: center; gap: 0.22rem; }
-.logo-name { font-family: 'Lora', serif; font-size: 1.18rem; font-weight: 700; color: #fff; letter-spacing: 0.04em; line-height: 1; }
+.logo-name { font-family: 'Lora', serif; font-size: 1.18rem; font-weight: 700; color: #0c1a3a; letter-spacing: 0.04em; line-height: 1; }
 .logo-name em { font-style: normal; color: #60a5fa; }
-.logo-tagline { font-family: 'Source Sans 3', sans-serif; font-size: 0.58rem; font-weight: 400; letter-spacing: 0.22em; color: #5a7fa8; text-transform: uppercase; line-height: 1; }
+.logo-tagline { font-family: 'Source Sans 3', sans-serif; font-size: 0.58rem; font-weight: 400; letter-spacing: 0.22em; color: #6b7280; text-transform: uppercase; line-height: 1; }
 
 /* Desktop nav */
 .nav-desktop { display: flex; align-items: center; gap: 1.8rem; }
-.nav-desktop a { color: #7a9ec4; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; padding: 0.3rem 0; min-height: 44px; display: flex; align-items: center; }
-.nav-desktop a:hover, .nav-desktop a.active { color: #fff; }
+.nav-desktop a { color: #4b5563; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; padding: 0.3rem 0; min-height: 44px; display: flex; align-items: center; }
+.nav-desktop a:hover, .nav-desktop a.active { color: #2563eb; }
 .nav-cta {
   background: var(--accent) !important; color: #fff !important;
   padding: 0.52rem 1.2rem !important; border-radius: 7px;
@@ -67,8 +67,8 @@ header {
   background: none; border: none; padding: 10px; border-radius: 8px;
   transition: background 0.2s;
 }
-.nav-mobile-toggle:hover { background: rgba(255,255,255,0.06); }
-.nav-mobile-toggle span { display: block; width: 22px; height: 2px; background: #93c5fd; border-radius: 2px; transition: all 0.3s; }
+.nav-mobile-toggle:hover { background: rgba(0,0,0,0.04); }
+.nav-mobile-toggle span { display: block; width: 22px; height: 2px; background: #374151; border-radius: 2px; transition: all 0.3s; }
 .nav-mobile-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav-mobile-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .nav-mobile-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
@@ -87,7 +87,7 @@ header {
 .nav-drawer a {
   display: flex; align-items: center; gap: 0.6rem;
   color: #8aafd4; text-decoration: none; font-size: 1rem; font-weight: 500;
-  padding: 0.9rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding: 0.9rem 0.5rem; border-bottom: 1px solid #e5e7eb;
   min-height: 52px; transition: color 0.2s;
 }
 .nav-drawer a:hover, .nav-drawer a.active { color: #fff; }
@@ -117,7 +117,7 @@ header {
 .page-badge {
   display: inline-flex; align-items: center; gap: 0.4rem;
   background: rgba(37,99,235,0.14); border: 1px solid rgba(96,165,250,0.25);
-  color: #93c5fd; font-size: 0.68rem; font-weight: 700;
+  color: #2563eb; font-size: 0.68rem; font-weight: 700;
   letter-spacing: 0.1em; text-transform: uppercase;
   padding: 0.32rem 0.85rem; border-radius: 99px; margin-bottom: 1.3rem;
 }
@@ -126,13 +126,13 @@ header {
 
 /* ── FOOTER ── */
 footer { background: var(--navy-dark); padding: 3rem 2.5rem 2rem; border-top: 1px solid rgba(255,255,255,0.05); margin-top: auto; }
-.footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e5e7eb; }
 .footer-brand .footer-logo-name { font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 700; color: white; display: block; margin-bottom: 0.6rem; }
 .footer-brand .footer-logo-name em { font-style: normal; color: #60a5fa; }
 .footer-brand .footer-desc { font-size: 0.8rem; color: #3a5878; line-height: 1.65; max-width: 220px; }
 .footer-col .footer-col-title { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #2a4060; margin-bottom: 0.9rem; }
 .footer-col a { display: block; font-size: 0.83rem; color: #3e5e7a; text-decoration: none; margin-bottom: 0.5rem; transition: color 0.2s; padding: 0.15rem 0; }
-.footer-col a:hover { color: #93c5fd; }
+.footer-col a:hover { color: #2563eb; }
 .footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.8rem; }
 .footer-copy { font-size: 0.75rem; color: #1e2e40; }
 .footer-legal { display: flex; gap: 1.4rem; }
@@ -141,7 +141,7 @@ footer { background: var(--navy-dark); padding: 3rem 2.5rem 2rem; border-top: 1p
 
 /* ── DOC SHORTCUTS STRIP ── */
 .doc-shortcuts {
-  background: rgba(255,255,255,0.025); border-bottom: 1px solid rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.025); border-bottom: 1px solid #e5e7eb;
   overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
 }
 .doc-shortcuts::-webkit-scrollbar { display: none; }
@@ -149,18 +149,18 @@ footer { background: var(--navy-dark); padding: 3rem 2.5rem 2rem; border-top: 1p
 .doc-shortcut {
   display: flex; align-items: center; gap: 0.55rem;
   padding: 0.7rem 1.2rem; text-decoration: none;
-  color: #6a8fb4; font-size: 0.8rem; font-weight: 500;
-  border-right: 1px solid rgba(255,255,255,0.05);
+  color: #4b5563; font-size: 0.8rem; font-weight: 500;
+  border-right: 1px solid #e5e7eb;
   white-space: nowrap; transition: all 0.2s; min-height: 44px;
 }
-.doc-shortcut:hover { color: #93c5fd; background: rgba(37,99,235,0.08); }
-.doc-shortcut.active { color: #93c5fd; background: rgba(37,99,235,0.1); }
+.doc-shortcut:hover { color: #2563eb; background: rgba(37,99,235,0.08); }
+.doc-shortcut.active { color: #2563eb; background: rgba(37,99,235,0.1); }
 .doc-shortcut .sc-badge {
   font-size: 0.58rem; font-weight: 700; letter-spacing: 0.06em;
   padding: 0.15rem 0.42rem; border-radius: 99px; text-transform: uppercase;
 }
-.sc-badge.available { background: rgba(34,197,94,0.15); color: #4ade80; }
-.sc-badge.soon { background: rgba(255,255,255,0.06); color: #4a6a8a; }
+.sc-badge.available { background: #f0fdf4; color: #16a34a; }
+.sc-badge.soon { background: #f3f4f6; color: #6b7280; }
 
 /* ── SHARED SECTION STYLES ── */
 .section-wrap { max-width: 1100px; margin: 0 auto; padding: 5rem 1.5rem; }
@@ -188,7 +188,7 @@ footer { background: var(--navy-dark); padding: 3rem 2.5rem 2rem; border-top: 1p
 .btn-secondary:hover { border-color: var(--accent); background: var(--accent-soft); }
 .btn-ghost-light {
   display: inline-flex; align-items: center; gap: 0.45rem;
-  color: #93c5fd; padding: 0.85rem 1.6rem; border-radius: 9px;
+  color: #2563eb; padding: 0.85rem 1.6rem; border-radius: 9px;
   font-size: 0.93rem; font-weight: 500; text-decoration: none;
   border: 1.5px solid rgba(96,165,250,0.22); transition: all 0.2s; min-height: 48px;
 }
@@ -252,10 +252,10 @@ footer { background: var(--navy-dark); padding: 3rem 2.5rem 2rem; border-top: 1p
     /* ── SHORTCUT DOT & PILL ── */
     .sc-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
     .sc-dot.green { background: #4ade80; }
-    .sc-dot.gray { background: #334455; }
+    .sc-dot.gray { background: #d1d5db; }
     .sc-pill { font-size: 0.57rem; font-weight: 700; letter-spacing: 0.06em; padding: 0.12rem 0.4rem; border-radius: 99px; text-transform: uppercase; }
-    .sc-pill.available { background: rgba(34,197,94,0.14); color: #4ade80; }
-    .sc-pill.soon { background: rgba(255,255,255,0.05); color: #3a5570; }
+    .sc-pill.available { background: #f0fdf4; color: #16a34a; }
+    .sc-pill.soon { background: rgba(255,255,255,0.05); color: #6b7280; }
 
     /* ── SCROLL TO TOP ── */
     .scroll-top-btn {
@@ -331,10 +331,10 @@ footer { background: var(--navy-dark); padding: 3rem 2.5rem 2rem; border-top: 1p
 </header>
 <nav class="nav-drawer" id="nav-drawer">
   <span class="drawer-label">Generators</span>
-  <a href="/generate/privacy-policy/">Privacy Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/generate/terms-conditions/">Terms &amp; Conditions <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/generate/cookie-policy/">Cookie Policy <span style="font-size:0.7rem;color:#4ade80;margin-left:auto;">Free</span></a>
-  <a href="/#documents" style="color:#4a6a8a;">EULA <span style="font-size:0.7rem;color:#4a6a8a;margin-left:auto;">Soon</span></a>
+  <a href="/generate/privacy-policy/">Privacy Policy <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
+  <a href="/generate/terms-conditions/">Terms &amp; Conditions <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
+  <a href="/generate/cookie-policy/">Cookie Policy <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
+  <a href="/#documents" style="color:#6b7280;">EULA <span style="font-size:0.7rem;color:#6b7280;margin-left:auto;">Soon</span></a>
   <hr class="drawer-divider"/>
   <span class="drawer-label">Pages</span>
   <a href="/">Home</a>
