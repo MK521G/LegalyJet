@@ -3,14 +3,14 @@
 <head><meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Privacy Policy — LegalyJet</title>
-  <meta name="description" content="LegalyJet's Privacy Policy. Learn how we handle your data when you use our free legal document generator."/>
+  <meta name="description" content="LegalyJet's Privacy Policy. We do not collect any personal data. All document processing is client-side. We use Google AdSense which may use cookies for ads."/>
     <!-- SEO & Open Graph -->
   <meta name="robots" content="index, follow"/>
   <meta name="author" content="LegalyJet"/>
   <link rel="canonical" href="https://legalyjet.tech/privacy/"/>
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Privacy Policy — LegalyJet"/>
-  <meta property="og:description" content="LegalyJet's Privacy Policy: how we collect, use, and protect information when you use our free legal document generator."/>
+  <meta property="og:description" content="LegalyJet's Privacy Policy: we collect no personal data. Document generation is entirely client-side. We use Google AdSense which may use cookies for ad personalization."/>
   <meta property="og:url" content="https://legalyjet.tech/privacy/"/>
   <meta property="og:site_name" content="LegalyJet"/>
   <meta property="og:image" content="https://legalyjet.tech/og-image.svg"/>
@@ -18,7 +18,7 @@
   <meta property="og:image:height" content="630"/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:title" content="Privacy Policy — LegalyJet"/>
-  <meta name="twitter:description" content="LegalyJet's Privacy Policy: how we collect, use, and protect information when you use our free legal document generator."/>
+  <meta name="twitter:description" content="LegalyJet's Privacy Policy: we collect no personal data. Document generation is entirely client-side. We use Google AdSense which may use cookies for ad personalization."/>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
 /* ── SHARED LEGALYJET STYLES ── */
@@ -27,12 +27,11 @@
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
 body{font-family:'Source Sans 3',sans-serif;background:var(--page-bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;}
 header{background:#ffffff;height:var(--header-h);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 3px rgba(0,0,0,0.08);}
-.logo{display:flex;align-items:center;gap:0.65rem;text-decoration:none;min-height:44px;}
-.logo-mark{width:42px;height:42px;flex-shrink:0;}
-.logo-wordmark{display:flex;flex-direction:column;line-height:1;}
-.logo-name{font-family:'Lora',serif;font-size:1.15rem;font-weight:700;color: #0c1a3a;letter-spacing:-0.02em;}
-.logo-name em{font-style:normal;color:#60a5fa;}
-.logo-tagline{font-size:0.54rem;font-weight:600;letter-spacing:0.15em;color:#4a7aaa;text-transform:uppercase;margin-top:0.12rem;}
+.logo{display:flex;align-items:center;gap:0.75rem;text-decoration:none;transition: opacity 0.2s;min-height:44px;}
+    .logo:hover { opacity: 0.82; }
+.logo-mark{width:34px;height:34px;flex-shrink:0;}
+.logo-name{font-family:'Lora',serif;font-size:1.25rem;font-weight:700;color: #0c1a3a;letter-spacing:-0.02em;}
+.logo-name em{font-style:normal;color:#2563eb;}
 .nav-desktop{display:flex;align-items:center;gap:1.8rem;}
 .nav-desktop a{color:#4b5563;text-decoration:none;font-size:0.875rem;font-weight:500;transition:color 0.2s;padding:0.3rem 0;min-height:44px;display:flex;align-items:center;}
 .nav-desktop a:hover,.nav-desktop a.active{ color: #2563eb; }
@@ -108,7 +107,7 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
     .sc-pill.available { background: #f0fdf4; color: #16a34a; }
     .sc-pill.soon { background: rgba(255,255,255,0.05); color: #6b7280; }
 
-  .logo-mark { width: 66px; height: 66px; object-fit: cover; }
+  .logo-mark {width:34px;height:34px;flex-shrink:0;}
     /* ── SCROLL TO TOP ── */
     .scroll-top-btn {
       position: fixed; bottom: 2rem; right: 2rem;
@@ -166,8 +165,8 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
 
 <header>
   <a class="logo" href="/">
-    <img class="logo-mark" src="/favicon.ico" alt="LegalyJet Logo"/>
-    <div class="logo-wordmark"><div class="logo-name">Legaly<em>Jet</em></div><div class="logo-tagline">Legal Docs in Secs</div></div>
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><rect width="34" height="34" rx="8" fill="#0c1a3a"/><path d="M17 5L27 9V18C27 24 17 29 17 29C17 29 7 24 7 18V9L17 5Z" fill="rgba(37,99,235,0.25)" stroke="#3b82f6" stroke-width="1.5"/></svg>
+    <span class="logo-name">Legaly<em>Jet</em></span>
   </a>
   <nav class="nav-desktop">
     <a href="/">Home</a>
@@ -208,79 +207,56 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
   <div class="page-hero-inner">
     <div class="page-badge">Legal</div>
     <h1>Privacy Policy</h1>
-    <p>How LegalyJet collects, uses, and protects information when you use our free legal document generator.</p>
+    <p>LegalyJet does not collect any personal data from you. All document generation runs entirely in your browser — nothing you enter is ever transmitted to our servers. We do display ads through Google AdSense, which may use cookies for ad personalization. See Section 2 for details and opt-out options.</p>
   </div>
 </div>
 
 <div class="content-wrap">
   <div class="meta-row">
     <div class="meta-item"><span class="meta-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span> Effective: January 1, 2026</div>
-    <div class="meta-item"><span class="meta-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span> Last updated: January 2026</div>
+    <div class="meta-item"><span class="meta-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span> Last updated: March 2026</div>
     <div class="meta-item"><span class="meta-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span> Applies to: legalyjet.tech</div>
   </div>
 
   <div class="prose">
-    <p>LegalyJet ("we", "us", or "our") operates the LegalyJet website and free legal document generation service. This Privacy Policy explains what information we collect, how we use it, and what rights you have regarding your data. We take privacy seriously — and we've designed our service to collect as little data as possible.</p>
+    <p>LegalyJet ("we", "us", or "our") operates the LegalyJet website and free legal document generation service. This Privacy Policy explains our privacy practices. <strong>LegalyJet itself does not collect, store, or process any personal data.</strong> Our document generation service is built on a privacy-by-design principle: all functionality runs entirely within your browser, and no information you enter is ever transmitted to or stored on our servers. We do, however, display third-party advertisements through Google AdSense, which may use cookies. See Section 2 for full details.</p>
 
-    <h2>1. Information We Collect</h2>
-    <h3>Information you provide directly</h3>
-    <p>When you use our contact form, you may provide your name and email address so we can respond to your inquiry. We only use this information to reply to your message. We do not add you to any mailing list without your explicit consent.</p>
+    <h2>1. No Data Collection</h2>
+    <h3>Document generation</h3>
+    <p>LegalyJet generates legal documents entirely in your browser using client-side JavaScript. <strong>The information you enter into the generator — your company name, website URL, contact email, and other business details — is never transmitted to our servers.</strong> It stays on your device and is used only to assemble your document in real time. When you close or refresh the page, that data is gone. We have no access to it at any point.</p>
 
-    <h3>Document generation data</h3>
-    <p>LegalyJet generates legal documents entirely in your browser using client-side JavaScript. <strong>The information you enter into the generator — your company name, website URL, contact email, and other business details — is never transmitted to our servers.</strong> It stays on your device and is used only to assemble your document in real time. When you close or refresh the page, that data is gone.</p>
+    <h3>Contact interactions</h3>
+    <p>Any contact or inquiry functionality on this site is handled entirely client-side. <strong>We do not receive, store, or retain any information you submit through contact forms.</strong> No name, email address, or message content is transmitted to or held on our servers.</p>
 
-    <h3>Automatically collected information</h3>
-    <p>Like most websites, our hosting provider may automatically collect standard server log data when you visit LegalyJet. This may include your IP address, browser type, operating system, referring URL, pages visited, and date/time of visits. This data is used solely for security, uptime monitoring, and aggregate traffic analysis. We do not use it to identify individual users.</p>
+    <h3>No server logs or automatic collection</h3>
+    <p>We do not collect server log data, IP addresses, browser types, operating system information, referring URLs, or any other information about your visit. We have not configured our hosting to retain such data for our use.</p>
 
-    <h2>2. Cookies and Tracking</h2>
-    <p>LegalyJet uses minimal cookies. We may set a session cookie to maintain your browser session and enable basic site functionality.</p>
-    <p>We use Google AdSense to display advertisements on our site. Google and other third-party vendors use cookies to serve ads based on your prior visits to our site and other sites on the internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" rel="noopener noreferrer">Google Ads Settings</a> or <a href="https://optout.aboutads.info/" rel="noopener noreferrer">optout.aboutads.info</a>. We do not sell your personal data to advertisers.</p>
-    <p>If we add analytics tools in the future (such as privacy-friendly analytics), this policy will be updated before they are deployed.</p>
+    <h2>2. Cookies and Third-Party Advertising</h2>
+    <p>LegalyJet itself does not set cookies and does not use analytics or tracking scripts. However, we display advertisements on our site through <strong>Google AdSense</strong>. Google and other third-party vendors use cookies to serve ads based on your prior visits to our site and other sites on the internet.</p>
+    <p>Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to LegalyJet and/or other sites on the internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" rel="noopener noreferrer">Google Ads Settings</a> or <a href="https://optout.aboutads.info/" rel="noopener noreferrer">optout.aboutads.info</a>. You can also opt out via the <a href="https://www.networkadvertising.org/choices/" rel="noopener noreferrer">Network Advertising Initiative opt-out page</a>.</p>
+    <p>Google's use of advertising data is governed by the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>. We do not sell your personal data to advertisers.</p>
 
-    <h2>3. How We Use Information</h2>
-    <p>We use the limited information we collect to:</p>
-    <ul>
-      <li>Operate, maintain, and improve the LegalyJet website</li>
-      <li>Respond to contact form submissions and support inquiries</li>
-      <li>Monitor for security issues and prevent abuse</li>
-      <li>Understand aggregate usage patterns to improve the service</li>
-    </ul>
-    <p>We do not use your information for profiling or sale to third parties. Third-party advertising partners (such as Google AdSense) may use cookies to serve ads; see Section 2 for details and opt-out options.</p>
+    <h2>3. Data Sharing</h2>
+    <p>LegalyJet does not sell, rent, or trade your personal information. Because we collect no personal data ourselves, there is nothing to share on our end. The only third-party data involvement on this site is through Google AdSense advertising cookies, which are governed by Google's own privacy policy (see Section 2). We may also disclose information if required by law or legal process.</p>
 
-    <h2>4. Data Sharing and Disclosure</h2>
-    <p>We do not sell, rent, or trade your personal information. We may share information only in the following limited circumstances:</p>
-    <ul>
-      <li><strong>Service providers:</strong> Our hosting infrastructure provider processes server logs on our behalf under appropriate data processing agreements.</li>
-      <li><strong>Advertising partners:</strong> We use Google AdSense to serve ads on our site. Google may use cookies and similar technologies to collect data about your visits to display relevant ads. Google's use of advertising data is governed by the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
-      <li><strong>Legal requirements:</strong> We may disclose information if required by law, court order, or government authority.</li>
-      <li><strong>Business transfers:</strong> In the event of a merger or acquisition, user information may be transferred as part of that transaction, subject to the same privacy protections.</li>
-    </ul>
+    <h2>4. Data Retention</h2>
+    <p>We retain no user data. Document generation data never reaches our servers — it exists only in your browser during your session and is discarded when you leave or refresh the page. Contact interactions are processed client-side and no information is stored on our end.</p>
 
-    <h2>5. Data Retention</h2>
-    <p>Contact form submissions are retained for as long as necessary to respond to your inquiry and for a reasonable period thereafter, after which they are deleted. Server log data is typically retained for 30–90 days. Since document generation data never reaches our servers, there is nothing to retain or delete on our end.</p>
+    <h2>5. Your Rights</h2>
+    <p>Because LegalyJet itself collects and stores no personal data about you, there is nothing for us to access, correct, delete, or transfer on your behalf. You can use LegalyJet with full confidence that no record of your visit or activity is held by us.</p>
+    <p>For data collected by Google AdSense through cookies, you can manage your ad preferences and opt out of personalized advertising via <a href="https://www.google.com/settings/ads" rel="noopener noreferrer">Google Ads Settings</a>. If you have any other questions or concerns about your privacy, please reach out via our <a href="/contact/">contact page</a>.</p>
 
-    <h2>6. Your Rights</h2>
-    <p>Depending on your location, you may have rights under GDPR, CCPA, or other applicable law to:</p>
-    <ul>
-      <li>Access the personal data we hold about you</li>
-      <li>Request correction of inaccurate data</li>
-      <li>Request deletion of your data</li>
-      <li>Object to certain processing activities</li>
-      <li>Data portability (where technically feasible)</li>
-    </ul>
-    <p>To exercise any of these rights, contact us at <a href="/contact/">our contact page</a>. We will respond within 30 days.</p>
+    <h2>6. Children's Privacy</h2>
+    <p>LegalyJet is not directed at children under 13. As we collect no personal data from anyone, we do not collect any information from children either.</p>
 
-    <h2>7. Children's Privacy</h2>
-    <p>LegalyJet is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+    <h2>7. Security</h2>
+    <p>Because all processing happens in your browser and no data is transmitted to us, the risk of a server-side breach exposing your information is eliminated by design. Your data never leaves your device.</p>
 
-    <h2>8. Security</h2>
-    <p>We implement reasonable technical and organizational measures to protect the limited information we hold. Because document generation happens in your browser and data is not transmitted to us, the risk of a server-side breach exposing your business information is eliminated by design.</p>
-
-    <h2>9. Changes to This Policy</h2>
+    <h2>8. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. When we do, we'll update the "Last updated" date at the top of this page. Continued use of LegalyJet after changes constitutes your acceptance of the updated policy.</p>
 
-    <h2>10. Contact Us</h2>
-    <p>If you have questions about this Privacy Policy or how we handle your data, please reach out via our <a href="/contact/">contact page</a>. We aim to respond to all privacy inquiries within 5 business days.</p>
+    <h2>9. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, please reach out via our <a href="/contact/">contact page</a>. We aim to respond to all privacy inquiries within 5 business days.</p>
   </div>
 </div>
 

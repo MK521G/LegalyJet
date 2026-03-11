@@ -23,12 +23,11 @@
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
 body{font-family:'Source Sans 3',sans-serif;background:var(--page-bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;}
 header{background:#ffffff;height:var(--header-h);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 3px rgba(0,0,0,0.08);}
-.logo{display:flex;align-items:center;gap:0.65rem;text-decoration:none;min-height:44px;}
-.logo-mark{width:42px;height:42px;flex-shrink:0;}
-.logo-wordmark{display:flex;flex-direction:column;line-height:1;}
-.logo-name{font-family:'Lora',serif;font-size:1.15rem;font-weight:700;color: #0c1a3a;letter-spacing:-0.02em;}
-.logo-name em{font-style:normal;color:#60a5fa;}
-.logo-tagline{font-size:0.54rem;font-weight:600;letter-spacing:0.15em;color:#4a7aaa;text-transform:uppercase;margin-top:0.12rem;}
+.logo{display:flex;align-items:center;gap:0.75rem;text-decoration:none;transition: opacity 0.2s;min-height:44px;}
+    .logo:hover { opacity: 0.82; }
+.logo-mark{width:34px;height:34px;flex-shrink:0;}
+.logo-name{font-family:'Lora',serif;font-size:1.25rem;font-weight:700;color: #0c1a3a;letter-spacing:-0.02em;}
+.logo-name em{font-style:normal;color:#2563eb;}
 .nav-desktop{display:flex;align-items:center;gap:1.8rem;}
 .nav-desktop a{color:#4b5563;text-decoration:none;font-size:0.875rem;font-weight:500;transition:color 0.2s;padding:0.3rem 0;min-height:44px;display:flex;align-items:center;}
 .nav-desktop a:hover,.nav-desktop a.active{ color: #2563eb; }
@@ -127,7 +126,7 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
     .sc-pill.available { background: #f0fdf4; color: #16a34a; }
     .sc-pill.soon { background: rgba(255,255,255,0.05); color: #6b7280; }
 
-  .logo-mark { width: 66px; height: 66px; object-fit: cover; }
+  .logo-mark {width:34px;height:34px;flex-shrink:0;}
     /* ── SCROLL TO TOP ── */
     .scroll-top-btn {
       position: fixed; bottom: 2rem; right: 2rem;
@@ -185,8 +184,8 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
 
 <header>
   <a class="logo" href="/">
-    <img class="logo-mark" src="/favicon.ico" alt="LegalyJet Logo"/>
-    <div class="logo-wordmark"><div class="logo-name">Legaly<em>Jet</em></div><div class="logo-tagline">Legal Docs in Secs</div></div>
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><rect width="34" height="34" rx="8" fill="#0c1a3a"/><path d="M17 5L27 9V18C27 24 17 29 17 29C17 29 7 24 7 18V9L17 5Z" fill="rgba(37,99,235,0.25)" stroke="#3b82f6" stroke-width="1.5"/></svg>
+    <span class="logo-name">Legaly<em>Jet</em></span>
   </a>
   <nav class="nav-desktop">
     <a href="/">Home</a>
