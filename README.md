@@ -54,7 +54,7 @@ LegalyJet takes under 4 minutes, uses your actual business details throughout th
 ## Local Development
 
 ```bash
-git clone https://github.com/yourusername/legalyjet
+git clone https://github.com/mk521g/legalyjet
 cd legalyjet
 # Open index.html in your browser — that's it
 ```
