@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What is a Privacy Policy? Complete Guide for Websites & Apps | LegalyJet</title>
+  <meta name="description" content="Step by step guide to writing a Privacy Policy for your website — what to include, how to structure it, and how to generate one free in minutes."/>
+    <!-- SEO & Open Graph -->
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="LegalyJet"/>
+  <link rel="canonical" href="https://legalyjet.tech/blog/how-to-write-a-privacy-policy/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="How to Write a Privacy Policy for Your Website — LegalyJet"/>
+  <meta property="og:description" content="A complete guide to Privacy Policies: what they are, who needs one, what to include, and how to generate one for free."/>
+  <meta property="og:url" content="https://legalyjet.tech/blog/privacy-policy-guide/"/>
+  <meta property="og:site_name" content="LegalyJet"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="How to Write a Privacy Policy for Your Website — LegalyJet"/>
+  <meta name="twitter:description" content="A complete guide to Privacy Policies: what they are, who needs one, what to include, and how to generate one for free."/>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+:root{--navy:#0c1a3a;--navy-mid:#142247;--navy-dark:#070d1f;--accent:#2563eb;--accent-lt:#3b82f6;--accent-soft:#dbeafe;--text:#0f1117;--muted:#6b7280;--border:#e2e8f4;--page-bg:#f4f7fd;--white:#ffffff;--header-h:60px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:'Source Sans 3',sans-serif;background:var(--page-bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;}
+header{background:#ffffff;height:var(--header-h);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 3px rgba(0,0,0,0.08);}
+.logo{display:flex;align-items:center;gap:0.75rem;text-decoration:none;transition: opacity 0.2s;min-height:44px;}
+    .logo:hover { opacity: 0.82; }
+.logo-mark{width:42px;height:42px;flex-shrink:0;}
+.logo-name{font-family:'Lora',serif;font-size:1.25rem;font-weight:700;color: #0c1a3a;letter-spacing:-0.02em;}
+.logo-name em{font-style:normal;color:#2563eb;}
+.nav-desktop{display:flex;align-items:center;gap:1.8rem;}
+.nav-desktop a{color:#4b5563;text-decoration:none;font-size:0.875rem;font-weight:500;transition:color 0.2s;padding:0.3rem 0;min-height:44px;display:flex;align-items:center;}
+.nav-desktop a:hover,.nav-desktop a.active{ color: #2563eb; }
+.nav-cta{background:var(--accent)!important;color:#fff!important;padding:0.52rem 1.2rem!important;border-radius:7px;font-weight:600!important;white-space:nowrap;box-shadow:0 2px 10px rgba(37,99,235,0.35);transition:background 0.2s,box-shadow 0.2s!important;}
+.nav-cta:hover{background:#1d4ed8!important;box-shadow:0 4px 18px rgba(37,99,235,0.5)!important;}
+.nav-mobile-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;cursor:pointer;background:none;border:none;padding:10px;border-radius:8px;transition:background 0.2s;}
+.nav-mobile-toggle:hover{background: rgba(0,0,0,0.04);}
+.nav-mobile-toggle span{display:block;width:22px;height:2px;background:#374151;border-radius:2px;transition:all 0.3s;}
+.nav-mobile-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-mobile-toggle.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.nav-mobile-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.nav-drawer{display:none;position:fixed;top:var(--header-h);left:0;right:0;background:rgba(7,13,31,0.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.08);padding:1.5rem 1.6rem 2rem;z-index:199;box-shadow:0 8px 32px rgba(0,0,0,0.4);animation:slideDown 0.22s ease both;}
+.nav-drawer.open{display:block;}
+@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+.nav-drawer a{display:flex;align-items:center;gap:0.6rem;color:#4b5563;text-decoration:none;font-size:1rem;font-weight:500;padding:0.9rem 0.5rem;border-bottom:1px solid #e5e7eb;min-height:52px;transition:color 0.2s;}
+.nav-drawer a:hover,.nav-drawer a.active{color:#fff;}
+.nav-drawer a:last-child{border-bottom:none;}
+.drawer-cta{margin-top:1rem;background:var(--accent);color:#fff!important;border-radius:9px;padding:1rem!important;font-weight:700!important;text-align:center;justify-content:center;border-bottom:none!important;font-size:1rem!important;}
+.drawer-divider{border:none;border-top:1px solid rgba(255,255,255,0.06);margin:0.5rem 0;}
+.drawer-label{font-size:0.65rem;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:#2e4a65;padding:0.5rem 0.5rem 0;display:block;}
+.doc-shortcuts{background:rgba(7,13,31,0.95);border-bottom:1px solid #e5e7eb;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.doc-shortcuts::-webkit-scrollbar{display:none;}
+.doc-shortcuts-inner{display:flex;align-items:center;padding:0 1.5rem;min-width:max-content;}
+.doc-shortcut{display:flex;align-items:center;gap:0.55rem;padding:0.65rem 1.1rem;text-decoration:none;color:#4b5563;font-size:0.8rem;font-weight:500;border-right:1px solid #e5e7eb;white-space:nowrap;transition:all 0.2s;min-height:42px;}
+.doc-shortcut:last-child{border-right:none;}
+.doc-shortcut:hover{color:#93c5fd;background:rgba(37,99,235,0.1);}
+.sc-badge{font-size:0.58rem;font-weight:700;letter-spacing:0.06em;padding:0.13rem 0.4rem;border-radius:99px;text-transform:uppercase;}
+.sc-available{background:#f0fdf4;color:#16a34a;}
+.sc-soon{background:#f3f4f6;color:#3a5878;}
+footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:auto;}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid #e5e7eb;}
+.footer-logo-name{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;color:white;display:block;margin-bottom:0.6rem;}
+.footer-logo-name em{font-style:normal;color:#60a5fa;}
+.footer-desc{font-size:0.8rem;color:#3a5878;line-height:1.65;max-width:220px;}
+.footer-col-title{font-size:0.64rem;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:#2a4060;margin-bottom:0.9rem;}
+.footer-col a{display:block;font-size:0.83rem;color:#3e5e7a;text-decoration:none;margin-bottom:0.5rem;transition:color 0.2s;padding:0.15rem 0;}
+.footer-col a:hover{color:#93c5fd;}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;}
+.footer-copy{font-size:0.75rem;color:#1e2e40;}
+.footer-legal{display:flex;gap:1.4rem;}
+.footer-legal a{font-size:0.75rem;color:#1e2e40;text-decoration:none;transition:color 0.2s;}
+.footer-legal a:hover{color:#60a5fa;}
+/* Article layout */
+.article-layout{display:grid;grid-template-columns:1fr 300px;gap:3rem;max-width:1100px;margin:0 auto;padding:4rem 1.5rem 5rem;flex:1;align-items:start;}
+.article-hero{background:linear-gradient(160deg,#070e20 0%,#0b1630 40%,#0e1e44 75%,#0a1530 100%);padding:4.5rem 1.5rem 4rem;text-align:center;position:relative;overflow:hidden;}
+.article-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,0.055) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,0.055) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(ellipse 85% 90% at 50% 50%,black 25%,transparent 100%);}
+.article-hero-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;}
+.article-cat{display:inline-flex;align-items:center;gap:0.4rem;background:rgba(37,99,235,0.14);border:1px solid rgba(96,165,250,0.25);color:#93c5fd;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.32rem 0.85rem;border-radius:99px;margin-bottom:1.2rem;}
+.article-hero h1{font-family:'Lora',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:700;color:#eef4ff;line-height:1.18;margin-bottom:0.9rem;letter-spacing:-0.02em;}
+.article-hero-meta{display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;font-size:0.8rem;color:#4a7090;margin-top:1rem;}
+.article-meta-item{display:flex;align-items:center;gap:0.35rem;}
+/* Prose */
+.prose h2{font-family:'Lora',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin:2.8rem 0 1rem;}
+.prose h2:first-child{margin-top:0;}
+.prose h3{font-family:'Lora',serif;font-size:1.12rem;font-weight:700;color:var(--navy);margin:2rem 0 0.65rem;}
+.prose p{font-size:0.97rem;color:#2e3340;line-height:1.88;margin-bottom:1.1rem;}
+.prose ul,.prose ol{margin:0.6rem 0 1.2rem 1.4rem;}
+.prose li{font-size:0.95rem;color:#2e3340;line-height:1.8;margin-bottom:0.4rem;}
+.prose strong{color:var(--navy);font-weight:700;}
+.prose a{color:var(--accent);text-decoration:underline;}
+.prose blockquote{border-left:4px solid var(--accent);margin:1.8rem 0;padding:1rem 1.5rem;background:var(--accent-soft);border-radius:0 10px 10px 0;}
+.prose blockquote p{color:var(--navy);font-style:italic;margin:0;}
+.callout{background:#fff;border:1.5px solid var(--border);border-radius:12px;padding:1.5rem;margin:2rem 0;}
+.callout-title{font-weight:700;color:var(--navy);font-size:0.95rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem;}
+.callout-body{font-size:0.88rem;color:var(--muted);line-height:1.7;}
+.callout.accent{border-color:var(--accent);background:var(--accent-soft);}
+.callout.accent .callout-body{color:#1e40af;}
+/* Sidebar */
+.sidebar{position:sticky;top:80px;}
+.sidebar-card{background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:1.6rem;margin-bottom:1.2rem;}
+.sidebar-title{font-family:'Lora',serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:1rem;}
+.sidebar-toc a{display:block;font-size:0.84rem;color:var(--muted);text-decoration:none;padding:0.35rem 0;border-bottom:1px solid var(--border);transition:color 0.2s;}
+.sidebar-toc a:last-child{border-bottom:none;}
+.sidebar-toc a:hover{color:var(--accent);}
+.sidebar-cta{background:linear-gradient(145deg,#0b1630,#0e1e44);border-radius:14px;padding:1.6rem;text-align:center;margin-bottom:1.2rem;}
+.sidebar-cta h3{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:0.5rem;}
+.sidebar-cta p{font-size:0.82rem;color:#6a96be;line-height:1.6;margin-bottom:1.2rem;}
+.btn-sidebar{display:block;background:var(--accent);color:#fff;padding:0.8rem;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;text-align:center;margin-bottom:0.6rem;transition:background 0.2s;}
+.btn-sidebar:hover{background:#1d4ed8;}
+.btn-sidebar-ghost{display:block;color:#93c5fd;padding:0.7rem;border-radius:8px;font-weight:600;font-size:0.85rem;text-decoration:none;text-align:center;border:1px solid rgba(96,165,250,0.25);transition:all 0.2s;}
+.btn-sidebar-ghost:hover{border-color:rgba(147,197,253,0.5);color:#dbeafe;}
+/* Table */
+.table-wrap{overflow-x:auto;margin:1.5rem 0;}
+.styled-table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.styled-table th{background:var(--navy);color:#fff;padding:0.8rem 1rem;text-align:left;font-weight:600;font-size:0.82rem;}
+.styled-table td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);color:#2e3340;vertical-align:top;}
+.styled-table tr:last-child td{border-bottom:none;}
+.styled-table tr:nth-child(even) td{background:#f8faff;}
+.tag-yes{color:#16a34a;font-weight:700;}
+.tag-no{color:#dc2626;font-weight:700;}
+@media(max-width:900px){.article-layout{grid-template-columns:1fr;}.sidebar{position:static;}.footer-top{grid-template-columns:1fr 1fr;gap:2rem;}}
+@media(max-width:780px){.nav-desktop{display:none;}.nav-mobile-toggle{display:flex;}header{padding:0 1.2rem;}footer{padding:2.5rem 1.4rem 1.5rem;}}
+@media(max-width:480px){.footer-top{grid-template-columns:1fr;gap:1.5rem;}.article-hero{padding:3.5rem 1.2rem 3rem;}.article-layout{padding:2.5rem 1.2rem 3rem;}}
+  
+    /* ── SHORTCUT DOT & PILL ── */
+    .sc-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+    .sc-dot.green { background: #4ade80; }
+    .sc-dot.gray { background: #d1d5db; }
+    .sc-pill { font-size: 0.57rem; font-weight: 700; letter-spacing: 0.06em; padding: 0.12rem 0.4rem; border-radius: 99px; text-transform: uppercase; }
+    .sc-pill.available { background: #f0fdf4; color: #16a34a; }
+    .sc-pill.soon { background: rgba(255,255,255,0.05); color: #6b7280; }
+
+  .logo-mark {width:42px;height:42px;flex-shrink:0;}
+    /* ── SCROLL TO TOP ── */
+    .scroll-top-btn {
+      position: fixed; bottom: 2rem; right: 2rem;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--accent); color: white;
+      border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 18px rgba(37,99,235,0.35);
+      z-index: 90;
+      opacity: 0; transform: translateY(12px);
+      transition: opacity 0.3s, transform 0.3s, background 0.2s;
+      pointer-events: none;
+    }
+    .scroll-top-btn.visible {
+      opacity: 1; transform: translateY(0);
+      pointer-events: auto;
+    }
+    .scroll-top-btn:hover {
+      background: #1d4ed8;
+      box-shadow: 0 6px 24px rgba(37,99,235,0.5);
+    }
+    .scroll-top-btn:focus-visible {
+      outline: 2px solid #93c5fd;
+      outline-offset: 2px;
+    }
+
+    /* ── ENHANCED FOCUS STYLES ── */
+    a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+      outline: 2px solid var(--accent-lt, #3b82f6);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* ── NAV UNDERLINE ANIMATION ── */
+    .nav-desktop a {
+      position: relative;
+    }
+    .nav-desktop a::after {
+      content: ''; position: absolute; bottom: 16px; left: 0; right: 0;
+      height: 2px; background: #60a5fa; border-radius: 1px;
+      transform: scaleX(0); transform-origin: center;
+      transition: transform 0.25s ease;
+    }
+    .nav-desktop a:hover::after,
+    .nav-desktop a.active::after { transform: scaleX(1); }
+    .nav-desktop a.nav-cta::after { display: none; }
+
+
+.sidebar-card-title{font-family:'Lora',serif;font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.9rem;}
+.sidebar-link{display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;color:var(--muted);text-decoration:none;padding:0.4rem 0;border-bottom:1px solid var(--border);transition:color 0.2s;}
+.sidebar-link:last-child{border-bottom:none;}
+.sidebar-link:hover{color:var(--accent);}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How to Write a Privacy Policy for Your Website","datePublished":"March 2026","dateModified":"March 2026","author":{"@type":"Organization","name":"LegalyJet"},"publisher":{"@type":"Organization","name":"LegalyJet","url":"https://legalyjet.tech"},"url":"https://legalyjet.tech/blog/how-to-write-a-privacy-policy/","description":"Step by step guide to writing a Privacy Policy for your website — what to include, how to structure it, and how to generate one free in minutes."}
+</script>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9219636336727946" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="/">
+    <img class="logo-mark" src="/logo.png" alt="LegalyJet logo"/>
+    <span class="logo-name">Legaly<em>Jet</em></span>
+  </a>
+  <nav class="nav-desktop">
+    <a href="/">Home</a>
+    <a href="/#documents">Documents</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <a href="/generate/privacy-policy/" class="nav-cta">Generate Free →</a>
+  </nav>
+  <button class="nav-mobile-toggle" onclick="toggleNav(this)" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+<nav class="nav-drawer" id="nav-drawer">
+  <span class="drawer-label">Generators</span>
+  <a href="/generate/privacy-policy/">Privacy Policy <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
+  <a href="/generate/terms-conditions/">Terms &amp; Conditions <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
+  <a href="/generate/cookie-policy/">Cookie Policy <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
+  <hr class="drawer-divider"/>
+  <span class="drawer-label">Pages</span>
+  <a href="/">Home</a>
+  <a href="/blog/">Blog</a>
+  <a href="/about/">About</a>
+  <a href="/contact/">Contact</a>
+  <a href="/generate/privacy-policy/" class="drawer-cta">Generate Free →</a>
+</nav>
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="article-cat">Privacy Policy</div>
+    <h1>How to Write a Privacy Policy for Your Website</h1>
+    <div class="article-hero-meta">
+      <div class="article-meta-item">March 2026</div>
+      <div class="article-meta-item">⏱ 6 min read</div>
+      <div class="article-meta-item">GDPR · CCPA · Guide</div>
+    </div>
+  </div>
+</div>
+
+<div class="article-layout">
+  <main class="prose">
+
+    <p>Writing a Privacy Policy from scratch is harder than it looks. It needs to cover specific legal requirements, use clear language, and accurately reflect your actual data practices. Here is a step-by-step guide — or you can skip all of this and generate one for free in 3 minutes.</p>
+
+    <div class="callout accent">
+      <div class="callout-title">Skip the writing — generate free in 3 minutes</div>
+      <div class="callout-body">LegalyJet asks you the right questions and writes the whole thing using your real business details. No blanks. <a href="/generate/privacy-policy/">Generate free →</a></div>
+    </div>
+
+    <h2>Step 1 — Audit your data collection</h2>
+    <p>Before you can write a Privacy Policy, you need to know exactly what data your site collects. Go through every part of your website or app and list:</p>
+    <ul>
+      <li>Every form that collects user information</li>
+      <li>Every analytics tool you use (Google Analytics, Hotjar, etc.)</li>
+      <li>Every advertising or tracking pixel (Google Ads, Facebook Pixel)</li>
+      <li>Every third-party service you use (payment processors, email marketing, live chat)</li>
+      <li>Any cookies your site sets</li>
+    </ul>
+    <p>This audit is the foundation of your Privacy Policy. If you miss something, your policy will be inaccurate — which can be worse than having no policy at all.</p>
+
+    <h2>Step 2 — Identify which laws apply to you</h2>
+    <p>Different privacy laws apply depending on where your users are located:</p>
+    <ul>
+      <li><strong>GDPR</strong> — applies if any of your users are in the European Union</li>
+      <li><strong>CCPA</strong> — applies if you meet certain thresholds and have California users</li>
+      <li><strong>CalOPPA</strong> — applies to virtually any commercial website accessible to California residents</li>
+      <li><strong>PIPEDA</strong> — applies if you have Canadian users</li>
+    </ul>
+
+    <h2>Step 3 — Write each required section</h2>
+    <p>A complete Privacy Policy needs to cover:</p>
+    <ul>
+      <li><strong>What data you collect</strong> — be specific, list every type</li>
+      <li><strong>How you collect it</strong> — forms, cookies, analytics tools</li>
+      <li><strong>Why you collect it</strong> — the legal basis and business purpose</li>
+      <li><strong>Who you share it with</strong> — third-party services, advertisers</li>
+      <li><strong>How long you keep it</strong> — data retention periods</li>
+      <li><strong>User rights</strong> — right to access, delete, correct data</li>
+      <li><strong>Cookies</strong> — what cookies you use and why</li>
+      <li><strong>Security</strong> — how you protect the data</li>
+      <li><strong>Contact information</strong> — how users can reach you with data questions</li>
+      <li><strong>Policy updates</strong> — how you will notify users of changes</li>
+    </ul>
+
+    <h2>Step 4 — Use plain English</h2>
+    <p>GDPR specifically requires that Privacy Policies be written in clear, plain language that users can actually understand. Avoid legal jargon where possible. Write as if you are explaining it to a friend, not impressing a judge.</p>
+
+    <h2>Step 5 — Publish and link it</h2>
+    <p>Once written, your Privacy Policy needs to be:</p>
+    <ul>
+      <li>Published on a dedicated page on your website</li>
+      <li>Linked in the footer of every page</li>
+      <li>Linked during any signup or checkout process</li>
+      <li>Easy to find and read on mobile</li>
+    </ul>
+
+    <div class="callout">
+      <div class="callout-title">Or just use LegalyJet</div>
+      <div class="callout-body">All of the above takes 30–60 minutes to do properly. LegalyJet does it in 3 minutes by asking you the right questions and generating a complete, personalized document. Free, no account, ready to publish. <a href="/generate/privacy-policy/">Generate free →</a></div>
+    </div>
+
+  </main>
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Generate Free Documents</div>
+      <a href="/generate/privacy-policy/" class="sidebar-link"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Privacy Policy</a>
+      <a href="/generate/terms-conditions/" class="sidebar-link"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Terms &amp; Conditions</a>
+      <a href="/generate/cookie-policy/" class="sidebar-link"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Cookie Policy</a>
+    </div>
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Related Guides</div>
+      <a href="/blog/gdpr-guide/" class="sidebar-link">GDPR Guide</a>
+      <a href="/blog/ccpa-guide/" class="sidebar-link">CCPA Guide</a>
+      <a href="/blog/cookie-policy-guide/" class="sidebar-link">Cookie Policy Guide</a>
+      <a href="/blog/legal-checklist/" class="sidebar-link">Legal Checklist</a>
+    </div>
+  </aside>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="footer-logo-name">Legaly<em>Jet</em></span>
+      <p class="footer-desc">Free legal document generator for websites and apps. Personalized policies in minutes — no account needed.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Documents</div>
+      <a href="/generate/privacy-policy/">Privacy Policy</a>
+      <a href="/generate/terms-conditions/">Terms &amp; Conditions</a>
+      <a href="/generate/cookie-policy/">Cookie Policy</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Learn</div>
+      <a href="/blog/">Blog &amp; Guides</a>
+      <a href="/blog/privacy-policy-guide/">Privacy Policy Guide</a>
+      <a href="/blog/terms-and-conditions/">T&amp;C Guide</a>
+      <a href="/blog/gdpr-guide/">GDPR Guide</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 LegalyJet. All rights reserved.</div>
+  </div>
+  <div class="footer-disclaimer" style="border-top:1px solid rgba(255,255,255,0.06);margin-top:1rem;padding-top:1rem;text-align:center;font-size:0.73rem;color:#2a4060;line-height:1.65;">
+    <strong style="color:#3a5878;">Legal Disclaimer:</strong> LegalyJet is not a law firm and does not provide legal advice. Documents generated on this site are for informational purposes only and do not constitute legal advice or create an attorney-client relationship. For advice specific to your situation, please consult a qualified attorney.
+  </div>
+</footer>
+
+<script>
+  // Scroll to top button
+  var scrollTopBtn = document.getElementById('scroll-top');
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', function() {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    scrollTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>
+<script>
+function toggleNav(btn){btn.classList.toggle('open');const d=document.getElementById('nav-drawer');d.classList.toggle('open');document.body.style.overflow=d.classList.contains('open')?'hidden':'';}
+document.addEventListener('click',e=>{const d=document.getElementById('nav-drawer');const t=document.querySelector('.nav-mobile-toggle');if(d&&d.classList.contains('open')&&!d.contains(e.target)&&!t.contains(e.target)){d.classList.remove('open');t.classList.remove('open');document.body.style.overflow='';}});
+</script>
+
+<script>
+(function(){
+  var path = window.location.pathname;
+  // Normalise trailing slash
+  if(path !== '/' && path.endsWith('/')) path = path.slice(0,-1);
+  document.querySelectorAll('.nav-desktop a, .nav-drawer a').forEach(function(a){
+    var href = a.getAttribute('href');
+    if(!href) return;
+    // Remove trailing slash for comparison
+    var h = href.endsWith('/') && href !== '/' ? href.slice(0,-1) : href;
+    // Exact match, or non-root prefix match
+    if(h === path || (h.length > 1 && path.startsWith(h))) {
+      a.classList.add('active');
+    }
+  });
+})();
+</script>
+<script>
+(function(){
+  // Detect if on GitHub Pages subfolder
+  var base = window.location.pathname.startsWith('/legalyjet') ? '/legalyjet' : '';
+  if(!base) return; // On Vercel/custom domain, links already correct
+  // On GitHub Pages, prefix all internal links with /legalyjet
+  document.querySelectorAll('a[href]').forEach(function(a){
+    var h = a.getAttribute('href');
+    if(h && h.startsWith('/') && !h.startsWith('/legalyjet') && !h.startsWith('//')) {
+      a.setAttribute('href', '/legalyjet' + h);
+    }
+  });
+})();
+</script>
+<!-- Scroll to top button -->
+<button class="scroll-top-btn" id="scroll-top" aria-label="Scroll to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+</body>
+</html>
