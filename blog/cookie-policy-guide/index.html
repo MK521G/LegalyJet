@@ -165,6 +165,11 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
     .nav-desktop a.active::after { transform: scaleX(1); }
     .nav-desktop a.nav-cta::after { display: none; }
 
+
+.sidebar-card-title{font-family:'Lora',serif;font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.9rem;}
+.sidebar-link{display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;color:var(--muted);text-decoration:none;padding:0.4rem 0;border-bottom:1px solid var(--border);transition:color 0.2s;}
+.sidebar-link:last-child{border-bottom:none;}
+.sidebar-link:hover{color:var(--accent);}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Cookie Policy Guide: Does Your Website Need One?","datePublished":"2026-02-10","dateModified":"2026-02-10","author":{"@type":"Organization","name":"LegalyJet"},"publisher":{"@type":"Organization","name":"LegalyJet","url":"https://legalyjet.tech"},"url":"https://legalyjet.tech/blog/cookie-policy-guide/","description":"Free guide on cookie policy guide: does your website need one? — written for founders, not lawyers."}
@@ -348,12 +353,10 @@ footer{background:var(--navy-dark);padding:3rem 2.5rem 2rem;border-top:1px solid
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© 2026 LegalyJet. All rights reserved. Not a law firm. Documents are for informational purposes only.</div>
-    <div class="footer-legal">
-      <a href="/privacy/">Privacy</a>
-      <a href="/terms/">Terms</a>
-      <a href="/contact/">Contact</a>
-    </div>
+    <div class="footer-copy">© 2026 LegalyJet. All rights reserved.</div>
+  </div>
+  <div class="footer-disclaimer" style="border-top:1px solid rgba(255,255,255,0.06);margin-top:1rem;padding-top:1rem;text-align:center;font-size:0.73rem;color:#2a4060;line-height:1.65;">
+    <strong style="color:#3a5878;">Legal Disclaimer:</strong> LegalyJet is not a law firm and does not provide legal advice. Documents generated on this site are for informational purposes only and do not constitute legal advice or create an attorney-client relationship. For advice specific to your situation, please consult a qualified attorney.
   </div>
 </footer>
 <script>
@@ -410,6 +413,5 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 <button class="scroll-top-btn" id="scroll-top" aria-label="Scroll to top">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
 </button>
-  <div style="background:#f8fafc;border-top:1px solid #e2e8f4;padding:0.85rem 2rem;text-align:center;font-size:0.75rem;color:#6b7280;line-height:1.6;"><strong>Legal Disclaimer:</strong> LegalyJet is not a law firm and does not provide legal advice. Documents generated on this site are for informational purposes only and do not constitute legal advice or create an attorney-client relationship. For advice specific to your situation, please consult a qualified attorney.</div>
 </body>
 </html>
