@@ -23,8 +23,8 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --navy: #0c1a3a; --navy-mid: #142247; --navy-dark: #070d1f;
-      --accent: #2563eb; --accent-lt: #3b82f6; --accent-soft: #dbeafe;
+      --navy: #3878E4; --navy-mid: #2d6dd6; --navy-dark: #3878E4;
+      --accent: #3878E4; --accent-lt: #5a9af0; --accent-soft: #dbeafe;
       --text: #0f1117; --text-mid: #374151; --muted: #6b7280;
       --border: #e2e8f4; --page-bg: #f4f7fd; --white: #ffffff; --header-h: 60px;
       --error: #d0341b; --error-bg: #fff5f3; --error-border: #f5a898;
@@ -36,40 +36,40 @@
     .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; transition: opacity 0.2s; user-select: none; }
     .logo:hover { opacity: 0.82; }
     .logo-mark {width:42px;height:42px;flex-shrink:0;}
-    .logo-name { font-family: 'Lora', serif; font-size: 1.25rem; font-weight: 700; color: #0c1a3a; letter-spacing: -0.02em; }
-    .logo-name em { font-style: normal; color: #2563eb; }
+    .logo-name { font-family: 'Lora', serif; font-size: 1.25rem; font-weight: 700; color: #0f172a; letter-spacing: -0.02em; }
+    .logo-name em { font-style: normal; color: #3878E4; }
     /* DESKTOP NAV */
     .nav-desktop { display: flex; align-items: center; gap: 1.8rem; margin-left: auto; }
     .nav-desktop a { color: #4b5563; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; min-height: 44px; display: flex; align-items: center; position: relative; }
-    .nav-desktop a:hover, .nav-desktop a.active { color: #2563eb; }
-    .nav-desktop a::after { content: ''; position: absolute; bottom: 16px; left: 0; right: 0; height: 2px; background: #60a5fa; border-radius: 1px; transform: scaleX(0); transform-origin: center; transition: transform 0.25s ease; }
+    .nav-desktop a:hover, .nav-desktop a.active { color: #3878E4; }
+    .nav-desktop a::after { content: ''; position: absolute; bottom: 16px; left: 0; right: 0; height: 2px; background: #7ab4f5; border-radius: 1px; transform: scaleX(0); transform-origin: center; transition: transform 0.25s ease; }
     .nav-desktop a:hover::after, .nav-desktop a.active::after { transform: scaleX(1); }
     .nav-desktop a.nav-cta::after { display: none; }
-    .nav-cta { background: #2563eb !important; color: #fff !important; padding: 0.52rem 1.2rem !important; border-radius: 7px; font-weight: 600 !important; white-space: nowrap; box-shadow: 0 2px 10px rgba(37,99,235,0.35); }
-    .nav-cta:hover { background: #1d4ed8 !important; }
+    .nav-cta { background: #3878E4 !important; color: #fff !important; padding: 0.52rem 1.2rem !important; border-radius: 7px; font-weight: 600 !important; white-space: nowrap; box-shadow: 0 2px 10px rgba(56,120,228,0.35); }
+    .nav-cta:hover { background: #1a5ec8 !important; }
     /* MOBILE NAV */
     .nav-mobile-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; cursor: pointer; background: none; border: none; padding: 10px; border-radius: 8px; }
     .nav-mobile-toggle span { display: block; width: 22px; height: 2px; background: #374151; border-radius: 2px; transition: all 0.3s; }
     .nav-mobile-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .nav-mobile-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
     .nav-mobile-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-    .nav-drawer { display: none; position: fixed; top: 60px; left: 0; right: 0; background: rgba(7,13,31,0.98); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 1.5rem 1.6rem 2rem; z-index: 199; box-shadow: 0 8px 32px rgba(0,0,0,0.4); animation: slideDown 0.22s ease both; }
+    .nav-drawer { display: none; position: fixed; top: 60px; left: 0; right: 0; background: #ffffff; backdrop-filter: blur(20px); border-bottom: 1px solid #e0e9f8; padding: 1.5rem 1.6rem 2rem; z-index: 199; box-shadow: 0 8px 32px rgba(56,120,228,0.12); animation: slideDown 0.22s ease both; }
     .nav-drawer.open { display: block; }
     @keyframes slideDown { from{opacity:0;transform:translateY(-8px)} to{opacity:1;transform:translateY(0)} }
-    .nav-drawer a { display: flex; align-items: center; gap: 0.6rem; color: #8aafd4; text-decoration: none; font-size: 1rem; font-weight: 500; padding: 0.9rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.07); min-height: 52px; transition: color 0.2s; }
-    .nav-drawer a:hover, .nav-drawer a.active { color: #fff; }
+    .nav-drawer a { display: flex; align-items: center; gap: 0.6rem; color: #334155; text-decoration: none; font-size: 1rem; font-weight: 500; padding: 0.9rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.07); min-height: 52px; transition: color 0.2s; }
+    .nav-drawer a:hover, .nav-drawer a.active { color: #3878E4; }
     .nav-drawer a:last-child { border-bottom: none; }
-    .nav-drawer .drawer-cta { margin-top: 1rem; background: #2563eb; color: #fff !important; border-radius: 9px; padding: 1rem !important; font-weight: 700 !important; text-align: center; justify-content: center; border-bottom: none !important; }
-    .nav-drawer .drawer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 0.5rem 0; }
-    .nav-drawer .drawer-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #2e4a65; padding: 0.5rem 0.5rem 0; display: block; }
+    .nav-drawer .drawer-cta { margin-top: 1rem; background: #3878E4; color: #fff !important; border-radius: 9px; padding: 1rem !important; font-weight: 700 !important; text-align: center; justify-content: center; border-bottom: none !important; }
+    .nav-drawer .drawer-divider { border: none; border-top: 1px solid #e0e9f8; margin: 0.5rem 0; }
+    .nav-drawer .drawer-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #64748b; padding: 0.5rem 0.5rem 0; display: block; }
     /* DOC SHORTCUTS */
     .doc-shortcuts { background: #f9fafb; border-bottom: 1px solid #e5e7eb; overflow-x: auto; scrollbar-width: none; }
     .doc-shortcuts::-webkit-scrollbar { display: none; }
     .doc-shortcuts-inner { display: flex; align-items: center; min-width: max-content; }
     .doc-shortcut { display: flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.3rem; text-decoration: none; color: #4b5563; font-size: 0.79rem; font-weight: 500; border-right: 1px solid #e5e7eb; white-space: nowrap; transition: all 0.18s; min-height: 40px; }
     .doc-shortcut:first-child { padding-left: 2rem; }
-    .doc-shortcut:hover { color: #2563eb; background: rgba(37,99,235,0.09); }
-    .doc-shortcut.sc-active { color: #2563eb; background: rgba(37,99,235,0.12); }
+    .doc-shortcut:hover { color: #3878E4; background: rgba(56,120,228,0.09); }
+    .doc-shortcut.sc-active { color: #3878E4; background: rgba(56,120,228,0.12); }
     .sc-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
     .sc-dot.green { background: #4ade80; }
     .sc-dot.gray { background: #d1d5db; }
@@ -80,7 +80,7 @@
     .step-indicator-wrap { background: linear-gradient(180deg, #c5daf5 0%, #d8e8f8 100%); padding: 1.4rem 1rem 0.9rem; display: flex; flex-direction: column; align-items: center; border-bottom: 1px solid #b5cfe9; }
     .step-indicator { display: flex; align-items: center; }
     .step-bubble { width: 40px; height: 40px; border-radius: 50%; border: 2px solid #afc4de; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; color: var(--muted); transition: all 0.3s ease; position: relative; }
-    .step-bubble.active { background: var(--navy); border-color: var(--navy); color: white; box-shadow: 0 0 0 4px rgba(12,26,58,0.14); }
+    .step-bubble.active { background: #3878E4; border-color: #3878E4; color: white; box-shadow: 0 0 0 4px rgba(56,120,228,0.14); }
     .step-bubble.done { background: var(--accent); border-color: var(--accent); color: white; }
     .step-bubble.done .bubble-num { display: none; }
     .step-bubble.done::after { content: '\2713'; font-weight: 700; }
@@ -93,7 +93,7 @@
     .step-label-item.done { color: var(--accent); }
     /* MAIN */
     main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 2.2rem 1rem 5rem; }
-    .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(12,26,58,0.07), 0 8px 32px rgba(12,26,58,0.05); width: 100%; max-width: 620px; padding: 2.2rem; border: 1px solid #e0e9f5; animation: fadeUp 0.3s ease both; }
+    .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(56,120,228,0.07), 0 8px 32px rgba(56,120,228,0.05); width: 100%; max-width: 620px; padding: 2.2rem; border: 1px solid #e0e9f5; animation: fadeUp 0.3s ease both; }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
     .card-title { font-family: 'Lora', serif; font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-bottom: 0.3rem; }
     .card-subtitle { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.9rem; }
@@ -103,12 +103,12 @@
     .req { color: var(--required); margin-left: 2px; }
     .hint-text { font-size: 0.77rem; color: var(--muted); margin-top: 0.35rem; line-height: 1.45; }
     .input-wrap { display: flex; align-items: center; border: 1.5px solid var(--border); border-radius: 7px; background: var(--input-bg); transition: border-color 0.2s, box-shadow 0.2s, background 0.2s; overflow: hidden; }
-    .input-wrap:focus-within { border-color: var(--accent); background: white; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+    .input-wrap:focus-within { border-color: var(--accent); background: white; box-shadow: 0 0 0 3px rgba(56,120,228,0.1); }
     .input-wrap.error { border-color: var(--error-border) !important; background: var(--error-bg) !important; box-shadow: none !important; }
     .input-icon { padding: 0 0.8rem; color: var(--muted); flex-shrink: 0; display: flex; align-items: center; }
     .input-wrap input { flex: 1; border: none; outline: none; background: transparent; font-family: 'Source Sans 3', sans-serif; font-size: 0.92rem; color: var(--text); padding: 0.72rem 0.8rem 0.72rem 0; }
     .date-wrap { display: flex; align-items: center; border: 1.5px solid var(--border); border-radius: 7px; background: var(--input-bg); padding: 0.72rem 1rem; gap: 0.5rem; transition: border-color 0.2s, box-shadow 0.2s; }
-    .date-wrap:focus-within { border-color: var(--accent); background: white; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+    .date-wrap:focus-within { border-color: var(--accent); background: white; box-shadow: 0 0 0 3px rgba(56,120,228,0.1); }
     .date-wrap.error { border-color: var(--error-border) !important; background: var(--error-bg) !important; }
     .date-wrap input[type="date"] { border: none; outline: none; background: transparent; font-family: 'Source Sans 3', sans-serif; font-size: 0.92rem; color: var(--text); flex: 1; }
     .field-error { display: none; font-size: 0.78rem; color: var(--error); margin-top: 0.38rem; font-weight: 500; align-items: center; gap: 0.28rem; }
@@ -130,7 +130,7 @@
     .cookie-types-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-top: 0.5rem; }
     .cookie-type-card { border: 1.5px solid var(--border); border-radius: 9px; padding: 1rem; cursor: pointer; background: white; transition: all 0.2s; display: flex; flex-direction: column; gap: 0.4rem; position: relative; }
     .cookie-type-card:hover { border-color: var(--accent); background: #f5f8ff; }
-    .cookie-type-card.selected { border-color: var(--accent); background: #eff6ff; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+    .cookie-type-card.selected { border-color: var(--accent); background: #eff6ff; box-shadow: 0 0 0 3px rgba(56,120,228,0.1); }
     .cookie-type-card input[type="checkbox"] { position: absolute; top: 0.85rem; right: 0.85rem; accent-color: var(--accent); width: 16px; height: 16px; cursor: pointer; }
     .cookie-card-icon { font-size: 1.4rem; line-height: 1; }
     .cookie-card-name { font-size: 0.88rem; font-weight: 700; color: var(--navy); }
@@ -142,8 +142,8 @@
     .btn-back { background: none; border: none; cursor: pointer; font-family: 'Source Sans 3', sans-serif; font-size: 0.9rem; color: var(--accent); font-weight: 600; padding: 0.5rem 0; display: flex; align-items: center; gap: 0.3rem; transition: color 0.2s; }
     .btn-back:hover { color: var(--navy); }
     .btn-back.hidden { visibility: hidden; }
-    .btn-continue { background: linear-gradient(135deg, #1a3060, var(--navy)); color: white; border: none; border-radius: 8px; padding: 0.82rem 2.2rem; font-family: 'Source Sans 3', sans-serif; font-size: 0.95rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; transition: all 0.2s; box-shadow: 0 3px 10px rgba(12,26,58,0.28); letter-spacing: 0.01em; }
-    .btn-continue:hover { background: linear-gradient(135deg, #0e1e40, #0a1530); box-shadow: 0 5px 18px rgba(12,26,58,0.38); transform: translateY(-1px); }
+    .btn-continue { background: linear-gradient(135deg, #3878E4, #1a5ec8); color: white; border: none; border-radius: 8px; padding: 0.82rem 2.2rem; font-family: 'Source Sans 3', sans-serif; font-size: 0.95rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; transition: all 0.2s; box-shadow: 0 3px 10px rgba(56,120,228,0.28); letter-spacing: 0.01em; }
+    .btn-continue:hover { background: linear-gradient(135deg, #1a5ec8, #1550b0); box-shadow: 0 5px 18px rgba(56,120,228,0.38); transform: translateY(-1px); }
     .btn-continue:active { transform: translateY(0); }
     /* STEP PANELS */
     .step-panel { display: none; width: 100%; max-width: 620px; }
@@ -152,12 +152,12 @@
     /* ACTION BUTTONS */
     .action-btn { display: inline-flex; align-items: center; gap: 0.42rem; padding: 0.62rem 1.15rem; font-family: 'Source Sans 3', sans-serif; font-size: 0.84rem; font-weight: 600; border-radius: 7px; cursor: pointer; border: 1.5px solid var(--border); background: white; color: var(--text); transition: all 0.2s; }
     .action-btn:hover { border-color: var(--navy); color: var(--navy); background: #f0f5ff; }
-    .action-btn-pdf { background: var(--navy); color: white !important; border-color: var(--navy) !important; box-shadow: 0 2px 8px rgba(12,26,58,0.22); }
-    .action-btn-pdf:hover { background: #0a1530 !important; box-shadow: 0 4px 14px rgba(12,26,58,0.32); }
+    .action-btn-pdf { background: #3878E4; color: white !important; border-color: #3878E4 !important; box-shadow: 0 2px 8px rgba(56,120,228,0.22); }
+    .action-btn-pdf:hover { background: #1a5ec8 !important; box-shadow: 0 4px 14px rgba(56,120,228,0.32); }
     .action-btn-ghost { color: var(--muted) !important; }
     .action-btn-ghost:hover { color: var(--error) !important; border-color: var(--error) !important; background: #fff5f3 !important; }
     /* TOAST */
-    .toast { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%) translateY(20px); background: #0c1a3a; color: white; padding: 0.7rem 1.5rem; border-radius: 99px; font-size: 0.82rem; font-weight: 500; opacity: 0; transition: all 0.3s ease; pointer-events: none; z-index: 9999; }
+    .toast { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%) translateY(20px); background: #0f172a; color: white; padding: 0.7rem 1.5rem; border-radius: 99px; font-size: 0.82rem; font-weight: 500; opacity: 0; transition: all 0.3s ease; pointer-events: none; z-index: 9999; }
     .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
     /* STEP 4 */
     @keyframes successIn { 0% { opacity: 0; transform: translateY(-16px) scale(0.96); } 60% { transform: translateY(3px) scale(1.01); } 100% { opacity: 1; transform: translateY(0) scale(1); } }
@@ -166,43 +166,43 @@
     .doc-success-icon { width: 40px; height: 40px; background: #22c55e; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 0 0 6px rgba(34,197,94,0.15); animation: checkPop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both; }
     .doc-success-title { font-size: 0.92rem; font-weight: 700; color: #14532d; margin-bottom: 0.08rem; }
     .doc-success-sub { font-size: 0.79rem; color: #16a34a; }
-    .doc-toolbar { width: 100%; max-width: 800px; position: sticky; top: 60px; z-index: 50; background: rgba(255,255,255,0.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid #e0e9f5; border-radius: 10px; padding: 0.75rem 1.1rem; margin-bottom: 1.2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.6rem; box-shadow: 0 4px 20px rgba(12,26,58,0.1); animation: fadeUp 0.3s ease 0.05s both; }
+    .doc-toolbar { width: 100%; max-width: 800px; position: sticky; top: 60px; z-index: 50; background: rgba(255,255,255,0.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid #e0e9f5; border-radius: 10px; padding: 0.75rem 1.1rem; margin-bottom: 1.2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.6rem; box-shadow: 0 4px 20px rgba(56,120,228,0.1); animation: fadeUp 0.3s ease 0.05s both; }
     .doc-toolbar-title { font-family: 'Lora', serif; font-size: 1rem; font-weight: 700; color: var(--navy); }
     .doc-toolbar-sub { font-size: 0.74rem; color: var(--muted); margin-top: 0.06rem; }
     .doc-toolbar-btns { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
     .doc-paper-wrap { width: 100%; max-width: 800px; background: #cfd6e0; border-radius: 14px; padding: 2rem 1.8rem; box-shadow: inset 0 2px 10px rgba(0,0,0,0.14); animation: fadeUp 0.4s ease 0.1s both; }
     .doc-paper { background: #fff; border: 1px solid #e0e0e0; border-radius: 3px; padding: 4rem 4.5rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 6px 20px rgba(0,0,0,0.07), 0 24px 70px rgba(0,0,0,0.09); position: relative; }
     .doc-paper::after { content: ''; position: absolute; bottom: -8px; left: 8px; right: 8px; height: 8px; background: rgba(0,0,0,0.06); border-radius: 0 0 6px 6px; filter: blur(4px); }
-    .doc-paper h1 { font-family: 'Georgia', 'Times New Roman', serif; font-size: 1.75rem; font-weight: 700; text-align: center; color: #0c1a3a; letter-spacing: -0.01em; margin-bottom: 0.3rem; }
+    .doc-paper h1 { font-family: 'Georgia', 'Times New Roman', serif; font-size: 1.75rem; font-weight: 700; text-align: center; color: #0f172a; letter-spacing: -0.01em; margin-bottom: 0.3rem; }
     .doc-paper .doc-updated { font-family: 'Georgia', 'Times New Roman', serif; text-align: center; color: #6b7280; font-size: 0.82rem; font-style: italic; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid #1a1a1a; }
-    .doc-paper h2 { font-family: 'Georgia', 'Times New Roman', serif; font-size: 1rem; font-weight: 700; color: #0c1a3a; margin: 2.2rem 0 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; padding-bottom: 0.35rem; border-bottom: 1px solid #d1d5db; }
+    .doc-paper h2 { font-family: 'Georgia', 'Times New Roman', serif; font-size: 1rem; font-weight: 700; color: #0f172a; margin: 2.2rem 0 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; padding-bottom: 0.35rem; border-bottom: 1px solid #d1d5db; }
     .doc-paper h3 { font-family: 'Georgia', 'Times New Roman', serif; font-size: 0.95rem; font-weight: 700; color: #1f2937; margin: 1.4rem 0 0.4rem; font-style: italic; }
     .doc-paper p { font-family: 'Georgia', 'Times New Roman', serif; font-size: 0.9rem; line-height: 1.88; color: #1a1a1a; margin-bottom: 1rem; text-align: justify; hyphens: auto; }
     .doc-paper ul { margin: 0.4rem 0 1rem 1.6rem; list-style: none; }
     .doc-paper ul li { font-family: 'Georgia', 'Times New Roman', serif; font-size: 0.9rem; line-height: 1.78; color: #1a1a1a; margin-bottom: 0.5rem; padding-left: 0.3rem; position: relative; }
-    .doc-paper ul li::before { content: '\2022'; position: absolute; left: -1.2rem; color: #0c1a3a; font-weight: 900; }
-    .doc-paper ul li strong { color: #0c1a3a; }
+    .doc-paper ul li::before { content: '\2022'; position: absolute; left: -1.2rem; color: #3878E4; font-weight: 900; }
+    .doc-paper ul li strong { color: #0f172a; }
     .doc-disclaimer { width: 100%; max-width: 800px; margin-top: 1rem; text-align: center; padding: 0.8rem; }
     .doc-disclaimer p { font-size: 0.72rem; color: var(--muted); line-height: 1.6; }
     /* FOOTER */
-    footer { background: var(--navy-dark); padding: 3rem 2.5rem 2rem; border-top: 1px solid rgba(255,255,255,0.05); margin-top: auto; }
+    footer { background: #ffffff; padding: 3rem 2.5rem 2rem; border-top: 1px solid #e0e9f8; margin-top: auto; }
     .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
-    .footer-brand .footer-logo-name { font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 700; color: white; display: block; margin-bottom: 0.6rem; }
-    .footer-brand .footer-logo-name em { font-style: normal; color: #60a5fa; }
-    .footer-brand .footer-desc { font-size: 0.8rem; color: #3a5878; line-height: 1.65; max-width: 220px; }
+    .footer-brand .footer-logo-name { font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 700; color: #0f172a; display: block; margin-bottom: 0.6rem; }
+    .footer-brand .footer-logo-name em { font-style: normal; color: #3878E4; }
+    .footer-brand .footer-desc { font-size: 0.8rem; color: #4a6a9a; line-height: 1.65; max-width: 220px; }
     .footer-col .footer-col-title { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #2a4060; margin-bottom: 0.9rem; }
     .footer-col a { display: block; font-size: 0.83rem; color: #3e5e7a; text-decoration: none; margin-bottom: 0.5rem; transition: color 0.2s; padding: 0.15rem 0; }
-    .footer-col a:hover { color: #2563eb; }
+    .footer-col a:hover { color: #3878E4; }
     .footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.8rem; }
-    .footer-copy { font-size: 0.75rem; color: #1e2e40; }
+    .footer-copy { font-size: 0.75rem; color: #64748b; }
     .footer-legal { display: flex; gap: 1.4rem; }
-    .footer-legal a { font-size: 0.75rem; color: #1e2e40; text-decoration: none; transition: color 0.2s; }
-    .footer-legal a:hover { color: #60a5fa; }
+    .footer-legal a { font-size: 0.75rem; color: #64748b; text-decoration: none; transition: color 0.2s; }
+    .footer-legal a:hover { color: #3878E4; }
     /* SCROLL TO TOP */
-    .scroll-top-btn { position: fixed; bottom: 2rem; right: 2rem; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 18px rgba(37,99,235,0.35); z-index: 90; opacity: 0; transform: translateY(12px); transition: opacity 0.3s, transform 0.3s, background 0.2s; pointer-events: none; }
+    .scroll-top-btn { position: fixed; bottom: 2rem; right: 2rem; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 18px rgba(56,120,228,0.35); z-index: 90; opacity: 0; transform: translateY(12px); transition: opacity 0.3s, transform 0.3s, background 0.2s; pointer-events: none; }
     .scroll-top-btn.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
-    .scroll-top-btn:hover { background: #1d4ed8; box-shadow: 0 6px 24px rgba(37,99,235,0.5); }
-    .scroll-top-btn:focus-visible { outline: 2px solid #93c5fd; outline-offset: 2px; }
+    .scroll-top-btn:hover { background: #1a5ec8; box-shadow: 0 6px 24px rgba(56,120,228,0.5); }
+    .scroll-top-btn:focus-visible { outline: 2px solid #a8c8f8; outline-offset: 2px; }
     /* FOCUS STYLES */
     a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent-lt); outline-offset: 2px; border-radius: 4px; }
     /* PRINT */
@@ -240,35 +240,46 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9219636336727946" crossorigin="anonymous"></script>
 </head>
 <body>
+<a href="#main-content" style="position:absolute;left:-9999px;top:0;background:#3878E4;color:#fff;padding:0.5rem 1rem;z-index:9999;border-radius:0 0 6px 0;" onfocus="this.style.left='0'">Skip to main content</a>
 
-<header>
+<header role="banner">
   <a class="logo" href="/">
-    <img class="logo-mark" src="/logo.png" alt="LegalyJet logo"/>
+    <img class="logo-mark" src="/logo.png" alt="LegalyJet — Free Legal Document Generator" width="42" height="42"/>
     <span class="logo-name">Legaly<em>Jet</em></span>
   </a>
-  <nav class="nav-desktop">
+  <nav class="nav-desktop" aria-label="Primary navigation" role="navigation">
     <a href="/">Home</a>
-    <a href="/#documents">Documents</a>
-    <a href="/blog/">Blog</a>
+    <a href="/blog/">Blog &amp; Guides</a>
     <a href="/about/">About</a>
     <a href="/contact/">Contact</a>
-    <a href="/generate/cookie-policy/" class="nav-cta active">Generate Free &#8594;</a>
+    <a href="/generate/privacy-policy/" class="nav-cta">Generate Free →</a>
   </nav>
-  <button class="nav-mobile-toggle" onclick="toggleNav(this)" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <button class="nav-mobile-toggle" onclick="toggleNav(this)" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-drawer"><span></span><span></span><span></span></button>
 </header>
-
-<nav class="nav-drawer" id="nav-drawer">
-  <span class="drawer-label">Generators</span>
-  <a href="/generate/privacy-policy/">Privacy Policy <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
-  <a href="/generate/terms-conditions/">Terms &amp; Conditions <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
-  <a href="/generate/cookie-policy/" class="active">Cookie Policy <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;">Free</span></a>
+<nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation" role="navigation">
+  <span class="drawer-label">Free Generators</span>
+  <a href="/generate/privacy-policy/">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+    Privacy Policy <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;font-weight:600;">Free</span>
+  </a>
+  <a href="/generate/terms-conditions/">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    Terms &amp; Conditions <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;font-weight:600;">Free</span>
+  </a>
+  <a href="/generate/cookie-policy/">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="10" r="1" fill="currentColor"/><circle cx="14" cy="8" r="1" fill="currentColor"/><circle cx="15" cy="14" r="1" fill="currentColor"/></svg>
+    Cookie Policy <span style="font-size:0.7rem;color:#16a34a;margin-left:auto;font-weight:600;">Free</span>
+  </a>
   <hr class="drawer-divider"/>
   <span class="drawer-label">Pages</span>
   <a href="/">Home</a>
-  <a href="/blog/">Blog</a>
-  <a href="/about/">About</a>
-  <a href="/contact/">Contact</a>
-  <a href="/generate/cookie-policy/" class="drawer-cta">Generate Cookie Policy Free &#8594;</a>
+  <a href="/blog/">Blog &amp; Legal Guides</a>
+  <a href="/about/">About LegalyJet</a>
+  <a href="/contact/">Contact Us</a>
+  <a href="/generate/privacy-policy/" class="drawer-cta">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+    Generate Free Document
+  </a>
 </nav>
 
 
@@ -277,7 +288,7 @@
 <section style="background:#ffffff;border-bottom:1px solid #e2e8f4;padding:2rem 2rem 1.8rem;">
   <div style="max-width:900px;margin:0 auto;">
     <div style="display:flex;align-items:baseline;gap:1rem;margin-bottom:1.2rem;flex-wrap:wrap;">
-      <h1 style="font-family:'Lora',serif;font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:#0c1a3a;margin:0;">Free Cookie Policy Generator</h1>
+      <h1 style="font-family:'Lora',serif;font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:#0f172a;margin:0;">Free Cookie Policy Generator</h1>
       <span style="font-size:0.78rem;color:#9ca3af;">Everything explained in plain English</span>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:0.7rem;">
@@ -286,16 +297,16 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <div>
-            <div style="font-size:0.85rem;font-weight:700;color:#0c1a3a;margin-bottom:0.2rem;">What are Cookies?</div>
+            <div style="font-size:0.85rem;font-weight:700;color:#0f172a;margin-bottom:0.2rem;">What are Cookies?</div>
             <div style="font-size:0.82rem;color:#6b7280;line-height:1.6;">Tiny files websites save on your browser. They remember if you are logged in, your preferences, and your location. Not dangerous — but they collect data.</div>
           </div>
         </div>
 <div style="background:#f8fafc;border:1px solid #e2e8f4;border-radius:10px;padding:1rem 1.1rem;display:flex;gap:0.85rem;align-items:flex-start;">
           <div style="width:36px;height:36px;border-radius:9px;background:#eff6ff;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3878E4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </div>
           <div>
-            <div style="font-size:0.85rem;font-weight:700;color:#0c1a3a;margin-bottom:0.2rem;">What is a Cookie Policy?</div>
+            <div style="font-size:0.85rem;font-weight:700;color:#0f172a;margin-bottom:0.2rem;">What is a Cookie Policy?</div>
             <div style="font-size:0.82rem;color:#6b7280;line-height:1.6;">A page telling users which cookies you use and why. If your site has Google Analytics or any ads, you need this.</div>
           </div>
         </div>
@@ -304,7 +315,7 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
           <div>
-            <div style="font-size:0.85rem;font-weight:700;color:#0c1a3a;margin-bottom:0.2rem;">What is GDPR?</div>
+            <div style="font-size:0.85rem;font-weight:700;color:#0f172a;margin-bottom:0.2rem;">What is GDPR?</div>
             <div style="font-size:0.82rem;color:#6b7280;line-height:1.6;">A European law that requires you to get user consent before placing non-essential cookies on their browser.</div>
           </div>
         </div>
@@ -313,7 +324,7 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
           <div>
-            <div style="font-size:0.85rem;font-weight:700;color:#0c1a3a;margin-bottom:0.2rem;">What is the ePrivacy Directive?</div>
+            <div style="font-size:0.85rem;font-weight:700;color:#0f172a;margin-bottom:0.2rem;">What is the ePrivacy Directive?</div>
             <div style="font-size:0.82rem;color:#6b7280;line-height:1.6;">Also called the Cookie Law. Requires websites to get clear consent from users before using tracking cookies.</div>
           </div>
         </div>
@@ -322,7 +333,7 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ca8a04" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
           <div>
-            <div style="font-size:0.85rem;font-weight:700;color:#0c1a3a;margin-bottom:0.2rem;">Strictly Necessary Cookies?</div>
+            <div style="font-size:0.85rem;font-weight:700;color:#0f172a;margin-bottom:0.2rem;">Strictly Necessary Cookies?</div>
             <div style="font-size:0.82rem;color:#6b7280;line-height:1.6;">Cookies your site cannot work without — like keeping users logged in. These don't need consent. All others do.</div>
           </div>
         </div>
@@ -354,7 +365,7 @@
   </div>
 </div>
 
-<main>
+<main role="main" id="main-content">
 
   <!-- STEP 1: About You -->
   <div class="step-panel active" id="step-1">
@@ -606,7 +617,7 @@
 
 </main>
 
-<footer>
+<footer role="contentinfo">
   <div class="footer-top">
     <div class="footer-brand">
       <span class="footer-logo-name">Legaly<em>Jet</em></span>
@@ -636,8 +647,8 @@
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 LegalyJet. All rights reserved.</div>
   </div>
-  <div class="footer-disclaimer" style="border-top:1px solid rgba(255,255,255,0.06);margin-top:1rem;padding-top:1rem;text-align:center;font-size:0.73rem;color:#2a4060;line-height:1.65;">
-    <strong style="color:#3a5878;">Legal Disclaimer:</strong> LegalyJet is not a law firm and does not provide legal advice. Documents generated on this site are for informational purposes only and do not constitute legal advice or create an attorney-client relationship. For advice specific to your situation, please consult a qualified attorney.
+  <div class="footer-disclaimer" style="border-top:1px solid #e0e9f8;margin-top:1rem;padding-top:1rem;text-align:center;font-size:0.73rem;color:#64748b;line-height:1.65;">
+    <strong style="color:#4a6a9a;">Legal Disclaimer:</strong> LegalyJet is not a law firm and does not provide legal advice. Documents generated on this site are for informational purposes only and do not constitute legal advice or create an attorney-client relationship. For advice specific to your situation, please consult a qualified attorney.
   </div>
 </footer>
 
@@ -768,7 +779,7 @@
 
     var html = '<h1>Cookie Policy</h1>\n<p class="doc-updated">Effective Date: ' + dateFormatted + '</p>\n\n'
       + '<h2>1. Introduction</h2>\n'
-      + '<p>This Cookie Policy explains how <strong>' + company + '</strong> (\u201cwe\u201d, \u201cus\u201d, or \u201cour\u201d) uses cookies and similar tracking technologies on <strong>' + siteName + '</strong> (<a href="' + siteUrl + '" style="color:#0c1a3a;">' + siteUrl + '</a>). It explains what these technologies are, why we use them, and your rights to control our use of them.</p>\n'
+      + '<p>This Cookie Policy explains how <strong>' + company + '</strong> (\u201cwe\u201d, \u201cus\u201d, or \u201cour\u201d) uses cookies and similar tracking technologies on <strong>' + siteName + '</strong> (<a href="' + siteUrl + '" style="color:#0f172a;">' + siteUrl + '</a>). It explains what these technologies are, why we use them, and your rights to control our use of them.</p>\n'
       + '<p>By continuing to use our website, you consent to our use of cookies in accordance with this Cookie Policy. If you do not agree, you should set your browser settings accordingly or not use our website.</p>\n';
 
     if (euUsers) {
@@ -789,7 +800,7 @@
       html += '\n<h3>4.' + subIdx + ' Analytics / Performance Cookies</h3>\n'
         + '<p>These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous.</p>\n';
       if (useGA) {
-        html += '<p>We use <strong>Google Analytics</strong> to collect information about how visitors use our website. Google Analytics sets a number of cookies to collect standard internet log information and visitor behaviour information. We use the information gathered from Google Analytics to improve user experience on our site. Google\'s privacy policy is available at <a href="https://policies.google.com/privacy" style="color:#0c1a3a;">https://policies.google.com/privacy</a>. You can opt out of Google Analytics tracking by using the <a href="https://tools.google.com/dlpage/gaoptout" style="color:#0c1a3a;">Google Analytics Opt-out Browser Add-on</a>.</p>\n';
+        html += '<p>We use <strong>Google Analytics</strong> to collect information about how visitors use our website. Google Analytics sets a number of cookies to collect standard internet log information and visitor behaviour information. We use the information gathered from Google Analytics to improve user experience on our site. Google\'s privacy policy is available at <a href="https://policies.google.com/privacy" style="color:#0f172a;" rel="noopener noreferrer">https://policies.google.com/privacy</a>. You can opt out of Google Analytics tracking by using the <a href="https://tools.google.com/dlpage/gaoptout" style="color:#0f172a;" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.</p>\n';
       }
       subIdx++;
     }
@@ -835,7 +846,7 @@
       + '  <li><strong>Opera:</strong> Go to Settings &#8594; Advanced &#8594; Privacy &amp; security &#8594; Site Settings &#8594; Cookies</li>\n'
       + '  <li><strong>Android Browser:</strong> Go to Settings &#8594; Privacy &#8594; Accept cookies</li>\n'
       + '</ul>\n'
-      + '<p>Please note that restricting cookies may impact the functionality of our website. To find out more about cookies, including how to see what cookies have been set, visit <a href="https://www.aboutcookies.org" style="color:#0c1a3a;">www.aboutcookies.org</a> or <a href="https://www.allaboutcookies.org" style="color:#0c1a3a;">www.allaboutcookies.org</a>.</p>\n';
+      + '<p>Please note that restricting cookies may impact the functionality of our website. To find out more about cookies, including how to see what cookies have been set, visit <a href="https://www.aboutcookies.org" style="color:#0f172a;" rel="noopener noreferrer">www.aboutcookies.org</a> or <a href="https://www.allaboutcookies.org" style="color:#0f172a;" rel="noopener noreferrer">www.allaboutcookies.org</a>.</p>\n';
     mainSec++;
 
     if (euUsers) {
@@ -867,12 +878,12 @@
       + '<p>If you have any questions about our use of cookies or this Cookie Policy, please contact us at:</p>\n'
       + '<ul>\n'
       + '  <li><strong>' + company + '</strong></li>\n'
-      + '  <li><strong>Website:</strong> <a href="' + siteUrl + '" style="color:#0c1a3a;">' + siteUrl + '</a></li>\n'
-      + '  <li><strong>Email:</strong> <a href="mailto:' + email + '" style="color:#0c1a3a;">' + email + '</a></li>\n'
+      + '  <li><strong>Website:</strong> <a href="' + siteUrl + '" style="color:#0f172a;">' + siteUrl + '</a></li>\n'
+      + '  <li><strong>Email:</strong> <a href="mailto:' + email + '" style="color:#0f172a;">' + email + '</a></li>\n'
       + '</ul>\n';
 
     if (privacyUrl) {
-      html += '<p>For more information on how we handle your personal data, please read our <a href="' + privacyUrl + '" style="color:#0c1a3a;">Privacy Policy</a>.</p>\n';
+      html += '<p>For more information on how we handle your personal data, please read our <a href="' + privacyUrl + '" style="color:#0f172a;">Privacy Policy</a>.</p>\n';
     }
 
     return html;
