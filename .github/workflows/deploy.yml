@@ -1,0 +1,25 @@
+name: Extract and Deploy
+
+on:
+  push:
+    paths:
+      - '**.zip'
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract zip
+        run: |
+          unzip -o LegalyJet-deploy.zip -d ./
+          rm LegalyJet-deploy.zip
+
+      - name: Commit extracted files
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Auto deploy from zip" || echo "Nothing to commit"
+          git push
