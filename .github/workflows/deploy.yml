@@ -2,8 +2,8 @@ name: Extract and Deploy
 
 on:
   push:
-    paths:
-      - '*.zip'
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -17,10 +17,16 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract zip
+      - name: Find and extract zip
         run: |
-          unzip -o LegalyJet-deploy.zip -d ./
-          rm LegalyJet-deploy.zip
+          ZIP=$(find . -maxdepth 1 -name "*.zip" | head -1)
+          if [ -n "$ZIP" ]; then
+            echo "Found zip: $ZIP"
+            unzip -o "$ZIP" -d ./
+            rm "$ZIP"
+          else
+            echo "No zip found, skipping"
+          fi
 
       - name: Commit and push extracted files
         run: |
